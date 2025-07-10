@@ -1,0 +1,28 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+	  <!--uyarıları hata göstererek düzgün ilerleme sağlar-->
+	  <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="AutoMapper" Version="14.0.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Extensions\ConvertExtension\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\Domain\TahaMucasirogluBlog.Domain.Constant\TahaMucasirogluBlog.Domain.Constant.csproj" />
+    <ProjectReference Include="..\..\Domain\TahaMucasirogluBlog.Domain.DTOs\TahaMucasirogluBlog.Domain.DTOs.csproj" />
+    <ProjectReference Include="..\..\Domain\TahaMucasirogluBlog.Domain.Entities\TahaMucasirogluBlog.Domain.Entities.csproj" />
+    <ProjectReference Include="..\..\Domain\TahaMucasirogluBlog.Domain.Extensions\TahaMucasirogluBlog.Domain.Extensions.csproj" />
+    <ProjectReference Include="..\..\Domain\TahaMucasirogluBlog.Domain.Models\TahaMucasirogluBlog.Domain.Models.csproj" />
+    <ProjectReference Include="..\..\Domain\TahaMucasirogluBlog.Domain.Return\TahaMucasirogluBlog.Domain.Return.csproj" />
+  </ItemGroup>
+
+</Project>
