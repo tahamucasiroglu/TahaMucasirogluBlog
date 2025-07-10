@@ -8,9 +8,9 @@ using TahaMucasirogluBlog.Domain.DTOs.Concrete.Entity.Category;
 
 namespace TahaMucasirogluBlog.Application.Validation.Concrete.Entity.Category
 {
-    public class DeleteCategoryValidaiton : DeleteValidation<DeleteCategoryDTO>
+    public class DeleteCategoryDTOValidaiton : DeleteValidation<DeleteCategoryDTO>
     {
-        public DeleteCategoryValidaiton() : base()
+        public DeleteCategoryDTOValidaiton() : base()
         {
             
         }

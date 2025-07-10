@@ -9,13 +9,13 @@ using TahaMucasirogluBlog.Domain.DTOs.Concrete.Entity.BlogPostCategory;
 
 namespace TahaMucasirogluBlog.Application.Validation.Concrete.Entity.BlogPostCategory
 {
-    public class UpdateBlogPostCategoryValidation : UpdateValidation<UpdateBlogPostCategoryDTO>
+    public class AddBlogPostCategoryDTOValidation : AddValidation<AddBlogPostCategoryDTO>
     {
-        public UpdateBlogPostCategoryValidation() : base()
+        public AddBlogPostCategoryDTOValidation() : base()
         {
             RuleFor(x => x.PostId)
-            .NotEmpty()
-            .WithMessage("PostId zorunludur ve geçerli bir GUID olmalıdır.");
+           .NotEmpty()
+           .WithMessage("PostId zorunludur ve geçerli bir GUID olmalıdır.");
 
             RuleFor(x => x.CategoryId)
                 .NotEmpty()
@@ -27,7 +27,6 @@ namespace TahaMucasirogluBlog.Application.Validation.Concrete.Entity.BlogPostCat
                     .Must((model, categoryId) => categoryId != model.PostId)
                     .WithMessage("CategoryId, PostId ile aynı olamaz.");
             });
-
         }
     }
 }

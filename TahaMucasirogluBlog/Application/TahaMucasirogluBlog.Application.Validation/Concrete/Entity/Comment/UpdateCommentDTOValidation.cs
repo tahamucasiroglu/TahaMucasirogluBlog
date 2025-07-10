@@ -8,9 +8,9 @@ using TahaMucasirogluBlog.Domain.DTOs.Concrete.Entity.Comment;
 
 namespace TahaMucasirogluBlog.Application.Validation.Concrete.Entity.Comment
 {
-    public class AddCommentValidation : AddValidation<AddCommentDTO>
+    public class UpdateCommentDTOValidation : UpdateValidation<UpdateCommentDTO>
     {
-        public AddCommentValidation() : base()
+        public UpdateCommentDTOValidation() : base()
         {
             
         }

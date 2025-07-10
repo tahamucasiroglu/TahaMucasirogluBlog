@@ -9,9 +9,9 @@ using TahaMucasirogluBlog.Domain.DTOs.Concrete.Entity.Category;
 
 namespace TahaMucasirogluBlog.Application.Validation.Concrete.Entity.Category
 {
-    public class AddCategoryValidation : AddValidation<AddCategoryDTO>
+    public class AddCategoryDTOValidation : AddValidation<AddCategoryDTO>
     {
-        public AddCategoryValidation() : base()
+        public AddCategoryDTOValidation() : base()
         {
             // ParentCategoryId: nullable olabilir ama boş GUID olmamalı
             RuleFor(x => x.ParentCategoryId)

@@ -8,9 +8,9 @@ using TahaMucasirogluBlog.Domain.DTOs.Concrete.Entity.BlogPostTag;
 
 namespace TahaMucasirogluBlog.Application.Validation.Concrete.Entity.BlogPostTag
 {
-    public class DeleteBlogPostTagValidation : DeleteValidation<DeleteBlogPostTagDTO>
+    public class DeleteBlogPostTagDTOValidation : DeleteValidation<DeleteBlogPostTagDTO>
     {
-        public DeleteBlogPostTagValidation() : base()
+        public DeleteBlogPostTagDTOValidation() : base()
         {
             
         }

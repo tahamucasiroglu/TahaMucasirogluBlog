@@ -8,7 +8,12 @@ using TahaMucasirogluBlog.Domain.DTOs.Concrete.Entity.Comment;
 
 namespace TahaMucasirogluBlog.Application.Validation.Concrete.Entity.Comment
 {
-    public class DeleteCommentValidation : DeleteValidation<DeleteCommentDTO>
+    public class DeleteCommentDTOValidation : DeleteValidation<DeleteCommentDTO>
     {
+        public DeleteCommentDTOValidation() : base()
+        {
+            
+
+        }
     }
 }
