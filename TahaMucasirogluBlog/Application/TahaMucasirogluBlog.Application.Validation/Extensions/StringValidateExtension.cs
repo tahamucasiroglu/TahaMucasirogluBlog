@@ -10,6 +10,17 @@ namespace TahaMucasirogluBlog.Application.Validation.Extensions
 {
     static public class StringValidateExtension
     {
+
+        public static IRuleBuilderOptions<T, string> Url<T>(this IRuleBuilder<T, string> ruleBuilder)
+        {
+            bool UrlIsValidUri(string url) =>
+                Uri.TryCreate(url, UriKind.Absolute, out var uri) &&
+                (uri.Scheme == Uri.UriSchemeHttp || uri.Scheme == Uri.UriSchemeHttps);
+
+            return ruleBuilder.Must(UrlIsValidUri)
+                              .WithMessage("'{PropertyName}' geçerli bir HTTP veya HTTPS URL olmalı");
+        }
+
         static public IRuleBuilderOptions<T, string?> IsInRange<T>(this IRuleBuilder<T, string?> validation, string propertyName = "", int minLength = 0, int maxLength = 0, string message = "", bool required = true)
             => validation.Required(propertyName: propertyName, required: required).Must(e => e != null && e.Length >= minLength && e.Length <= maxLength).WithMessage(message == "" ? $"{propertyName} uzunluğu [{minLength} - {maxLength}] aralığında değil" : $"{propertyName}  {message}");
 

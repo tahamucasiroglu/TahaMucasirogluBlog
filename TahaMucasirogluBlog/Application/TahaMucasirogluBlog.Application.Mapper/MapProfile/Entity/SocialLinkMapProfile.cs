@@ -1,12 +1,18 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using AutoMapper;
+using TahaMucasirogluBlog.Application.Mapper.Extensions.ConfigExtension;
+using TahaMucasirogluBlog.Domain.DTOs.Concrete.Entity.SocialLink;
+using TahaMucasirogluBlog.Domain.Entities.Concrete;
 
 namespace TahaMucasirogluBlog.Application.Mapper.MapProfile.Entity
 {
-    internal class SocialLinkMapProfile
+    public class SocialLinkMapProfile : Profile
     {
+        public SocialLinkMapProfile()
+        {
+            CreateMap<AddSocialLinkDTO, SocialLink>().DefaultAddMapConfig();
+            CreateMap<UpdateSocialLinkDTO, SocialLink>().DefaultUpdateMapConfig();
+            CreateMap<DeleteSocialLinkDTO, SocialLink>().DefaultDeleteMapConfig();
+            CreateMap<SocialLink, GetSocialLinkDTO>();
+        }
     }
 }

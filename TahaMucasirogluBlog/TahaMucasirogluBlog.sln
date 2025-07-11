@@ -45,6 +45,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Client", "Client", "{4F570B
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TahaMucasirogluBlog.Client.TahaMucasirogluMVC", "Client\TahaMucasirogluBlog.Client.TahaMucasirogluMVC\TahaMucasirogluBlog.Client.TahaMucasirogluMVC.csproj", "{D4BBFDEA-5682-4A3B-8BFF-386D5DDA0B5B}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TahaMucasirogluBlog.Client.Cv.TahaMucasirogluMVC", "Client\TahaMucasirogluBlog.Client.Cv.TahaMucasirogluMVC\TahaMucasirogluBlog.Client.Cv.TahaMucasirogluMVC.csproj", "{BAEBF4D5-255D-4E0B-BD57-D407FACE6BED}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -107,6 +109,10 @@ Global
 		{D4BBFDEA-5682-4A3B-8BFF-386D5DDA0B5B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D4BBFDEA-5682-4A3B-8BFF-386D5DDA0B5B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D4BBFDEA-5682-4A3B-8BFF-386D5DDA0B5B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BAEBF4D5-255D-4E0B-BD57-D407FACE6BED}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BAEBF4D5-255D-4E0B-BD57-D407FACE6BED}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BAEBF4D5-255D-4E0B-BD57-D407FACE6BED}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BAEBF4D5-255D-4E0B-BD57-D407FACE6BED}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -126,6 +132,7 @@ Global
 		{56116250-ECE1-4EB9-80ED-025D78F22677} = {9B4E1F49-E70C-45D3-891F-6DFDD4D8E264}
 		{0B7CF555-A28A-4D3C-9BE5-92C18B9273CC} = {6AA954D6-4BDF-4510-9E7D-3822B4602635}
 		{D4BBFDEA-5682-4A3B-8BFF-386D5DDA0B5B} = {4F570B7E-9CBC-4E08-9B4F-8CB54D95F360}
+		{BAEBF4D5-255D-4E0B-BD57-D407FACE6BED} = {4F570B7E-9CBC-4E08-9B4F-8CB54D95F360}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {2C2C2F6B-91FF-435F-A510-0D6C0F7573D2}

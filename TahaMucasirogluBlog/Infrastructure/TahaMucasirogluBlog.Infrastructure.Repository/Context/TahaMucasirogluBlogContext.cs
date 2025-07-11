@@ -18,6 +18,7 @@ namespace TahaMucasirogluBlog.Infrastructure.Repository.Context
         public DbSet<Comment>Comments { get; set; }
         public DbSet<Tag> Tags { get; set; }
         public DbSet<User> Users { get; set; }
+        public DbSet<SocialLink> SocialLinks { get; set; }
 
         public TahaMucasirogluBlogContext(DbContextOptions<TahaMucasirogluBlogContext> opt) : base(opt) { }
 
@@ -32,6 +33,7 @@ namespace TahaMucasirogluBlog.Infrastructure.Repository.Context
             modelBuilder.ApplyConfiguration(new CommentConfiguration());
             modelBuilder.ApplyConfiguration(new TagConfiguration());
             modelBuilder.ApplyConfiguration(new UserConfiguration());
+            modelBuilder.ApplyConfiguration(new SocialLinkConfiguration());
         }
     }
 }

@@ -18,4 +18,8 @@
     <ProjectReference Include="..\..\Application\TahaMucasirogluBlog.Application.Validation\TahaMucasirogluBlog.Application.Validation.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="ViewComponents\" />
+  </ItemGroup>
+
 </Project>
