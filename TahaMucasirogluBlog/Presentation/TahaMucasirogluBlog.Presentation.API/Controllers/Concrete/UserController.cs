@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Http;
+﻿using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using TahaMucasirogluBlog.Domain.DTOs.Concrete.Entity.User;
 using TahaMucasirogluBlog.Domain.Entities.Concrete;
@@ -10,6 +11,7 @@ namespace TahaMucasirogluBlog.Presentation.API.Controllers.Concrete
 {
     [Route("api/[controller]")]
     [ApiController]
+    [Authorize]
     public class UserController : Controller<User, GetUserDTO, AddUserDTO, UpdateUserDTO, DeleteUserDTO>
     {
         public UserController(IUserDatabaseService service) : base(service)

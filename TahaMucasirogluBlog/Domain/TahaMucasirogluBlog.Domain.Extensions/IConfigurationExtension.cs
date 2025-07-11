@@ -145,6 +145,7 @@ namespace TahaMucasirogluBlog.Domain.Extensions
         public static bool GetDatabaseSettingsEnableDetailedErrorsAppSettings(this IConfiguration configuration) => configuration.GetAppSettingsValue<bool>("DatabaseSettings:EnableDetailedErrors");
         public static string GetPasswordSettingsSaltAppSettings(this IConfiguration configuration) => configuration.GetAppSettingsValue("PasswordSettings:Salt");
         public static int GetLogLevelAppSettings(this IConfiguration configuration) => configuration.GetAppSettingsValue<int>("LogLevel");
+        public static int GetIpRateLimitFromSecondAppSettings(this IConfiguration configuration) => configuration.GetAppSettingsValue<int>("IpRateLimit");
 
 
     }

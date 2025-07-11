@@ -7,7 +7,6 @@ namespace TahaMucasirogluBlog.Presentation.API.Extensions
         public static void AddSingleton(this WebApplicationBuilder builder)
         {
             builder.Services.AddSingleton<IHttpContextAccessor, HttpContextAccessor>();
-            builder.Services.AddSingleton<IPasswordManager, PasswordManager>();
         }
     }
 }

@@ -1,4 +1,5 @@
 ﻿
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using TahaMucasirogluBlog.Domain.DTOs.Concrete.Entity.Comment;
 using TahaMucasirogluBlog.Domain.Entities.Concrete;
@@ -10,6 +11,7 @@ namespace TahaMucasirogluBlog.Presentation.API.Controllers.Concrete
 {
     [Route("api/[controller]")]
     [ApiController]
+    [Authorize]
     public class CommentController : Controller<Comment, GetCommentDTO, AddCommentDTO, UpdateCommentDTO, DeleteCommentDTO>
     {
         public CommentController(ICommentDatabaseService service) : base(service)

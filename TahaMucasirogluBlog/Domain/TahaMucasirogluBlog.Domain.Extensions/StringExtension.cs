@@ -156,16 +156,12 @@ namespace TahaMucasirogluBlog.Domain.Extensions
         }
 
 
-        /// <summary>
-        /// NTNTakipMainDBContext gelen yazıyı NTNTakipMainDB yapar.
-        /// </summary>
         public static string SetContextName(this string viewName)
         {
             return viewName.Replace("Context", "");
         }
-        /// <summary>
-        /// NTNTakipMainDBContext gelen yazıyı NTNTakipMainDB yapar.
-        /// </summary>
+
+
         public static string SetContextName(this object viewObj)
         {
             if (viewObj == null) return "";
