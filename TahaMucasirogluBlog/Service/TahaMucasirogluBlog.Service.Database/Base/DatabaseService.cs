@@ -9,6 +9,7 @@ using System.Linq.Expressions;
 using System.Text;
 using System.Threading.Tasks;
 using TahaMucasirogluBlog.Domain.DTOs.Abstract;
+using TahaMucasirogluBlog.Domain.DTOs.Concrete.Request;
 using TahaMucasirogluBlog.Domain.Entities.Abstract;
 using TahaMucasirogluBlog.Domain.Return.Abstract;
 using TahaMucasirogluBlog.Domain.Return.Concrete;
@@ -38,27 +39,29 @@ namespace TahaMucasirogluBlog.Service.Database.Base
             this.logger = logger;
         }
 
-        public IReturn<Tout> AutoReturn<Tout, Tin>(IReturn<Tin> model, string message = "", string logMessage = "", bool log = true)
+        public IReturn<Tout> AutoReturn<Tout, Tin>(IReturn<Tin> model, string message = "", string errorMessage = "", bool log = true)
         {
             try
             {
                 if(model.Status && model.Data != null)
                 {
-                    new SuccessReturn<Tout>(message: message, data: mapper.Map<Tout>(model.Data));
+                    return new SuccessReturn<Tout>(message: message, data: mapper.Map<Tout>(model.Data));
                 }
                 else if(model.Status && model.Data == null)
                 {
-                    new SuccessReturn<Tout>(message: message);
+                    return new SuccessReturn<Tout>(message: message);
                 }
-                else if(!model.Status)
+                else //if(!model.Status)
                 {
-
+                    logger.LogError(model.Exception, $"Serivce AutoReturn Hata. \nKullanıcı Hata Mesajı = {errorMessage}\nGelen Hata Mesajı = {model.Message}\nHata = {model.Exception?.Message}");
+                    return new ErrorReturn<Tout>(message: errorMessage);
                 }
 
             }
             catch(Exception e)
             {
-
+                logger.LogError(e, $"Serivce AutoReturn Hata. \nKullanıcı Hata Mesajı = {errorMessage}\nGelen Hata Mesajı = {model.Message}\nHata = {model.Exception?.Message}\nException Hatası = {e.Message}");
+                return new ErrorReturn<Tout>();
             }
     
         }
@@ -71,170 +74,25 @@ namespace TahaMucasirogluBlog.Service.Database.Base
 
 
 
-    public abstract class DatabaseService<TEntity, TResponse> : IDatabaseService<TEntity, TResponse>
+    public abstract class DatabaseService<TEntity, TResponse> : DatabaseService<TEntity>, IDatabaseService<TEntity, TResponse>
        where TEntity : class, IEntity
        where TResponse : class, IGetDTO
     {
-        internal readonly IRepository<TEntity> repository;
-        internal readonly IMapper mapper;
-        internal readonly IConfiguration configuration;
-        internal readonly ILogger<DatabaseService<TEntity, TResponse, TAddRequest, TUpdateRequest, TDeleteRequest>> logger;
         public DatabaseService(
             IRepository<TEntity> repository,
             IMapper mapper,
             IConfiguration configuration,
-            ILogger<DatabaseService<TEntity, TResponse, TAddRequest, TUpdateRequest, TDeleteRequest>> logger)
-        {
-            this.repository = repository;
-            this.mapper = mapper;
-            this.configuration = configuration;
-            this.logger = logger;
-        }
+            ILogger<DatabaseService<TEntity, TResponse>> logger) : base(repository, mapper, configuration, logger) { }
 
 
-    }
-
-        public abstract class DatabaseService<TEntity, TResponse, TAddRequest, TUpdateRequest, TDeleteRequest> : IDatabaseService<TEntity, TResponse, TAddRequest, TUpdateRequest, TDeleteRequest>
-       where TEntity : class, IEntity
-       where TResponse : class, IGetDTO
-       where TAddRequest : class, IAddDTO
-       where TUpdateRequest : class, IUpdateDTO
-       where TDeleteRequest : class, IDeleteDTO
-    {
-        internal readonly IRepository<TEntity> repository;
-        internal readonly IMapper mapper;
-        internal readonly IConfiguration configuration;
-        internal readonly ILogger<DatabaseService<TEntity, TResponse, TAddRequest, TUpdateRequest, TDeleteRequest>> logger;
-        public DatabaseService(
-            IRepository<TEntity> repository,
-            IMapper mapper,
-            IConfiguration configuration,
-            ILogger<DatabaseService<TEntity, TResponse, TAddRequest, TUpdateRequest, TDeleteRequest>> logger)
-        {
-            this.repository = repository;
-            this.mapper = mapper;
-            this.configuration = configuration;
-            this.logger = logger;
-        }
-
-
-
-        public virtual IReturn<TResponse> Add(TAddRequest entity)
-        {
-            TEntity ent = entity.ConvertToEntityCustom<TEntity>(mapper);
-            IReturn<TEntity> res = repository.Add(ent);
-            if (res.Status && res.Data != null)
-            {
-                return new SuccessReturn<TResponse>(data: res.Data.ConvertToDtoCustom<TResponse>(mapper));
-            }
-            else
-            {
-                return new ErrorReturn<TResponse>(message: "Eklemede hata var", res.Exception);
-            }
-        }
-
-        public virtual IReturn<IEnumerable<TResponse>> Add(IEnumerable<TAddRequest> entity)
-        {
-            IEnumerable<TEntity> ent = entity.ConvertToEntityCustom<TEntity>(mapper);
-            IReturn<IEnumerable<TEntity>> res = repository.Add(ent);
-            if (res.Status && res.Data != null)
-            {
-                return new SuccessReturn<IEnumerable<TResponse>>(data: res.Data.ConvertToDtoCustom<TResponse>(mapper));
-            }
-            else
-            {
-                return new ErrorReturn<IEnumerable<TResponse>>(message: "Eklemede hata var", res.Exception);
-            }
-        }
-
-        public virtual async Task<IReturn<TResponse>> AddAsync(TAddRequest entity)
-        {
-            TEntity ent = entity.ConvertToEntityCustom<TEntity>(mapper);
-            IReturn<TEntity> res = await repository.AddAsync(ent);
-            if (res.Status && res.Data != null)
-            {
-                return new SuccessReturn<TResponse>(data: res.Data.ConvertToDtoCustom<TResponse>(mapper));
-            }
-            else
-            {
-                return new ErrorReturn<TResponse>(message: "Eklemede hata var", res.Exception);
-            }
-        }
-
-        public virtual async Task<IReturn<IEnumerable<TResponse>>> AddAsync(IEnumerable<TAddRequest> entity)
-        {
-            IEnumerable<TEntity> ent = entity.ConvertToEntityCustom<TEntity>(mapper);
-            IReturn<IEnumerable<TEntity>> res = await repository.AddAsync(ent);
-            if (res.Status && res.Data != null)
-            {
-                return new SuccessReturn<IEnumerable<TResponse>>(data: res.Data.ConvertToDtoCustom<TResponse>(mapper));
-            }
-            else
-            {
-                return new ErrorReturn<IEnumerable<TResponse>>(message: "Eklemede hata var", res.Exception);
-            }
-        }
-
-        public virtual IReturn<int> Count(MainIdRequest model, Expression<Func<TEntity, bool>>? filter = null)
+        public virtual IReturn<int> Count(IdRequest model, Expression<Func<TEntity, bool>>? filter = null)
         {
             return repository.Count(filter);
         }
 
-        public virtual async Task<IReturn<int>> CountAsync(MainIdRequest model, Expression<Func<TEntity, bool>>? filter = null)
+        public virtual async Task<IReturn<int>> CountAsync(IdRequest model, Expression<Func<TEntity, bool>>? filter = null)
         {
             return await repository.CountAsync(filter);
-        }
-
-        public virtual IReturn<TResponse> Delete(TDeleteRequest entity)
-        {
-            IReturn<TEntity> res = repository.Delete(mapper.Map<TEntity>(entity));
-            if (res.Status && res.Data != null)
-            {
-                return new SuccessReturn<TResponse>(data: res.Data.ConvertToDtoCustom<TResponse>(mapper));
-            }
-            else
-            {
-                return new ErrorReturn<TResponse>(message: "silmede hata var", res.Exception);
-            }
-        }
-
-        public virtual IReturn<IEnumerable<TResponse>> Delete(IEnumerable<TDeleteRequest> entity)
-        {
-            IReturn<IEnumerable<TEntity>> res = repository.Delete(mapper.Map<IEnumerable<TEntity>>(entity));
-            if (res.Status && res.Data != null)
-            {
-                return new SuccessReturn<IEnumerable<TResponse>>(data: res.Data.ConvertToDtoCustom<TResponse>(mapper));
-            }
-            else
-            {
-                return new ErrorReturn<IEnumerable<TResponse>>(message: "silmede hata var", res.Exception);
-            }
-        }
-
-        public virtual async Task<IReturn<TResponse>> DeleteAsync(TDeleteRequest entity)
-        {
-            IReturn<TEntity> res = await repository.DeleteAsync(mapper.Map<TEntity>(entity));
-            if (res.Status && res.Data != null)
-            {
-                return new SuccessReturn<TResponse>(data: res.Data.ConvertToDtoCustom<TResponse>(mapper));
-            }
-            else
-            {
-                return new ErrorReturn<TResponse>(message: "silmede hata var", res.Exception);
-            }
-        }
-
-        public virtual async Task<IReturn<IEnumerable<TResponse>>> DeleteAsync(IEnumerable<TDeleteRequest> entity)
-        {
-            IReturn<IEnumerable<TEntity>> res = await repository.DeleteAsync(mapper.Map<IEnumerable<TEntity>>(entity));
-            if (res.Status && res.Data != null)
-            {
-                return new SuccessReturn<IEnumerable<TResponse>>(data: res.Data.ConvertToDtoCustom<TResponse>(mapper));
-            }
-            else
-            {
-                return new ErrorReturn<IEnumerable<TResponse>>(message: "silmede hata var", res.Exception);
-            }
         }
 
         public virtual void Dispose()
@@ -247,176 +105,171 @@ namespace TahaMucasirogluBlog.Service.Database.Base
             await repository.DisposeAsync();
         }
 
-        public virtual IReturn<TResponse> Get(MainIdRequest model, Expression<Func<TEntity, bool>> filter)
+        public virtual IReturn<TResponse> Get(IdRequest model, Expression<Func<TEntity, bool>> filter)
         {
-            IReturn<TEntity> res = repository.Get(filter);
-            if (res.Status && res.Data != null)
-            {
-                return new SuccessReturn<TResponse>(res.Data.ConvertToDtoCustom<TResponse>(mapper));
-            }
-            else
-            {
-                return new NullDataError<TResponse>(res);
-            }
+            return AutoReturn<TResponse, TEntity>(repository.Get(filter));
         }
 
-        public virtual IReturn<IEnumerable<TResponse>> GetAll(MainIdRequest model, Expression<Func<TEntity, bool>>? filter = null, bool reverse = false)
+        public virtual IReturn<IEnumerable<TResponse>> GetAll(IdRequest model, Expression<Func<TEntity, bool>>? filter = null, bool reverse = false)
         {
-            IReturn<IEnumerable<TEntity>> res = repository.GetAll(filter);
-            if (res.Status && res.Data != null)
-            {
-                return new SuccessReturn<IEnumerable<TResponse>>(res.Data.ConvertToDtoCustom<TResponse>(mapper));
-            }
-            else
-            {
-                return new NullDataError<IEnumerable<TResponse>>(res);
-            }
+            return AutoReturn<IEnumerable<TResponse>, IEnumerable<TEntity>>(repository.GetAll(filter));
         }
 
-        public virtual async Task<IReturn<IEnumerable<TResponse>>> GetAllAsync(MainIdRequest model, Expression<Func<TEntity, bool>>? filter = null, bool reverse = false)
+        public virtual async Task<IReturn<IEnumerable<TResponse>>> GetAllAsync(IdRequest model, Expression<Func<TEntity, bool>>? filter = null, bool reverse = false)
         {
-            IReturn<IEnumerable<TEntity>> res = await repository.GetAllAsync(filter);
-            if (res.Status && res.Data != null)
-            {
-                return new SuccessReturn<IEnumerable<TResponse>>(res.Data.ConvertToDtoCustom<TResponse>(mapper));
-            }
-            else
-            {
-                return new NullDataError<IEnumerable<TResponse>>(res);
-            }
+            return AutoReturn<IEnumerable<TResponse>, IEnumerable<TEntity>>(await repository.GetAllAsync(filter));
         }
 
-        public virtual IReturn<IEnumerable<TResponse>> GetAllDeleted(MainIdRequest model, Expression<Func<TEntity, bool>>? filter = null, bool reverse = false)
+        public virtual IReturn<IEnumerable<TResponse>> GetAllDeleted(IdRequest model, Expression<Func<TEntity, bool>>? filter = null, bool reverse = false)
         {
-            IReturn<IEnumerable<TEntity>> res = repository.GetAllDeleted(filter);
-            if (res.Status && res.Data != null)
-            {
-                return new SuccessReturn<IEnumerable<TResponse>>(res.Data.ConvertToDtoCustom<TResponse>(mapper));
-            }
-            else
-            {
-                return new NullDataError<IEnumerable<TResponse>>(res);
-            }
+            return AutoReturn<IEnumerable<TResponse>, IEnumerable<TEntity>>(repository.GetAllDeleted(filter));
         }
 
-        public virtual async Task<IReturn<IEnumerable<TResponse>>> GetAllDeletedAsync(MainIdRequest model, Expression<Func<TEntity, bool>>? filter = null, bool reverse = false)
+        public virtual async Task<IReturn<IEnumerable<TResponse>>> GetAllDeletedAsync(IdRequest model, Expression<Func<TEntity, bool>>? filter = null, bool reverse = false)
         {
-            IReturn<IEnumerable<TEntity>> res = await repository.GetAllDeletedAsync(filter);
-            if (res.Status && res.Data != null)
-            {
-                return new SuccessReturn<IEnumerable<TResponse>>(res.Data.ConvertToDtoCustom<TResponse>(mapper));
-            }
-            else
-            {
-                return new NullDataError<IEnumerable<TResponse>>(res);
-            }
+            return AutoReturn<IEnumerable<TResponse>, IEnumerable<TEntity>>(await repository.GetAllDeletedAsync(filter));
         }
 
-        public virtual async Task<IReturn<TResponse>> GetAsync(MainIdRequest model, Expression<Func<TEntity, bool>> filter)
+        public virtual async Task<IReturn<TResponse>> GetAsync(IdRequest model, Expression<Func<TEntity, bool>> filter)
         {
-            IReturn<TEntity> res = await repository.GetAsync(filter);
-            if (res.Status && res.Data != null)
-            {
-                return new SuccessReturn<TResponse>(res.Data.ConvertToDtoCustom<TResponse>(mapper));
-            }
-            else
-            {
-                return new NullDataError<TResponse>(res);
-            }
+            return AutoReturn<TResponse, TEntity>(await repository.GetAsync(filter));
         }
 
-        public virtual IReturn<TResponse> GetDeleted(MainIdRequest model, Expression<Func<TEntity, bool>> filter)
+        public virtual IReturn<TResponse> GetDeleted(IdRequest model, Expression<Func<TEntity, bool>> filter)
         {
-            IReturn<TEntity> res = repository.GetDeleted(filter);
-            if (res.Status && res.Data != null)
-            {
-                return new SuccessReturn<TResponse>(res.Data.ConvertToDtoCustom<TResponse>(mapper));
-            }
-            else
-            {
-                return new NullDataError<TResponse>(res);
-            }
+            return AutoReturn<TResponse, TEntity>(repository.GetDeleted(filter));
         }
 
-        public virtual async Task<IReturn<TResponse>> GetDeletedAsync(MainIdRequest model, Expression<Func<TEntity, bool>> filter)
+        public virtual async Task<IReturn<TResponse>> GetDeletedAsync(IdRequest model, Expression<Func<TEntity, bool>> filter)
         {
-            IReturn<TEntity> res = await repository.GetDeletedAsync(filter);
-            if (res.Status && res.Data != null)
-            {
-                return new SuccessReturn<TResponse>(res.Data.ConvertToDtoCustom<TResponse>(mapper));
-            }
-            else
-            {
-                return new NullDataError<TResponse>(res);
-            }
+            return AutoReturn<TResponse, TEntity>(await repository.GetDeletedAsync(filter));
         }
 
-        public virtual IReturn<bool> IsExist(MainIdRequest model, Expression<Func<TEntity, bool>> filter)
+        public virtual IReturn<bool> IsExist(IdRequest model, Expression<Func<TEntity, bool>> filter)
         {
             return repository.IsExist(filter);
         }
 
-        public virtual async Task<IReturn<bool>> IsExistAsync(MainIdRequest model, Expression<Func<TEntity, bool>> filter)
+        public virtual async Task<IReturn<bool>> IsExistAsync(IdRequest model, Expression<Func<TEntity, bool>> filter)
         {
             return await repository.IsExistAsync(filter);
         }
 
+    }
+
+
+    public abstract class DatabaseService<TEntity, TResponse, TAddRequest> : DatabaseService<TEntity, TResponse>, IDatabaseService<TEntity, TResponse, TAddRequest>
+       where TEntity : class, IEntity
+       where TResponse : class, IGetDTO
+        where TAddRequest : class, IAddDTO
+    {
+        public DatabaseService(
+            IRepository<TEntity> repository,
+            IMapper mapper,
+            IConfiguration configuration,
+            ILogger<DatabaseService<TEntity, TResponse>> logger) : base(repository, mapper, configuration, logger) { }
+
+
+        public virtual IReturn<TResponse> Add(TAddRequest entity)
+        {
+            TEntity ent = mapper.Map<TEntity>(entity);
+            return AutoReturn<TResponse, TEntity>(repository.Add(ent));
+        }
+
+        public virtual IReturn<IEnumerable<TResponse>> Add(IEnumerable<TAddRequest> entity)
+        {
+            IEnumerable<TEntity> ent = mapper.Map<IEnumerable<TEntity>>(entity);
+            return AutoReturn<IEnumerable<TResponse>, IEnumerable<TEntity>>(repository.Add(ent));
+        }
+
+        public virtual async Task<IReturn<TResponse>> AddAsync(TAddRequest entity)
+        {
+            TEntity ent = mapper.Map<TEntity>(entity);
+            return AutoReturn<TResponse, TEntity>(await repository.AddAsync(ent));
+        }
+
+        public virtual async Task<IReturn<IEnumerable<TResponse>>> AddAsync(IEnumerable<TAddRequest> entity)
+        {
+            IEnumerable<TEntity> ent = mapper.Map<IEnumerable<TEntity>>(entity);
+            return AutoReturn<IEnumerable<TResponse>, IEnumerable<TEntity>>(await repository.AddAsync(ent));
+        }
+
+    }
+
+    public abstract class DatabaseService<TEntity, TResponse, TAddRequest, TUpdateRequest> : DatabaseService<TEntity, TResponse, TAddRequest>, IDatabaseService<TEntity, TResponse, TAddRequest, TUpdateRequest>
+      where TEntity : class, IEntity
+      where TResponse : class, IGetDTO
+       where TAddRequest : class, IAddDTO
+        where TUpdateRequest : class, IUpdateDTO
+    {
+        public DatabaseService(
+            IRepository<TEntity> repository,
+            IMapper mapper,
+            IConfiguration configuration,
+            ILogger<DatabaseService<TEntity, TResponse>> logger) : base(repository, mapper, configuration, logger) { }
+
+
+
         public virtual IReturn<TResponse> Update(TUpdateRequest entity)
         {
-            TEntity ent = entity.ConvertToEntityCustom<TEntity>(mapper);
-            IReturn<TEntity> res = repository.Update(ent);
-            if (res.Status && res.Data != null)
-            {
-                return new SuccessReturn<TResponse>(data: res.Data.ConvertToDtoCustom<TResponse>(mapper));
-            }
-            else
-            {
-                return new ErrorReturn<TResponse>(message: "silmede hata var", res.Exception);
-            }
+            TEntity ent = mapper.Map<TEntity>(entity);
+            return AutoReturn<TResponse, TEntity>(repository.Update(ent));
         }
 
         public virtual IReturn<IEnumerable<TResponse>> Update(IEnumerable<TUpdateRequest> entity)
         {
-            IEnumerable<TEntity> ent = entity.ConvertToEntityCustom<TEntity>(mapper);
-            IReturn<IEnumerable<TEntity>> res = repository.Update(ent);
-            if (res.Status && res.Data != null)
-            {
-                return new SuccessReturn<IEnumerable<TResponse>>(data: res.Data.ConvertToDtoCustom<TResponse>(mapper));
-            }
-            else
-            {
-                return new ErrorReturn<IEnumerable<TResponse>>(message: "silmede hata var", res.Exception);
-            }
+            IEnumerable<TEntity> ent = mapper.Map<IEnumerable<TEntity>>(entity);
+            return AutoReturn<IEnumerable<TResponse>, IEnumerable<TEntity>>(repository.Update(ent));
         }
 
         public virtual async Task<IReturn<TResponse>> UpdateAsync(TUpdateRequest entity)
         {
-            TEntity ent = entity.ConvertToEntityCustom<TEntity>(mapper);
-            IReturn<TEntity> res = await repository.UpdateAsync(ent);
-            if (res.Status && res.Data != null)
-            {
-                return new SuccessReturn<TResponse>(data: res.Data.ConvertToDtoCustom<TResponse>(mapper));
-            }
-            else
-            {
-                return new ErrorReturn<TResponse>(message: "silmede hata var", res.Exception);
-            }
+            TEntity ent = mapper.Map<TEntity>(entity);
+            return AutoReturn<TResponse, TEntity>(await repository.UpdateAsync(ent));
         }
 
         public virtual async Task<IReturn<IEnumerable<TResponse>>> UpdateAsync(IEnumerable<TUpdateRequest> entity)
         {
-            IEnumerable<TEntity> ent = entity.ConvertToEntityCustom<TEntity>(mapper);
-            IReturn<IEnumerable<TEntity>> res = await repository.UpdateAsync(ent);
-            if (res.Status && res.Data != null)
-            {
-                return new SuccessReturn<IEnumerable<TResponse>>(data: res.Data.ConvertToDtoCustom<TResponse>(mapper));
-            }
-            else
-            {
-                return new ErrorReturn<IEnumerable<TResponse>>(message: "silmede hata var", res.Exception);
-            }
+            IEnumerable<TEntity> ent = mapper.Map<IEnumerable<TEntity>>(entity);
+            return AutoReturn<IEnumerable<TResponse>, IEnumerable<TEntity>>(await repository.UpdateAsync(ent));
         }
 
-
     }
+
+
+    public abstract class DatabaseService<TEntity, TResponse, TAddRequest, TUpdateRequest, TDeleteRequest> : DatabaseService<TEntity, TResponse, TAddRequest, TUpdateRequest>, IDatabaseService<TEntity, TResponse, TAddRequest, TUpdateRequest, TDeleteRequest>
+      where TEntity : class, IEntity
+      where TResponse : class, IGetDTO
+       where TAddRequest : class, IAddDTO
+        where TUpdateRequest : class, IUpdateDTO
+        where TDeleteRequest : class, IDeleteDTO
+    {
+        public DatabaseService(
+            IRepository<TEntity> repository,
+            IMapper mapper,
+            IConfiguration configuration,
+            ILogger<DatabaseService<TEntity, TResponse>> logger) : base(repository, mapper, configuration, logger) { }
+
+        public virtual IReturn<TResponse> Delete(TDeleteRequest entity)
+        {
+            return AutoReturn<TResponse, TEntity>(repository.Delete(mapper.Map<TEntity>(entity)));
+        }
+
+        public virtual IReturn<IEnumerable<TResponse>> Delete(IEnumerable<TDeleteRequest> entity)
+        {
+            return AutoReturn<IEnumerable<TResponse>, IEnumerable<TEntity>>(repository.Delete(mapper.Map<IEnumerable<TEntity>>(entity)));
+        }
+
+        public virtual async Task<IReturn<TResponse>> DeleteAsync(TDeleteRequest entity)
+        {
+            return AutoReturn<TResponse, TEntity>(await repository.DeleteAsync(mapper.Map<TEntity>(entity)));
+        }
+
+        public virtual async Task<IReturn<IEnumerable<TResponse>>> DeleteAsync(IEnumerable<TDeleteRequest> entity)
+        {
+            return AutoReturn<IEnumerable<TResponse>, IEnumerable<TEntity>>(await repository.DeleteAsync(mapper.Map<IEnumerable<TEntity>>(entity)));
+        }
+    }
+
+   
 }
