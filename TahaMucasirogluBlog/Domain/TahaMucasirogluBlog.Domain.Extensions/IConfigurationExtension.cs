@@ -129,6 +129,22 @@ namespace TahaMucasirogluBlog.Domain.Extensions
             }
         }
 
+        public static string GetCORSNameAppSettings(this IConfiguration configuration) => configuration.GetAppSettingsValue("CORS:CorsName");
+        public static string GetCorsURLsAppSettings(this IConfiguration configuration) => configuration.GetAppSettingsValue("CORS:CorsURLs");
+        public static bool GetAnyCorsAppSettings(this IConfiguration configuration) => configuration.GetAppSettingsValue<bool>("CORS:AnyCors");
+        public static string GetJwtSettingsIssuerAppSettings(this IConfiguration configuration) => configuration.GetAppSettingsValue("JwtSettings:Issuer");
+        public static string GetJwtSettingsAudienceAppSettings(this IConfiguration configuration) => configuration.GetAppSettingsValue("JwtSettings:Audience");
+        public static string GetJwtSettingsSecurityKeyAppSettings(this IConfiguration configuration) => configuration.GetAppSettingsValue("JwtSettings:SecurityKey");
+        public static double GetJwtSettingsClockSkewAppSettings(this IConfiguration configuration) => configuration.GetAppSettingsValue<double>("JwtSettings:ClockSkew");
+        public static bool GetJwtSettingsRefreshRefreshTokenAppSettings(this IConfiguration configuration) => configuration.GetAppSettingsValue<bool>("JwtSettings:RefreshRefreshToken");
+        public static double GetJwtSettingsAccessTokenExpirationAppSettings(this IConfiguration configuration) => configuration.GetAppSettingsValue<double>("JwtSettings:AccessTokenExpiration");
+        public static double GetJwtSettingsRefreshTokenExpirationAppSettings(this IConfiguration configuration) => configuration.GetAppSettingsValue<double>("JwtSettings:RefreshTokenExpiration");
+        public static string GetDatabaseSettingsDatabaseLogLevelAppSettings(this IConfiguration configuration) => configuration.GetAppSettingsValue("DatabaseSettings:DatabaseLogLevel");
+        public static bool GetDatabaseSettingsTrackQueryAppSettings(this IConfiguration configuration) => configuration.GetAppSettingsValue<bool>("DatabaseSettings:TrackQuery");
+        public static bool GetDatabaseSettingsEnableSensitiveDataLoggingAppSettings(this IConfiguration configuration) => configuration.GetAppSettingsValue<bool>("DatabaseSettings:EnableSensitiveDataLogging");
+        public static bool GetDatabaseSettingsEnableDetailedErrorsAppSettings(this IConfiguration configuration) => configuration.GetAppSettingsValue<bool>("DatabaseSettings:EnableDetailedErrors");
+        public static string GetPasswordSettingsSaltAppSettings(this IConfiguration configuration) => configuration.GetAppSettingsValue("PasswordSettings:Salt");
+        public static int GetLogLevelAppSettings(this IConfiguration configuration) => configuration.GetAppSettingsValue<int>("LogLevel");
 
 
     }

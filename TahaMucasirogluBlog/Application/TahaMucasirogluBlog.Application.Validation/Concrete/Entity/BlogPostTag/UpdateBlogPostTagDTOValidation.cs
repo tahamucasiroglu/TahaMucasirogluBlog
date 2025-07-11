@@ -9,9 +9,9 @@ using TahaMucasirogluBlog.Domain.DTOs.Concrete.Entity.BlogPostTag;
 
 namespace TahaMucasirogluBlog.Application.Validation.Concrete.Entity.BlogPostTag
 {
-    public class UpdateBlogPostTagDTOValidaiton : UpdateValidation<UpdateBlogPostTagDTO>
+    public class UpdateBlogPostTagDTOValidation : UpdateValidation<UpdateBlogPostTagDTO>
     {
-        public UpdateBlogPostTagDTOValidaiton() : base()
+        public UpdateBlogPostTagDTOValidation() : base()
         {
             // PostId boş olamaz
             RuleFor(x => x.PostId)

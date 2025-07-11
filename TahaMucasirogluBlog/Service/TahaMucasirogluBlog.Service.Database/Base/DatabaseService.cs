@@ -11,6 +11,7 @@ using System.Threading.Tasks;
 using TahaMucasirogluBlog.Domain.DTOs.Abstract;
 using TahaMucasirogluBlog.Domain.DTOs.Concrete.Request;
 using TahaMucasirogluBlog.Domain.Entities.Abstract;
+using TahaMucasirogluBlog.Domain.Extensions;
 using TahaMucasirogluBlog.Domain.Return.Abstract;
 using TahaMucasirogluBlog.Domain.Return.Concrete;
 using TahaMucasirogluBlog.Domain.Return.Constant;
@@ -107,51 +108,61 @@ namespace TahaMucasirogluBlog.Service.Database.Base
 
         public virtual IReturn<TResponse> Get(IdRequest model, Expression<Func<TEntity, bool>> filter)
         {
+            logger.LogInformation($"{model.IslemYapanKullaniciId} idli kullanıcı, {model.Id} değeri ile birlikte, \n {filter.ToJson()} \n filtresi ile Get Sorgusu yaptı.");
             return AutoReturn<TResponse, TEntity>(repository.Get(filter));
         }
 
         public virtual IReturn<IEnumerable<TResponse>> GetAll(IdRequest model, Expression<Func<TEntity, bool>>? filter = null, bool reverse = false)
         {
+            logger.LogInformation($"{model.IslemYapanKullaniciId} idli kullanıcı, {model.Id} değeri ile birlikte, \n {filter.ToJson()} \n filtresi ile GetAll Sorgusu yaptı.");
             return AutoReturn<IEnumerable<TResponse>, IEnumerable<TEntity>>(repository.GetAll(filter));
         }
 
         public virtual async Task<IReturn<IEnumerable<TResponse>>> GetAllAsync(IdRequest model, Expression<Func<TEntity, bool>>? filter = null, bool reverse = false)
         {
+            logger.LogInformation($"{model.IslemYapanKullaniciId} idli kullanıcı, {model.Id} değeri ile birlikte, \n {filter.ToJson()} \n filtresi ile GetAllAsync Sorgusu yaptı.");
             return AutoReturn<IEnumerable<TResponse>, IEnumerable<TEntity>>(await repository.GetAllAsync(filter));
         }
 
         public virtual IReturn<IEnumerable<TResponse>> GetAllDeleted(IdRequest model, Expression<Func<TEntity, bool>>? filter = null, bool reverse = false)
         {
+            logger.LogInformation($"{model.IslemYapanKullaniciId} idli kullanıcı, {model.Id} değeri ile birlikte, \n {filter.ToJson()} \n filtresi ile GetAllDeleted Sorgusu yaptı.");
             return AutoReturn<IEnumerable<TResponse>, IEnumerable<TEntity>>(repository.GetAllDeleted(filter));
         }
 
         public virtual async Task<IReturn<IEnumerable<TResponse>>> GetAllDeletedAsync(IdRequest model, Expression<Func<TEntity, bool>>? filter = null, bool reverse = false)
         {
+            logger.LogInformation($"{model.IslemYapanKullaniciId} idli kullanıcı, {model.Id} değeri ile birlikte, \n {filter.ToJson()} \n filtresi ile GetAllDeletedAsync Sorgusu yaptı.");
             return AutoReturn<IEnumerable<TResponse>, IEnumerable<TEntity>>(await repository.GetAllDeletedAsync(filter));
         }
 
         public virtual async Task<IReturn<TResponse>> GetAsync(IdRequest model, Expression<Func<TEntity, bool>> filter)
         {
+            logger.LogInformation($"{model.IslemYapanKullaniciId} idli kullanıcı, {model.Id} değeri ile birlikte, \n {filter.ToJson()} \n filtresi ile GetAsync Sorgusu yaptı.");
             return AutoReturn<TResponse, TEntity>(await repository.GetAsync(filter));
         }
 
         public virtual IReturn<TResponse> GetDeleted(IdRequest model, Expression<Func<TEntity, bool>> filter)
         {
+            logger.LogInformation($"{model.IslemYapanKullaniciId} idli kullanıcı, {model.Id} değeri ile birlikte, \n {filter.ToJson()} \n filtresi ile GetDeleted Sorgusu yaptı.");
             return AutoReturn<TResponse, TEntity>(repository.GetDeleted(filter));
         }
 
         public virtual async Task<IReturn<TResponse>> GetDeletedAsync(IdRequest model, Expression<Func<TEntity, bool>> filter)
         {
+            logger.LogInformation($"{model.IslemYapanKullaniciId} idli kullanıcı, {model.Id} değeri ile birlikte, \n {filter.ToJson()} \n filtresi ile GetDeletedAsync Sorgusu yaptı.");
             return AutoReturn<TResponse, TEntity>(await repository.GetDeletedAsync(filter));
         }
 
         public virtual IReturn<bool> IsExist(IdRequest model, Expression<Func<TEntity, bool>> filter)
         {
+            logger.LogInformation($"{model.IslemYapanKullaniciId} idli kullanıcı, {model.Id} değeri ile birlikte, \n {filter.ToJson()} \n filtresi ile IsExist Sorgusu yaptı.");
             return repository.IsExist(filter);
         }
 
         public virtual async Task<IReturn<bool>> IsExistAsync(IdRequest model, Expression<Func<TEntity, bool>> filter)
         {
+            logger.LogInformation($"{model.IslemYapanKullaniciId} idli kullanıcı, {model.Id} değeri ile birlikte, \n {filter.ToJson()} \n filtresi ile IsExistAsync Sorgusu yaptı.");
             return await repository.IsExistAsync(filter);
         }
 

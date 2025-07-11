@@ -3,212 +3,128 @@
   "WorkspaceRootPath": "C:\\Dosyalar\\Projects\\TahaMucasirogluBlog\\TahaMucasirogluBlog\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{4C4C2121-31DD-44CE-8EE5-ACC01559C0C1}|Service\\TahaMucasirogluBlog.Service.Database\\TahaMucasirogluBlog.Service.Database.csproj|c:\\dosyalar\\projects\\tahamucasiroglublog\\tahamucasiroglublog\\service\\tahamucasiroglublog.service.database\\concrete\\userdatabaseservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4C4C2121-31DD-44CE-8EE5-ACC01559C0C1}|Service\\TahaMucasirogluBlog.Service.Database\\TahaMucasirogluBlog.Service.Database.csproj|solutionrelative:service\\tahamucasiroglublog.service.database\\concrete\\userdatabaseservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{56116250-ECE1-4EB9-80ED-025D78F22677}|Presentation\\TahaMucasirogluBlog.Presentation.API\\TahaMucasirogluBlog.Presentation.API.csproj|c:\\dosyalar\\projects\\tahamucasiroglublog\\tahamucasiroglublog\\presentation\\tahamucasiroglublog.presentation.api\\appsettingsornek.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{56116250-ECE1-4EB9-80ED-025D78F22677}|Presentation\\TahaMucasirogluBlog.Presentation.API\\TahaMucasirogluBlog.Presentation.API.csproj|solutionrelative:presentation\\tahamucasiroglublog.presentation.api\\appsettingsornek.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{4C4C2121-31DD-44CE-8EE5-ACC01559C0C1}|Service\\TahaMucasirogluBlog.Service.Database\\TahaMucasirogluBlog.Service.Database.csproj|c:\\dosyalar\\projects\\tahamucasiroglublog\\tahamucasiroglublog\\service\\tahamucasiroglublog.service.database\\abstract\\iuserdatabaseservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4C4C2121-31DD-44CE-8EE5-ACC01559C0C1}|Service\\TahaMucasirogluBlog.Service.Database\\TahaMucasirogluBlog.Service.Database.csproj|solutionrelative:service\\tahamucasiroglublog.service.database\\abstract\\iuserdatabaseservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{56116250-ECE1-4EB9-80ED-025D78F22677}|Presentation\\TahaMucasirogluBlog.Presentation.API\\TahaMucasirogluBlog.Presentation.API.csproj|c:\\dosyalar\\projects\\tahamucasiroglublog\\tahamucasiroglublog\\presentation\\tahamucasiroglublog.presentation.api\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{56116250-ECE1-4EB9-80ED-025D78F22677}|Presentation\\TahaMucasirogluBlog.Presentation.API\\TahaMucasirogluBlog.Presentation.API.csproj|solutionrelative:presentation\\tahamucasiroglublog.presentation.api\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{4C4C2121-31DD-44CE-8EE5-ACC01559C0C1}|Service\\TahaMucasirogluBlog.Service.Database\\TahaMucasirogluBlog.Service.Database.csproj|c:\\dosyalar\\projects\\tahamucasiroglublog\\tahamucasiroglublog\\service\\tahamucasiroglublog.service.database\\concrete\\tagdatabaseservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4C4C2121-31DD-44CE-8EE5-ACC01559C0C1}|Service\\TahaMucasirogluBlog.Service.Database\\TahaMucasirogluBlog.Service.Database.csproj|solutionrelative:service\\tahamucasiroglublog.service.database\\concrete\\tagdatabaseservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{0B7CF555-A28A-4D3C-9BE5-92C18B9273CC}|Utils\\TahaMucasirogluBlog.Utils.DatabaseInstallation\\TahaMucasirogluBlog.Utils.DatabaseInstallation.csproj|c:\\dosyalar\\projects\\tahamucasiroglublog\\tahamucasiroglublog\\utils\\tahamucasiroglublog.utils.databaseinstallation\\tahamucasiroglublog.utils.databaseinstallation.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{0B7CF555-A28A-4D3C-9BE5-92C18B9273CC}|Utils\\TahaMucasirogluBlog.Utils.DatabaseInstallation\\TahaMucasirogluBlog.Utils.DatabaseInstallation.csproj|solutionrelative:utils\\tahamucasiroglublog.utils.databaseinstallation\\tahamucasiroglublog.utils.databaseinstallation.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{4C4C2121-31DD-44CE-8EE5-ACC01559C0C1}|Service\\TahaMucasirogluBlog.Service.Database\\TahaMucasirogluBlog.Service.Database.csproj|c:\\dosyalar\\projects\\tahamucasiroglublog\\tahamucasiroglublog\\service\\tahamucasiroglublog.service.database\\abstract\\itagdatabaseservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4C4C2121-31DD-44CE-8EE5-ACC01559C0C1}|Service\\TahaMucasirogluBlog.Service.Database\\TahaMucasirogluBlog.Service.Database.csproj|solutionrelative:service\\tahamucasiroglublog.service.database\\abstract\\itagdatabaseservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{56116250-ECE1-4EB9-80ED-025D78F22677}|Presentation\\TahaMucasirogluBlog.Presentation.API\\TahaMucasirogluBlog.Presentation.API.csproj|c:\\dosyalar\\projects\\tahamucasiroglublog\\tahamucasiroglublog\\presentation\\tahamucasiroglublog.presentation.api\\tahamucasiroglublog.presentation.api.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{56116250-ECE1-4EB9-80ED-025D78F22677}|Presentation\\TahaMucasirogluBlog.Presentation.API\\TahaMucasirogluBlog.Presentation.API.csproj|solutionrelative:presentation\\tahamucasiroglublog.presentation.api\\tahamucasiroglublog.presentation.api.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{4C4C2121-31DD-44CE-8EE5-ACC01559C0C1}|Service\\TahaMucasirogluBlog.Service.Database\\TahaMucasirogluBlog.Service.Database.csproj|c:\\dosyalar\\projects\\tahamucasiroglublog\\tahamucasiroglublog\\service\\tahamucasiroglublog.service.database\\concrete\\commentdatabaseservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4C4C2121-31DD-44CE-8EE5-ACC01559C0C1}|Service\\TahaMucasirogluBlog.Service.Database\\TahaMucasirogluBlog.Service.Database.csproj|solutionrelative:service\\tahamucasiroglublog.service.database\\concrete\\commentdatabaseservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{0B7CF555-A28A-4D3C-9BE5-92C18B9273CC}|Utils\\TahaMucasirogluBlog.Utils.DatabaseInstallation\\TahaMucasirogluBlog.Utils.DatabaseInstallation.csproj|c:\\dosyalar\\projects\\tahamucasiroglublog\\tahamucasiroglublog\\utils\\tahamucasiroglublog.utils.databaseinstallation\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0B7CF555-A28A-4D3C-9BE5-92C18B9273CC}|Utils\\TahaMucasirogluBlog.Utils.DatabaseInstallation\\TahaMucasirogluBlog.Utils.DatabaseInstallation.csproj|solutionrelative:utils\\tahamucasiroglublog.utils.databaseinstallation\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{4C4C2121-31DD-44CE-8EE5-ACC01559C0C1}|Service\\TahaMucasirogluBlog.Service.Database\\TahaMucasirogluBlog.Service.Database.csproj|c:\\dosyalar\\projects\\tahamucasiroglublog\\tahamucasiroglublog\\service\\tahamucasiroglublog.service.database\\abstract\\icommentdatabaseservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4C4C2121-31DD-44CE-8EE5-ACC01559C0C1}|Service\\TahaMucasirogluBlog.Service.Database\\TahaMucasirogluBlog.Service.Database.csproj|solutionrelative:service\\tahamucasiroglublog.service.database\\abstract\\icommentdatabaseservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{56116250-ECE1-4EB9-80ED-025D78F22677}|Presentation\\TahaMucasirogluBlog.Presentation.API\\TahaMucasirogluBlog.Presentation.API.csproj|c:\\dosyalar\\projects\\tahamucasiroglublog\\tahamucasiroglublog\\presentation\\tahamucasiroglublog.presentation.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{56116250-ECE1-4EB9-80ED-025D78F22677}|Presentation\\TahaMucasirogluBlog.Presentation.API\\TahaMucasirogluBlog.Presentation.API.csproj|solutionrelative:presentation\\tahamucasiroglublog.presentation.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{4C4C2121-31DD-44CE-8EE5-ACC01559C0C1}|Service\\TahaMucasirogluBlog.Service.Database\\TahaMucasirogluBlog.Service.Database.csproj|c:\\dosyalar\\projects\\tahamucasiroglublog\\tahamucasiroglublog\\service\\tahamucasiroglublog.service.database\\concrete\\categorydatabaseservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4C4C2121-31DD-44CE-8EE5-ACC01559C0C1}|Service\\TahaMucasirogluBlog.Service.Database\\TahaMucasirogluBlog.Service.Database.csproj|solutionrelative:service\\tahamucasiroglublog.service.database\\concrete\\categorydatabaseservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{56116250-ECE1-4EB9-80ED-025D78F22677}|Presentation\\TahaMucasirogluBlog.Presentation.API\\TahaMucasirogluBlog.Presentation.API.csproj|c:\\dosyalar\\projects\\tahamucasiroglublog\\tahamucasiroglublog\\presentation\\tahamucasiroglublog.presentation.api\\extensions\\validationextension.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{56116250-ECE1-4EB9-80ED-025D78F22677}|Presentation\\TahaMucasirogluBlog.Presentation.API\\TahaMucasirogluBlog.Presentation.API.csproj|solutionrelative:presentation\\tahamucasiroglublog.presentation.api\\extensions\\validationextension.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{4C4C2121-31DD-44CE-8EE5-ACC01559C0C1}|Service\\TahaMucasirogluBlog.Service.Database\\TahaMucasirogluBlog.Service.Database.csproj|c:\\dosyalar\\projects\\tahamucasiroglublog\\tahamucasiroglublog\\service\\tahamucasiroglublog.service.database\\abstract\\icategorydatabaseservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4C4C2121-31DD-44CE-8EE5-ACC01559C0C1}|Service\\TahaMucasirogluBlog.Service.Database\\TahaMucasirogluBlog.Service.Database.csproj|solutionrelative:service\\tahamucasiroglublog.service.database\\abstract\\icategorydatabaseservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{2DE2F0FB-3115-40A4-B987-DB1C7B344E97}|Application\\TahaMucasirogluBlog.Application.Validation\\TahaMucasirogluBlog.Application.Validation.csproj|c:\\dosyalar\\projects\\tahamucasiroglublog\\tahamucasiroglublog\\application\\tahamucasiroglublog.application.validation\\concrete\\entity\\category\\deletecategorydtovalidation.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2DE2F0FB-3115-40A4-B987-DB1C7B344E97}|Application\\TahaMucasirogluBlog.Application.Validation\\TahaMucasirogluBlog.Application.Validation.csproj|solutionrelative:application\\tahamucasiroglublog.application.validation\\concrete\\entity\\category\\deletecategorydtovalidation.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{4C4C2121-31DD-44CE-8EE5-ACC01559C0C1}|Service\\TahaMucasirogluBlog.Service.Database\\TahaMucasirogluBlog.Service.Database.csproj|c:\\dosyalar\\projects\\tahamucasiroglublog\\tahamucasiroglublog\\service\\tahamucasiroglublog.service.database\\concrete\\blogposttagdatabaseservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4C4C2121-31DD-44CE-8EE5-ACC01559C0C1}|Service\\TahaMucasirogluBlog.Service.Database\\TahaMucasirogluBlog.Service.Database.csproj|solutionrelative:service\\tahamucasiroglublog.service.database\\concrete\\blogposttagdatabaseservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{2DE2F0FB-3115-40A4-B987-DB1C7B344E97}|Application\\TahaMucasirogluBlog.Application.Validation\\TahaMucasirogluBlog.Application.Validation.csproj|c:\\dosyalar\\projects\\tahamucasiroglublog\\tahamucasiroglublog\\application\\tahamucasiroglublog.application.validation\\concrete\\entity\\blogposttag\\updateblogposttagdtovalidation.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2DE2F0FB-3115-40A4-B987-DB1C7B344E97}|Application\\TahaMucasirogluBlog.Application.Validation\\TahaMucasirogluBlog.Application.Validation.csproj|solutionrelative:application\\tahamucasiroglublog.application.validation\\concrete\\entity\\blogposttag\\updateblogposttagdtovalidation.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{4C4C2121-31DD-44CE-8EE5-ACC01559C0C1}|Service\\TahaMucasirogluBlog.Service.Database\\TahaMucasirogluBlog.Service.Database.csproj|c:\\dosyalar\\projects\\tahamucasiroglublog\\tahamucasiroglublog\\service\\tahamucasiroglublog.service.database\\abstract\\iblogposttagdatabaseservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4C4C2121-31DD-44CE-8EE5-ACC01559C0C1}|Service\\TahaMucasirogluBlog.Service.Database\\TahaMucasirogluBlog.Service.Database.csproj|solutionrelative:service\\tahamucasiroglublog.service.database\\abstract\\iblogposttagdatabaseservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{56116250-ECE1-4EB9-80ED-025D78F22677}|Presentation\\TahaMucasirogluBlog.Presentation.API\\TahaMucasirogluBlog.Presentation.API.csproj|c:\\dosyalar\\projects\\tahamucasiroglublog\\tahamucasiroglublog\\presentation\\tahamucasiroglublog.presentation.api\\extensions\\singletonextension.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{56116250-ECE1-4EB9-80ED-025D78F22677}|Presentation\\TahaMucasirogluBlog.Presentation.API\\TahaMucasirogluBlog.Presentation.API.csproj|solutionrelative:presentation\\tahamucasiroglublog.presentation.api\\extensions\\singletonextension.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{4C4C2121-31DD-44CE-8EE5-ACC01559C0C1}|Service\\TahaMucasirogluBlog.Service.Database\\TahaMucasirogluBlog.Service.Database.csproj|c:\\dosyalar\\projects\\tahamucasiroglublog\\tahamucasiroglublog\\service\\tahamucasiroglublog.service.database\\concrete\\blogpostdatabaseservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4C4C2121-31DD-44CE-8EE5-ACC01559C0C1}|Service\\TahaMucasirogluBlog.Service.Database\\TahaMucasirogluBlog.Service.Database.csproj|solutionrelative:service\\tahamucasiroglublog.service.database\\concrete\\blogpostdatabaseservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{56116250-ECE1-4EB9-80ED-025D78F22677}|Presentation\\TahaMucasirogluBlog.Presentation.API\\TahaMucasirogluBlog.Presentation.API.csproj|c:\\dosyalar\\projects\\tahamucasiroglublog\\tahamucasiroglublog\\presentation\\tahamucasiroglublog.presentation.api\\middlewares\\errorhandlingmiddleware.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{56116250-ECE1-4EB9-80ED-025D78F22677}|Presentation\\TahaMucasirogluBlog.Presentation.API\\TahaMucasirogluBlog.Presentation.API.csproj|solutionrelative:presentation\\tahamucasiroglublog.presentation.api\\middlewares\\errorhandlingmiddleware.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{4C4C2121-31DD-44CE-8EE5-ACC01559C0C1}|Service\\TahaMucasirogluBlog.Service.Database\\TahaMucasirogluBlog.Service.Database.csproj|c:\\dosyalar\\projects\\tahamucasiroglublog\\tahamucasiroglublog\\service\\tahamucasiroglublog.service.database\\abstract\\iblogpostdatabaseservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4C4C2121-31DD-44CE-8EE5-ACC01559C0C1}|Service\\TahaMucasirogluBlog.Service.Database\\TahaMucasirogluBlog.Service.Database.csproj|solutionrelative:service\\tahamucasiroglublog.service.database\\abstract\\iblogpostdatabaseservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{56116250-ECE1-4EB9-80ED-025D78F22677}|Presentation\\TahaMucasirogluBlog.Presentation.API\\TahaMucasirogluBlog.Presentation.API.csproj|c:\\dosyalar\\projects\\tahamucasiroglublog\\tahamucasiroglublog\\presentation\\tahamucasiroglublog.presentation.api\\extensions\\scopedextension.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{56116250-ECE1-4EB9-80ED-025D78F22677}|Presentation\\TahaMucasirogluBlog.Presentation.API\\TahaMucasirogluBlog.Presentation.API.csproj|solutionrelative:presentation\\tahamucasiroglublog.presentation.api\\extensions\\scopedextension.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{4C4C2121-31DD-44CE-8EE5-ACC01559C0C1}|Service\\TahaMucasirogluBlog.Service.Database\\TahaMucasirogluBlog.Service.Database.csproj|c:\\dosyalar\\projects\\tahamucasiroglublog\\tahamucasiroglublog\\service\\tahamucasiroglublog.service.database\\concrete\\blogpostcategorydatabaseservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4C4C2121-31DD-44CE-8EE5-ACC01559C0C1}|Service\\TahaMucasirogluBlog.Service.Database\\TahaMucasirogluBlog.Service.Database.csproj|solutionrelative:service\\tahamucasiroglublog.service.database\\concrete\\blogpostcategorydatabaseservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{56116250-ECE1-4EB9-80ED-025D78F22677}|Presentation\\TahaMucasirogluBlog.Presentation.API\\TahaMucasirogluBlog.Presentation.API.csproj|c:\\dosyalar\\projects\\tahamucasiroglublog\\tahamucasiroglublog\\presentation\\tahamucasiroglublog.presentation.api\\extensions\\middlewaresextension.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{56116250-ECE1-4EB9-80ED-025D78F22677}|Presentation\\TahaMucasirogluBlog.Presentation.API\\TahaMucasirogluBlog.Presentation.API.csproj|solutionrelative:presentation\\tahamucasiroglublog.presentation.api\\extensions\\middlewaresextension.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{4C4C2121-31DD-44CE-8EE5-ACC01559C0C1}|Service\\TahaMucasirogluBlog.Service.Database\\TahaMucasirogluBlog.Service.Database.csproj|c:\\dosyalar\\projects\\tahamucasiroglublog\\tahamucasiroglublog\\service\\tahamucasiroglublog.service.database\\abstract\\iblogpostcategorydatabaseservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4C4C2121-31DD-44CE-8EE5-ACC01559C0C1}|Service\\TahaMucasirogluBlog.Service.Database\\TahaMucasirogluBlog.Service.Database.csproj|solutionrelative:service\\tahamucasiroglublog.service.database\\abstract\\iblogpostcategorydatabaseservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{56116250-ECE1-4EB9-80ED-025D78F22677}|Presentation\\TahaMucasirogluBlog.Presentation.API\\TahaMucasirogluBlog.Presentation.API.csproj|c:\\dosyalar\\projects\\tahamucasiroglublog\\tahamucasiroglublog\\presentation\\tahamucasiroglublog.presentation.api\\extensions\\mapperextension.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{56116250-ECE1-4EB9-80ED-025D78F22677}|Presentation\\TahaMucasirogluBlog.Presentation.API\\TahaMucasirogluBlog.Presentation.API.csproj|solutionrelative:presentation\\tahamucasiroglublog.presentation.api\\extensions\\mapperextension.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{56116250-ECE1-4EB9-80ED-025D78F22677}|Presentation\\TahaMucasirogluBlog.Presentation.API\\TahaMucasirogluBlog.Presentation.API.csproj|c:\\dosyalar\\projects\\tahamucasiroglublog\\tahamucasiroglublog\\presentation\\tahamucasiroglublog.presentation.api\\extensions\\loggerextension.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{56116250-ECE1-4EB9-80ED-025D78F22677}|Presentation\\TahaMucasirogluBlog.Presentation.API\\TahaMucasirogluBlog.Presentation.API.csproj|solutionrelative:presentation\\tahamucasiroglublog.presentation.api\\extensions\\loggerextension.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{56116250-ECE1-4EB9-80ED-025D78F22677}|Presentation\\TahaMucasirogluBlog.Presentation.API\\TahaMucasirogluBlog.Presentation.API.csproj|c:\\dosyalar\\projects\\tahamucasiroglublog\\tahamucasiroglublog\\presentation\\tahamucasiroglublog.presentation.api\\extensions\\jsonextension.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{56116250-ECE1-4EB9-80ED-025D78F22677}|Presentation\\TahaMucasirogluBlog.Presentation.API\\TahaMucasirogluBlog.Presentation.API.csproj|solutionrelative:presentation\\tahamucasiroglublog.presentation.api\\extensions\\jsonextension.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{56116250-ECE1-4EB9-80ED-025D78F22677}|Presentation\\TahaMucasirogluBlog.Presentation.API\\TahaMucasirogluBlog.Presentation.API.csproj|c:\\dosyalar\\projects\\tahamucasiroglublog\\tahamucasiroglublog\\presentation\\tahamucasiroglublog.presentation.api\\extensions\\databaseextension.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{56116250-ECE1-4EB9-80ED-025D78F22677}|Presentation\\TahaMucasirogluBlog.Presentation.API\\TahaMucasirogluBlog.Presentation.API.csproj|solutionrelative:presentation\\tahamucasiroglublog.presentation.api\\extensions\\databaseextension.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{56116250-ECE1-4EB9-80ED-025D78F22677}|Presentation\\TahaMucasirogluBlog.Presentation.API\\TahaMucasirogluBlog.Presentation.API.csproj|c:\\dosyalar\\projects\\tahamucasiroglublog\\tahamucasiroglublog\\presentation\\tahamucasiroglublog.presentation.api\\extensions\\corsextension.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{56116250-ECE1-4EB9-80ED-025D78F22677}|Presentation\\TahaMucasirogluBlog.Presentation.API\\TahaMucasirogluBlog.Presentation.API.csproj|solutionrelative:presentation\\tahamucasiroglublog.presentation.api\\extensions\\corsextension.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{56116250-ECE1-4EB9-80ED-025D78F22677}|Presentation\\TahaMucasirogluBlog.Presentation.API\\TahaMucasirogluBlog.Presentation.API.csproj|c:\\dosyalar\\projects\\tahamucasiroglublog\\tahamucasiroglublog\\presentation\\tahamucasiroglublog.presentation.api\\extensions\\authenticationextension.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{56116250-ECE1-4EB9-80ED-025D78F22677}|Presentation\\TahaMucasirogluBlog.Presentation.API\\TahaMucasirogluBlog.Presentation.API.csproj|solutionrelative:presentation\\tahamucasiroglublog.presentation.api\\extensions\\authenticationextension.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{56116250-ECE1-4EB9-80ED-025D78F22677}|Presentation\\TahaMucasirogluBlog.Presentation.API\\TahaMucasirogluBlog.Presentation.API.csproj|c:\\dosyalar\\projects\\tahamucasiroglublog\\tahamucasiroglublog\\presentation\\tahamucasiroglublog.presentation.api\\controllers\\concrete\\blogpostcategorycontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{56116250-ECE1-4EB9-80ED-025D78F22677}|Presentation\\TahaMucasirogluBlog.Presentation.API\\TahaMucasirogluBlog.Presentation.API.csproj|solutionrelative:presentation\\tahamucasiroglublog.presentation.api\\controllers\\concrete\\blogpostcategorycontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{41EFCF97-CB7E-469B-933F-F0AEBAC0ADAF}|Domain\\TahaMucasirogluBlog.Domain.Extensions\\TahaMucasirogluBlog.Domain.Extensions.csproj|c:\\dosyalar\\projects\\tahamucasiroglublog\\tahamucasiroglublog\\domain\\tahamucasiroglublog.domain.extensions\\iconfigurationextension.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{41EFCF97-CB7E-469B-933F-F0AEBAC0ADAF}|Domain\\TahaMucasirogluBlog.Domain.Extensions\\TahaMucasirogluBlog.Domain.Extensions.csproj|solutionrelative:domain\\tahamucasiroglublog.domain.extensions\\iconfigurationextension.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{56116250-ECE1-4EB9-80ED-025D78F22677}|Presentation\\TahaMucasirogluBlog.Presentation.API\\TahaMucasirogluBlog.Presentation.API.csproj|c:\\dosyalar\\projects\\tahamucasiroglublog\\tahamucasiroglublog\\presentation\\tahamucasiroglublog.presentation.api\\controllers\\concrete\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{56116250-ECE1-4EB9-80ED-025D78F22677}|Presentation\\TahaMucasirogluBlog.Presentation.API\\TahaMucasirogluBlog.Presentation.API.csproj|solutionrelative:presentation\\tahamucasiroglublog.presentation.api\\controllers\\concrete\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{56116250-ECE1-4EB9-80ED-025D78F22677}|Presentation\\TahaMucasirogluBlog.Presentation.API\\TahaMucasirogluBlog.Presentation.API.csproj|c:\\dosyalar\\projects\\tahamucasiroglublog\\tahamucasiroglublog\\presentation\\tahamucasiroglublog.presentation.api\\controllers\\concrete\\tagcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{56116250-ECE1-4EB9-80ED-025D78F22677}|Presentation\\TahaMucasirogluBlog.Presentation.API\\TahaMucasirogluBlog.Presentation.API.csproj|solutionrelative:presentation\\tahamucasiroglublog.presentation.api\\controllers\\concrete\\tagcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{56116250-ECE1-4EB9-80ED-025D78F22677}|Presentation\\TahaMucasirogluBlog.Presentation.API\\TahaMucasirogluBlog.Presentation.API.csproj|c:\\dosyalar\\projects\\tahamucasiroglublog\\tahamucasiroglublog\\presentation\\tahamucasiroglublog.presentation.api\\controllers\\concrete\\commentcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{56116250-ECE1-4EB9-80ED-025D78F22677}|Presentation\\TahaMucasirogluBlog.Presentation.API\\TahaMucasirogluBlog.Presentation.API.csproj|solutionrelative:presentation\\tahamucasiroglublog.presentation.api\\controllers\\concrete\\commentcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{56116250-ECE1-4EB9-80ED-025D78F22677}|Presentation\\TahaMucasirogluBlog.Presentation.API\\TahaMucasirogluBlog.Presentation.API.csproj|c:\\dosyalar\\projects\\tahamucasiroglublog\\tahamucasiroglublog\\presentation\\tahamucasiroglublog.presentation.api\\controllers\\concrete\\categorycontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{56116250-ECE1-4EB9-80ED-025D78F22677}|Presentation\\TahaMucasirogluBlog.Presentation.API\\TahaMucasirogluBlog.Presentation.API.csproj|solutionrelative:presentation\\tahamucasiroglublog.presentation.api\\controllers\\concrete\\categorycontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{56116250-ECE1-4EB9-80ED-025D78F22677}|Presentation\\TahaMucasirogluBlog.Presentation.API\\TahaMucasirogluBlog.Presentation.API.csproj|c:\\dosyalar\\projects\\tahamucasiroglublog\\tahamucasiroglublog\\presentation\\tahamucasiroglublog.presentation.api\\controllers\\concrete\\blogposttagcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{56116250-ECE1-4EB9-80ED-025D78F22677}|Presentation\\TahaMucasirogluBlog.Presentation.API\\TahaMucasirogluBlog.Presentation.API.csproj|solutionrelative:presentation\\tahamucasiroglublog.presentation.api\\controllers\\concrete\\blogposttagcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{56116250-ECE1-4EB9-80ED-025D78F22677}|Presentation\\TahaMucasirogluBlog.Presentation.API\\TahaMucasirogluBlog.Presentation.API.csproj|c:\\dosyalar\\projects\\tahamucasiroglublog\\tahamucasiroglublog\\presentation\\tahamucasiroglublog.presentation.api\\controllers\\concrete\\blogpostcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{56116250-ECE1-4EB9-80ED-025D78F22677}|Presentation\\TahaMucasirogluBlog.Presentation.API\\TahaMucasirogluBlog.Presentation.API.csproj|solutionrelative:presentation\\tahamucasiroglublog.presentation.api\\controllers\\concrete\\blogpostcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{56116250-ECE1-4EB9-80ED-025D78F22677}|Presentation\\TahaMucasirogluBlog.Presentation.API\\TahaMucasirogluBlog.Presentation.API.csproj|c:\\dosyalar\\projects\\tahamucasiroglublog\\tahamucasiroglublog\\presentation\\tahamucasiroglublog.presentation.api\\controllers\\base\\controller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{56116250-ECE1-4EB9-80ED-025D78F22677}|Presentation\\TahaMucasirogluBlog.Presentation.API\\TahaMucasirogluBlog.Presentation.API.csproj|solutionrelative:presentation\\tahamucasiroglublog.presentation.api\\controllers\\base\\controller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{4C4C2121-31DD-44CE-8EE5-ACC01559C0C1}|Service\\TahaMucasirogluBlog.Service.Database\\TahaMucasirogluBlog.Service.Database.csproj|c:\\dosyalar\\projects\\tahamucasiroglublog\\tahamucasiroglublog\\service\\tahamucasiroglublog.service.database\\base\\databaseservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{4C4C2121-31DD-44CE-8EE5-ACC01559C0C1}|Service\\TahaMucasirogluBlog.Service.Database\\TahaMucasirogluBlog.Service.Database.csproj|solutionrelative:service\\tahamucasiroglublog.service.database\\base\\databaseservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{4C4C2121-31DD-44CE-8EE5-ACC01559C0C1}|Service\\TahaMucasirogluBlog.Service.Database\\TahaMucasirogluBlog.Service.Database.csproj|c:\\dosyalar\\projects\\tahamucasiroglublog\\tahamucasiroglublog\\service\\tahamucasiroglublog.service.database\\abstract\\base\\idatabaseservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4C4C2121-31DD-44CE-8EE5-ACC01559C0C1}|Service\\TahaMucasirogluBlog.Service.Database\\TahaMucasirogluBlog.Service.Database.csproj|solutionrelative:service\\tahamucasiroglublog.service.database\\abstract\\base\\idatabaseservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{56116250-ECE1-4EB9-80ED-025D78F22677}|Presentation\\TahaMucasirogluBlog.Presentation.API\\TahaMucasirogluBlog.Presentation.API.csproj|c:\\dosyalar\\projects\\tahamucasiroglublog\\tahamucasiroglublog\\presentation\\tahamucasiroglublog.presentation.api\\attributes\\attributes.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{56116250-ECE1-4EB9-80ED-025D78F22677}|Presentation\\TahaMucasirogluBlog.Presentation.API\\TahaMucasirogluBlog.Presentation.API.csproj|solutionrelative:presentation\\tahamucasiroglublog.presentation.api\\attributes\\attributes.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{863D92C7-F2CE-4F96-9BD9-A7DEA438B2CC}|Domain\\TahaMucasirogluBlog.Domain.Entities\\TahaMucasirogluBlog.Domain.Entities.csproj|c:\\dosyalar\\projects\\tahamucasiroglublog\\tahamucasiroglublog\\domain\\tahamucasiroglublog.domain.entities\\concrete\\tag.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{863D92C7-F2CE-4F96-9BD9-A7DEA438B2CC}|Domain\\TahaMucasirogluBlog.Domain.Entities\\TahaMucasirogluBlog.Domain.Entities.csproj|solutionrelative:domain\\tahamucasiroglublog.domain.entities\\concrete\\tag.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{863D92C7-F2CE-4F96-9BD9-A7DEA438B2CC}|Domain\\TahaMucasirogluBlog.Domain.Entities\\TahaMucasirogluBlog.Domain.Entities.csproj|c:\\dosyalar\\projects\\tahamucasiroglublog\\tahamucasiroglublog\\domain\\tahamucasiroglublog.domain.entities\\concrete\\comment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{863D92C7-F2CE-4F96-9BD9-A7DEA438B2CC}|Domain\\TahaMucasirogluBlog.Domain.Entities\\TahaMucasirogluBlog.Domain.Entities.csproj|solutionrelative:domain\\tahamucasiroglublog.domain.entities\\concrete\\comment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{863D92C7-F2CE-4F96-9BD9-A7DEA438B2CC}|Domain\\TahaMucasirogluBlog.Domain.Entities\\TahaMucasirogluBlog.Domain.Entities.csproj|c:\\dosyalar\\projects\\tahamucasiroglublog\\tahamucasiroglublog\\domain\\tahamucasiroglublog.domain.entities\\concrete\\category.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{863D92C7-F2CE-4F96-9BD9-A7DEA438B2CC}|Domain\\TahaMucasirogluBlog.Domain.Entities\\TahaMucasirogluBlog.Domain.Entities.csproj|solutionrelative:domain\\tahamucasiroglublog.domain.entities\\concrete\\category.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{863D92C7-F2CE-4F96-9BD9-A7DEA438B2CC}|Domain\\TahaMucasirogluBlog.Domain.Entities\\TahaMucasirogluBlog.Domain.Entities.csproj|c:\\dosyalar\\projects\\tahamucasiroglublog\\tahamucasiroglublog\\domain\\tahamucasiroglublog.domain.entities\\concrete\\blogposttag.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{863D92C7-F2CE-4F96-9BD9-A7DEA438B2CC}|Domain\\TahaMucasirogluBlog.Domain.Entities\\TahaMucasirogluBlog.Domain.Entities.csproj|solutionrelative:domain\\tahamucasiroglublog.domain.entities\\concrete\\blogposttag.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{84838BD2-C3A1-4E10-B75B-1565A9CEF772}|Domain\\TahaMucasirogluBlog.Domain.DTOs\\TahaMucasirogluBlog.Domain.DTOs.csproj|c:\\dosyalar\\projects\\tahamucasiroglublog\\tahamucasiroglublog\\domain\\tahamucasiroglublog.domain.dtos\\concrete\\request\\idrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{84838BD2-C3A1-4E10-B75B-1565A9CEF772}|Domain\\TahaMucasirogluBlog.Domain.DTOs\\TahaMucasirogluBlog.Domain.DTOs.csproj|solutionrelative:domain\\tahamucasiroglublog.domain.dtos\\concrete\\request\\idrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{4C4C2121-31DD-44CE-8EE5-ACC01559C0C1}|Service\\TahaMucasirogluBlog.Service.Database\\TahaMucasirogluBlog.Service.Database.csproj|c:\\dosyalar\\projects\\tahamucasiroglublog\\tahamucasiroglublog\\service\\tahamucasiroglublog.service.database\\tahamucasiroglublog.service.database.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
-      "RelativeMoniker": "D:0:0:{4C4C2121-31DD-44CE-8EE5-ACC01559C0C1}|Service\\TahaMucasirogluBlog.Service.Database\\TahaMucasirogluBlog.Service.Database.csproj|solutionrelative:service\\tahamucasiroglublog.service.database\\tahamucasiroglublog.service.database.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E43AD915-D86C-43FA-B512-711DDBA3E2AA}|Infrastructure\\TahaMucasirogluBlog.Infrastructure.Repository\\TahaMucasirogluBlog.Infrastructure.Repository.csproj|c:\\dosyalar\\projects\\tahamucasiroglublog\\tahamucasiroglublog\\infrastructure\\tahamucasiroglublog.infrastructure.repository\\tahamucasiroglublog.infrastructure.repository.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
-      "RelativeMoniker": "D:0:0:{E43AD915-D86C-43FA-B512-711DDBA3E2AA}|Infrastructure\\TahaMucasirogluBlog.Infrastructure.Repository\\TahaMucasirogluBlog.Infrastructure.Repository.csproj|solutionrelative:infrastructure\\tahamucasiroglublog.infrastructure.repository\\tahamucasiroglublog.infrastructure.repository.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E43AD915-D86C-43FA-B512-711DDBA3E2AA}|Infrastructure\\TahaMucasirogluBlog.Infrastructure.Repository\\TahaMucasirogluBlog.Infrastructure.Repository.csproj|c:\\dosyalar\\projects\\tahamucasiroglublog\\tahamucasiroglublog\\infrastructure\\tahamucasiroglublog.infrastructure.repository\\context\\tahamucasiroglublogcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E43AD915-D86C-43FA-B512-711DDBA3E2AA}|Infrastructure\\TahaMucasirogluBlog.Infrastructure.Repository\\TahaMucasirogluBlog.Infrastructure.Repository.csproj|solutionrelative:infrastructure\\tahamucasiroglublog.infrastructure.repository\\context\\tahamucasiroglublogcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E43AD915-D86C-43FA-B512-711DDBA3E2AA}|Infrastructure\\TahaMucasirogluBlog.Infrastructure.Repository\\TahaMucasirogluBlog.Infrastructure.Repository.csproj|c:\\dosyalar\\projects\\tahamucasiroglublog\\tahamucasiroglublog\\infrastructure\\tahamucasiroglublog.infrastructure.repository\\repository\\concrete\\userrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E43AD915-D86C-43FA-B512-711DDBA3E2AA}|Infrastructure\\TahaMucasirogluBlog.Infrastructure.Repository\\TahaMucasirogluBlog.Infrastructure.Repository.csproj|solutionrelative:infrastructure\\tahamucasiroglublog.infrastructure.repository\\repository\\concrete\\userrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E43AD915-D86C-43FA-B512-711DDBA3E2AA}|Infrastructure\\TahaMucasirogluBlog.Infrastructure.Repository\\TahaMucasirogluBlog.Infrastructure.Repository.csproj|c:\\dosyalar\\projects\\tahamucasiroglublog\\tahamucasiroglublog\\infrastructure\\tahamucasiroglublog.infrastructure.repository\\repository\\abstract\\iuserrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E43AD915-D86C-43FA-B512-711DDBA3E2AA}|Infrastructure\\TahaMucasirogluBlog.Infrastructure.Repository\\TahaMucasirogluBlog.Infrastructure.Repository.csproj|solutionrelative:infrastructure\\tahamucasiroglublog.infrastructure.repository\\repository\\abstract\\iuserrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E43AD915-D86C-43FA-B512-711DDBA3E2AA}|Infrastructure\\TahaMucasirogluBlog.Infrastructure.Repository\\TahaMucasirogluBlog.Infrastructure.Repository.csproj|c:\\dosyalar\\projects\\tahamucasiroglublog\\tahamucasiroglublog\\infrastructure\\tahamucasiroglublog.infrastructure.repository\\repository\\concrete\\tagrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E43AD915-D86C-43FA-B512-711DDBA3E2AA}|Infrastructure\\TahaMucasirogluBlog.Infrastructure.Repository\\TahaMucasirogluBlog.Infrastructure.Repository.csproj|solutionrelative:infrastructure\\tahamucasiroglublog.infrastructure.repository\\repository\\concrete\\tagrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E43AD915-D86C-43FA-B512-711DDBA3E2AA}|Infrastructure\\TahaMucasirogluBlog.Infrastructure.Repository\\TahaMucasirogluBlog.Infrastructure.Repository.csproj|c:\\dosyalar\\projects\\tahamucasiroglublog\\tahamucasiroglublog\\infrastructure\\tahamucasiroglublog.infrastructure.repository\\repository\\abstract\\itagrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E43AD915-D86C-43FA-B512-711DDBA3E2AA}|Infrastructure\\TahaMucasirogluBlog.Infrastructure.Repository\\TahaMucasirogluBlog.Infrastructure.Repository.csproj|solutionrelative:infrastructure\\tahamucasiroglublog.infrastructure.repository\\repository\\abstract\\itagrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E43AD915-D86C-43FA-B512-711DDBA3E2AA}|Infrastructure\\TahaMucasirogluBlog.Infrastructure.Repository\\TahaMucasirogluBlog.Infrastructure.Repository.csproj|c:\\dosyalar\\projects\\tahamucasiroglublog\\tahamucasiroglublog\\infrastructure\\tahamucasiroglublog.infrastructure.repository\\repository\\concrete\\commentrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E43AD915-D86C-43FA-B512-711DDBA3E2AA}|Infrastructure\\TahaMucasirogluBlog.Infrastructure.Repository\\TahaMucasirogluBlog.Infrastructure.Repository.csproj|solutionrelative:infrastructure\\tahamucasiroglublog.infrastructure.repository\\repository\\concrete\\commentrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E43AD915-D86C-43FA-B512-711DDBA3E2AA}|Infrastructure\\TahaMucasirogluBlog.Infrastructure.Repository\\TahaMucasirogluBlog.Infrastructure.Repository.csproj|c:\\dosyalar\\projects\\tahamucasiroglublog\\tahamucasiroglublog\\infrastructure\\tahamucasiroglublog.infrastructure.repository\\repository\\abstract\\icommentrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E43AD915-D86C-43FA-B512-711DDBA3E2AA}|Infrastructure\\TahaMucasirogluBlog.Infrastructure.Repository\\TahaMucasirogluBlog.Infrastructure.Repository.csproj|solutionrelative:infrastructure\\tahamucasiroglublog.infrastructure.repository\\repository\\abstract\\icommentrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E43AD915-D86C-43FA-B512-711DDBA3E2AA}|Infrastructure\\TahaMucasirogluBlog.Infrastructure.Repository\\TahaMucasirogluBlog.Infrastructure.Repository.csproj|c:\\dosyalar\\projects\\tahamucasiroglublog\\tahamucasiroglublog\\infrastructure\\tahamucasiroglublog.infrastructure.repository\\repository\\concrete\\categoryrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E43AD915-D86C-43FA-B512-711DDBA3E2AA}|Infrastructure\\TahaMucasirogluBlog.Infrastructure.Repository\\TahaMucasirogluBlog.Infrastructure.Repository.csproj|solutionrelative:infrastructure\\tahamucasiroglublog.infrastructure.repository\\repository\\concrete\\categoryrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E43AD915-D86C-43FA-B512-711DDBA3E2AA}|Infrastructure\\TahaMucasirogluBlog.Infrastructure.Repository\\TahaMucasirogluBlog.Infrastructure.Repository.csproj|c:\\dosyalar\\projects\\tahamucasiroglublog\\tahamucasiroglublog\\infrastructure\\tahamucasiroglublog.infrastructure.repository\\repository\\abstract\\icategoryrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E43AD915-D86C-43FA-B512-711DDBA3E2AA}|Infrastructure\\TahaMucasirogluBlog.Infrastructure.Repository\\TahaMucasirogluBlog.Infrastructure.Repository.csproj|solutionrelative:infrastructure\\tahamucasiroglublog.infrastructure.repository\\repository\\abstract\\icategoryrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E43AD915-D86C-43FA-B512-711DDBA3E2AA}|Infrastructure\\TahaMucasirogluBlog.Infrastructure.Repository\\TahaMucasirogluBlog.Infrastructure.Repository.csproj|c:\\dosyalar\\projects\\tahamucasiroglublog\\tahamucasiroglublog\\infrastructure\\tahamucasiroglublog.infrastructure.repository\\repository\\concrete\\blogposttagrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E43AD915-D86C-43FA-B512-711DDBA3E2AA}|Infrastructure\\TahaMucasirogluBlog.Infrastructure.Repository\\TahaMucasirogluBlog.Infrastructure.Repository.csproj|solutionrelative:infrastructure\\tahamucasiroglublog.infrastructure.repository\\repository\\concrete\\blogposttagrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E43AD915-D86C-43FA-B512-711DDBA3E2AA}|Infrastructure\\TahaMucasirogluBlog.Infrastructure.Repository\\TahaMucasirogluBlog.Infrastructure.Repository.csproj|c:\\dosyalar\\projects\\tahamucasiroglublog\\tahamucasiroglublog\\infrastructure\\tahamucasiroglublog.infrastructure.repository\\repository\\abstract\\iblogposttagrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E43AD915-D86C-43FA-B512-711DDBA3E2AA}|Infrastructure\\TahaMucasirogluBlog.Infrastructure.Repository\\TahaMucasirogluBlog.Infrastructure.Repository.csproj|solutionrelative:infrastructure\\tahamucasiroglublog.infrastructure.repository\\repository\\abstract\\iblogposttagrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E43AD915-D86C-43FA-B512-711DDBA3E2AA}|Infrastructure\\TahaMucasirogluBlog.Infrastructure.Repository\\TahaMucasirogluBlog.Infrastructure.Repository.csproj|c:\\dosyalar\\projects\\tahamucasiroglublog\\tahamucasiroglublog\\infrastructure\\tahamucasiroglublog.infrastructure.repository\\repository\\concrete\\blogpostrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E43AD915-D86C-43FA-B512-711DDBA3E2AA}|Infrastructure\\TahaMucasirogluBlog.Infrastructure.Repository\\TahaMucasirogluBlog.Infrastructure.Repository.csproj|solutionrelative:infrastructure\\tahamucasiroglublog.infrastructure.repository\\repository\\concrete\\blogpostrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E43AD915-D86C-43FA-B512-711DDBA3E2AA}|Infrastructure\\TahaMucasirogluBlog.Infrastructure.Repository\\TahaMucasirogluBlog.Infrastructure.Repository.csproj|c:\\dosyalar\\projects\\tahamucasiroglublog\\tahamucasiroglublog\\infrastructure\\tahamucasiroglublog.infrastructure.repository\\repository\\abstract\\iblogpostrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E43AD915-D86C-43FA-B512-711DDBA3E2AA}|Infrastructure\\TahaMucasirogluBlog.Infrastructure.Repository\\TahaMucasirogluBlog.Infrastructure.Repository.csproj|solutionrelative:infrastructure\\tahamucasiroglublog.infrastructure.repository\\repository\\abstract\\iblogpostrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E43AD915-D86C-43FA-B512-711DDBA3E2AA}|Infrastructure\\TahaMucasirogluBlog.Infrastructure.Repository\\TahaMucasirogluBlog.Infrastructure.Repository.csproj|c:\\dosyalar\\projects\\tahamucasiroglublog\\tahamucasiroglublog\\infrastructure\\tahamucasiroglublog.infrastructure.repository\\repository\\concrete\\blogpostcategoryrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E43AD915-D86C-43FA-B512-711DDBA3E2AA}|Infrastructure\\TahaMucasirogluBlog.Infrastructure.Repository\\TahaMucasirogluBlog.Infrastructure.Repository.csproj|solutionrelative:infrastructure\\tahamucasiroglublog.infrastructure.repository\\repository\\concrete\\blogpostcategoryrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E43AD915-D86C-43FA-B512-711DDBA3E2AA}|Infrastructure\\TahaMucasirogluBlog.Infrastructure.Repository\\TahaMucasirogluBlog.Infrastructure.Repository.csproj|c:\\dosyalar\\projects\\tahamucasiroglublog\\tahamucasiroglublog\\infrastructure\\tahamucasiroglublog.infrastructure.repository\\repository\\base\\repository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E43AD915-D86C-43FA-B512-711DDBA3E2AA}|Infrastructure\\TahaMucasirogluBlog.Infrastructure.Repository\\TahaMucasirogluBlog.Infrastructure.Repository.csproj|solutionrelative:infrastructure\\tahamucasiroglublog.infrastructure.repository\\repository\\base\\repository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E43AD915-D86C-43FA-B512-711DDBA3E2AA}|Infrastructure\\TahaMucasirogluBlog.Infrastructure.Repository\\TahaMucasirogluBlog.Infrastructure.Repository.csproj|c:\\dosyalar\\projects\\tahamucasiroglublog\\tahamucasiroglublog\\infrastructure\\tahamucasiroglublog.infrastructure.repository\\repository\\abstract\\iblogpostcategoryrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E43AD915-D86C-43FA-B512-711DDBA3E2AA}|Infrastructure\\TahaMucasirogluBlog.Infrastructure.Repository\\TahaMucasirogluBlog.Infrastructure.Repository.csproj|solutionrelative:infrastructure\\tahamucasiroglublog.infrastructure.repository\\repository\\abstract\\iblogpostcategoryrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E43AD915-D86C-43FA-B512-711DDBA3E2AA}|Infrastructure\\TahaMucasirogluBlog.Infrastructure.Repository\\TahaMucasirogluBlog.Infrastructure.Repository.csproj|c:\\dosyalar\\projects\\tahamucasiroglublog\\tahamucasiroglublog\\infrastructure\\tahamucasiroglublog.infrastructure.repository\\configuration\\userconfiguration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E43AD915-D86C-43FA-B512-711DDBA3E2AA}|Infrastructure\\TahaMucasirogluBlog.Infrastructure.Repository\\TahaMucasirogluBlog.Infrastructure.Repository.csproj|solutionrelative:infrastructure\\tahamucasiroglublog.infrastructure.repository\\configuration\\userconfiguration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E43AD915-D86C-43FA-B512-711DDBA3E2AA}|Infrastructure\\TahaMucasirogluBlog.Infrastructure.Repository\\TahaMucasirogluBlog.Infrastructure.Repository.csproj|c:\\dosyalar\\projects\\tahamucasiroglublog\\tahamucasiroglublog\\infrastructure\\tahamucasiroglublog.infrastructure.repository\\configuration\\tagconfiguration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E43AD915-D86C-43FA-B512-711DDBA3E2AA}|Infrastructure\\TahaMucasirogluBlog.Infrastructure.Repository\\TahaMucasirogluBlog.Infrastructure.Repository.csproj|solutionrelative:infrastructure\\tahamucasiroglublog.infrastructure.repository\\configuration\\tagconfiguration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E43AD915-D86C-43FA-B512-711DDBA3E2AA}|Infrastructure\\TahaMucasirogluBlog.Infrastructure.Repository\\TahaMucasirogluBlog.Infrastructure.Repository.csproj|c:\\dosyalar\\projects\\tahamucasiroglublog\\tahamucasiroglublog\\infrastructure\\tahamucasiroglublog.infrastructure.repository\\configuration\\commentconfiguration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E43AD915-D86C-43FA-B512-711DDBA3E2AA}|Infrastructure\\TahaMucasirogluBlog.Infrastructure.Repository\\TahaMucasirogluBlog.Infrastructure.Repository.csproj|solutionrelative:infrastructure\\tahamucasiroglublog.infrastructure.repository\\configuration\\commentconfiguration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E43AD915-D86C-43FA-B512-711DDBA3E2AA}|Infrastructure\\TahaMucasirogluBlog.Infrastructure.Repository\\TahaMucasirogluBlog.Infrastructure.Repository.csproj|c:\\dosyalar\\projects\\tahamucasiroglublog\\tahamucasiroglublog\\infrastructure\\tahamucasiroglublog.infrastructure.repository\\configuration\\categoryconfiguration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E43AD915-D86C-43FA-B512-711DDBA3E2AA}|Infrastructure\\TahaMucasirogluBlog.Infrastructure.Repository\\TahaMucasirogluBlog.Infrastructure.Repository.csproj|solutionrelative:infrastructure\\tahamucasiroglublog.infrastructure.repository\\configuration\\categoryconfiguration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{863D92C7-F2CE-4F96-9BD9-A7DEA438B2CC}|Domain\\TahaMucasirogluBlog.Domain.Entities\\TahaMucasirogluBlog.Domain.Entities.csproj|c:\\dosyalar\\projects\\tahamucasiroglublog\\tahamucasiroglublog\\domain\\tahamucasiroglublog.domain.entities\\concrete\\blogpost.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{863D92C7-F2CE-4F96-9BD9-A7DEA438B2CC}|Domain\\TahaMucasirogluBlog.Domain.Entities\\TahaMucasirogluBlog.Domain.Entities.csproj|solutionrelative:domain\\tahamucasiroglublog.domain.entities\\concrete\\blogpost.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E43AD915-D86C-43FA-B512-711DDBA3E2AA}|Infrastructure\\TahaMucasirogluBlog.Infrastructure.Repository\\TahaMucasirogluBlog.Infrastructure.Repository.csproj|c:\\dosyalar\\projects\\tahamucasiroglublog\\tahamucasiroglublog\\infrastructure\\tahamucasiroglublog.infrastructure.repository\\configuration\\blogposttagconfiguration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E43AD915-D86C-43FA-B512-711DDBA3E2AA}|Infrastructure\\TahaMucasirogluBlog.Infrastructure.Repository\\TahaMucasirogluBlog.Infrastructure.Repository.csproj|solutionrelative:infrastructure\\tahamucasiroglublog.infrastructure.repository\\configuration\\blogposttagconfiguration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E43AD915-D86C-43FA-B512-711DDBA3E2AA}|Infrastructure\\TahaMucasirogluBlog.Infrastructure.Repository\\TahaMucasirogluBlog.Infrastructure.Repository.csproj|c:\\dosyalar\\projects\\tahamucasiroglublog\\tahamucasiroglublog\\infrastructure\\tahamucasiroglublog.infrastructure.repository\\configuration\\blogpostconfiguration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E43AD915-D86C-43FA-B512-711DDBA3E2AA}|Infrastructure\\TahaMucasirogluBlog.Infrastructure.Repository\\TahaMucasirogluBlog.Infrastructure.Repository.csproj|solutionrelative:infrastructure\\tahamucasiroglublog.infrastructure.repository\\configuration\\blogpostconfiguration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E43AD915-D86C-43FA-B512-711DDBA3E2AA}|Infrastructure\\TahaMucasirogluBlog.Infrastructure.Repository\\TahaMucasirogluBlog.Infrastructure.Repository.csproj|c:\\dosyalar\\projects\\tahamucasiroglublog\\tahamucasiroglublog\\infrastructure\\tahamucasiroglublog.infrastructure.repository\\configuration\\blogpostcategoryconfiguration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E43AD915-D86C-43FA-B512-711DDBA3E2AA}|Infrastructure\\TahaMucasirogluBlog.Infrastructure.Repository\\TahaMucasirogluBlog.Infrastructure.Repository.csproj|solutionrelative:infrastructure\\tahamucasiroglublog.infrastructure.repository\\configuration\\blogpostcategoryconfiguration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E43AD915-D86C-43FA-B512-711DDBA3E2AA}|Infrastructure\\TahaMucasirogluBlog.Infrastructure.Repository\\TahaMucasirogluBlog.Infrastructure.Repository.csproj|c:\\dosyalar\\projects\\tahamucasiroglublog\\tahamucasiroglublog\\infrastructure\\tahamucasiroglublog.infrastructure.repository\\configuration\\base\\entityconfiguration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E43AD915-D86C-43FA-B512-711DDBA3E2AA}|Infrastructure\\TahaMucasirogluBlog.Infrastructure.Repository\\TahaMucasirogluBlog.Infrastructure.Repository.csproj|solutionrelative:infrastructure\\tahamucasiroglublog.infrastructure.repository\\configuration\\base\\entityconfiguration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E43AD915-D86C-43FA-B512-711DDBA3E2AA}|Infrastructure\\TahaMucasirogluBlog.Infrastructure.Repository\\TahaMucasirogluBlog.Infrastructure.Repository.csproj|c:\\dosyalar\\projects\\tahamucasiroglublog\\tahamucasiroglublog\\infrastructure\\tahamucasiroglublog.infrastructure.repository\\repository\\abstract\\base\\irepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E43AD915-D86C-43FA-B512-711DDBA3E2AA}|Infrastructure\\TahaMucasirogluBlog.Infrastructure.Repository\\TahaMucasirogluBlog.Infrastructure.Repository.csproj|solutionrelative:infrastructure\\tahamucasiroglublog.infrastructure.repository\\repository\\abstract\\base\\irepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{56D9FF46-F595-4691-98F9-42D274F40B65}|Application\\TahaMucasirogluBlog.Application.Managers\\TahaMucasirogluBlog.Application.Managers.csproj|c:\\dosyalar\\projects\\tahamucasiroglublog\\tahamucasiroglublog\\application\\tahamucasiroglublog.application.managers\\tahamucasiroglublog.application.managers.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
-      "RelativeMoniker": "D:0:0:{56D9FF46-F595-4691-98F9-42D274F40B65}|Application\\TahaMucasirogluBlog.Application.Managers\\TahaMucasirogluBlog.Application.Managers.csproj|solutionrelative:application\\tahamucasiroglublog.application.managers\\tahamucasiroglublog.application.managers.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A470EE9C-8047-45FA-AED0-B7452E230B75}|Application\\TahaMucasirogluBlog.Application.Mapper\\TahaMucasirogluBlog.Application.Mapper.csproj|c:\\dosyalar\\projects\\tahamucasiroglublog\\tahamucasiroglublog\\application\\tahamucasiroglublog.application.mapper\\tahamucasiroglublog.application.mapper.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
-      "RelativeMoniker": "D:0:0:{A470EE9C-8047-45FA-AED0-B7452E230B75}|Application\\TahaMucasirogluBlog.Application.Mapper\\TahaMucasirogluBlog.Application.Mapper.csproj|solutionrelative:application\\tahamucasiroglublog.application.mapper\\tahamucasiroglublog.application.mapper.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{2DE2F0FB-3115-40A4-B987-DB1C7B344E97}|Application\\TahaMucasirogluBlog.Application.Validation\\TahaMucasirogluBlog.Application.Validation.csproj|c:\\dosyalar\\projects\\tahamucasiroglublog\\tahamucasiroglublog\\application\\tahamucasiroglublog.application.validation\\tahamucasiroglublog.application.validation.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
-      "RelativeMoniker": "D:0:0:{2DE2F0FB-3115-40A4-B987-DB1C7B344E97}|Application\\TahaMucasirogluBlog.Application.Validation\\TahaMucasirogluBlog.Application.Validation.csproj|solutionrelative:application\\tahamucasiroglublog.application.validation\\tahamucasiroglublog.application.validation.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+      "AbsoluteMoniker": "D:0:0:{84838BD2-C3A1-4E10-B75B-1565A9CEF772}|Domain\\TahaMucasirogluBlog.Domain.DTOs\\TahaMucasirogluBlog.Domain.DTOs.csproj|c:\\dosyalar\\projects\\tahamucasiroglublog\\tahamucasiroglublog\\domain\\tahamucasiroglublog.domain.dtos\\concrete\\request\\healthcheckrequestdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{84838BD2-C3A1-4E10-B75B-1565A9CEF772}|Domain\\TahaMucasirogluBlog.Domain.DTOs\\TahaMucasirogluBlog.Domain.DTOs.csproj|solutionrelative:domain\\tahamucasiroglublog.domain.dtos\\concrete\\request\\healthcheckrequestdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -223,641 +139,405 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "UserDatabaseService.cs",
-              "DocumentMoniker": "C:\\Dosyalar\\Projects\\TahaMucasirogluBlog\\TahaMucasirogluBlog\\Service\\TahaMucasirogluBlog.Service.Database\\Concrete\\UserDatabaseService.cs",
-              "RelativeDocumentMoniker": "Service\\TahaMucasirogluBlog.Service.Database\\Concrete\\UserDatabaseService.cs",
-              "ToolTip": "C:\\Dosyalar\\Projects\\TahaMucasirogluBlog\\TahaMucasirogluBlog\\Service\\TahaMucasirogluBlog.Service.Database\\Concrete\\UserDatabaseService.cs*",
-              "RelativeToolTip": "Service\\TahaMucasirogluBlog.Service.Database\\Concrete\\UserDatabaseService.cs*",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAB1AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-11T09:05:50.356Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "TagDatabaseService.cs",
-              "DocumentMoniker": "C:\\Dosyalar\\Projects\\TahaMucasirogluBlog\\TahaMucasirogluBlog\\Service\\TahaMucasirogluBlog.Service.Database\\Concrete\\TagDatabaseService.cs",
-              "RelativeDocumentMoniker": "Service\\TahaMucasirogluBlog.Service.Database\\Concrete\\TagDatabaseService.cs",
-              "ToolTip": "C:\\Dosyalar\\Projects\\TahaMucasirogluBlog\\TahaMucasirogluBlog\\Service\\TahaMucasirogluBlog.Service.Database\\Concrete\\TagDatabaseService.cs",
-              "RelativeToolTip": "Service\\TahaMucasirogluBlog.Service.Database\\Concrete\\TagDatabaseService.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAABzAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-11T09:05:06.687Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "CommentDatabaseService.cs",
-              "DocumentMoniker": "C:\\Dosyalar\\Projects\\TahaMucasirogluBlog\\TahaMucasirogluBlog\\Service\\TahaMucasirogluBlog.Service.Database\\Concrete\\CommentDatabaseService.cs",
-              "RelativeDocumentMoniker": "Service\\TahaMucasirogluBlog.Service.Database\\Concrete\\CommentDatabaseService.cs",
-              "ToolTip": "C:\\Dosyalar\\Projects\\TahaMucasirogluBlog\\TahaMucasirogluBlog\\Service\\TahaMucasirogluBlog.Service.Database\\Concrete\\CommentDatabaseService.cs*",
-              "RelativeToolTip": "Service\\TahaMucasirogluBlog.Service.Database\\Concrete\\CommentDatabaseService.cs*",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAB7AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-11T09:04:17.348Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "CategoryDatabaseService.cs",
-              "DocumentMoniker": "C:\\Dosyalar\\Projects\\TahaMucasirogluBlog\\TahaMucasirogluBlog\\Service\\TahaMucasirogluBlog.Service.Database\\Concrete\\CategoryDatabaseService.cs",
-              "RelativeDocumentMoniker": "Service\\TahaMucasirogluBlog.Service.Database\\Concrete\\CategoryDatabaseService.cs",
-              "ToolTip": "C:\\Dosyalar\\Projects\\TahaMucasirogluBlog\\TahaMucasirogluBlog\\Service\\TahaMucasirogluBlog.Service.Database\\Concrete\\CategoryDatabaseService.cs*",
-              "RelativeToolTip": "Service\\TahaMucasirogluBlog.Service.Database\\Concrete\\CategoryDatabaseService.cs*",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAB9AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-11T09:03:26.5Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "BlogPostTagDatabaseService.cs",
-              "DocumentMoniker": "C:\\Dosyalar\\Projects\\TahaMucasirogluBlog\\TahaMucasirogluBlog\\Service\\TahaMucasirogluBlog.Service.Database\\Concrete\\BlogPostTagDatabaseService.cs",
-              "RelativeDocumentMoniker": "Service\\TahaMucasirogluBlog.Service.Database\\Concrete\\BlogPostTagDatabaseService.cs",
-              "ToolTip": "C:\\Dosyalar\\Projects\\TahaMucasirogluBlog\\TahaMucasirogluBlog\\Service\\TahaMucasirogluBlog.Service.Database\\Concrete\\BlogPostTagDatabaseService.cs*",
-              "RelativeToolTip": "Service\\TahaMucasirogluBlog.Service.Database\\Concrete\\BlogPostTagDatabaseService.cs*",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAACDAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-11T09:02:42.792Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "BlogPostDatabaseService.cs",
-              "DocumentMoniker": "C:\\Dosyalar\\Projects\\TahaMucasirogluBlog\\TahaMucasirogluBlog\\Service\\TahaMucasirogluBlog.Service.Database\\Concrete\\BlogPostDatabaseService.cs",
-              "RelativeDocumentMoniker": "Service\\TahaMucasirogluBlog.Service.Database\\Concrete\\BlogPostDatabaseService.cs",
-              "ToolTip": "C:\\Dosyalar\\Projects\\TahaMucasirogluBlog\\TahaMucasirogluBlog\\Service\\TahaMucasirogluBlog.Service.Database\\Concrete\\BlogPostDatabaseService.cs*",
-              "RelativeToolTip": "Service\\TahaMucasirogluBlog.Service.Database\\Concrete\\BlogPostDatabaseService.cs*",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAB9AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-11T09:01:54.24Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 12,
-              "Title": "BlogPostCategoryDatabaseService.cs",
-              "DocumentMoniker": "C:\\Dosyalar\\Projects\\TahaMucasirogluBlog\\TahaMucasirogluBlog\\Service\\TahaMucasirogluBlog.Service.Database\\Concrete\\BlogPostCategoryDatabaseService.cs",
-              "RelativeDocumentMoniker": "Service\\TahaMucasirogluBlog.Service.Database\\Concrete\\BlogPostCategoryDatabaseService.cs",
-              "ToolTip": "C:\\Dosyalar\\Projects\\TahaMucasirogluBlog\\TahaMucasirogluBlog\\Service\\TahaMucasirogluBlog.Service.Database\\Concrete\\BlogPostCategoryDatabaseService.cs*",
-              "RelativeToolTip": "Service\\TahaMucasirogluBlog.Service.Database\\Concrete\\BlogPostCategoryDatabaseService.cs*",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABcAAAAUAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-11T09:00:54.739Z",
+              "Title": "appsettingsOrnek.json",
+              "DocumentMoniker": "C:\\Dosyalar\\Projects\\TahaMucasirogluBlog\\TahaMucasirogluBlog\\Presentation\\TahaMucasirogluBlog.Presentation.API\\appsettingsOrnek.json",
+              "RelativeDocumentMoniker": "Presentation\\TahaMucasirogluBlog.Presentation.API\\appsettingsOrnek.json",
+              "ToolTip": "C:\\Dosyalar\\Projects\\TahaMucasirogluBlog\\TahaMucasirogluBlog\\Presentation\\TahaMucasirogluBlog.Presentation.API\\appsettingsOrnek.json",
+              "RelativeToolTip": "Presentation\\TahaMucasirogluBlog.Presentation.API\\appsettingsOrnek.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACkAAAADAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-07-11T10:39:38.351Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "IUserDatabaseService.cs",
-              "DocumentMoniker": "C:\\Dosyalar\\Projects\\TahaMucasirogluBlog\\TahaMucasirogluBlog\\Service\\TahaMucasirogluBlog.Service.Database\\Abstract\\IUserDatabaseService.cs",
-              "RelativeDocumentMoniker": "Service\\TahaMucasirogluBlog.Service.Database\\Abstract\\IUserDatabaseService.cs",
-              "ToolTip": "C:\\Dosyalar\\Projects\\TahaMucasirogluBlog\\TahaMucasirogluBlog\\Service\\TahaMucasirogluBlog.Service.Database\\Abstract\\IUserDatabaseService.cs",
-              "RelativeToolTip": "Service\\TahaMucasirogluBlog.Service.Database\\Abstract\\IUserDatabaseService.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-11T06:53:27.713Z",
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Dosyalar\\Projects\\TahaMucasirogluBlog\\TahaMucasirogluBlog\\Presentation\\TahaMucasirogluBlog.Presentation.API\\appsettings.json",
+              "RelativeDocumentMoniker": "Presentation\\TahaMucasirogluBlog.Presentation.API\\appsettings.json",
+              "ToolTip": "C:\\Dosyalar\\Projects\\TahaMucasirogluBlog\\TahaMucasirogluBlog\\Presentation\\TahaMucasirogluBlog.Presentation.API\\appsettings.json",
+              "RelativeToolTip": "Presentation\\TahaMucasirogluBlog.Presentation.API\\appsettings.json",
+              "ViewState": "AgIAABYAAAAAAAAAAAAuwEkAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-07-11T10:38:54.93Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
-              "Title": "DatabaseService.cs",
-              "DocumentMoniker": "C:\\Dosyalar\\Projects\\TahaMucasirogluBlog\\TahaMucasirogluBlog\\Service\\TahaMucasirogluBlog.Service.Database\\Base\\DatabaseService.cs",
-              "RelativeDocumentMoniker": "Service\\TahaMucasirogluBlog.Service.Database\\Base\\DatabaseService.cs",
-              "ToolTip": "C:\\Dosyalar\\Projects\\TahaMucasirogluBlog\\TahaMucasirogluBlog\\Service\\TahaMucasirogluBlog.Service.Database\\Base\\DatabaseService.cs",
-              "RelativeToolTip": "Service\\TahaMucasirogluBlog.Service.Database\\Base\\DatabaseService.cs",
-              "ViewState": "AgIAAOsAAAAAAAAAAAAswA4BAAAJAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-11T06:59:44.457Z",
+              "DocumentIndex": 2,
+              "Title": "TahaMucasirogluBlog.Utils.DatabaseInstallation",
+              "DocumentMoniker": "C:\\Dosyalar\\Projects\\TahaMucasirogluBlog\\TahaMucasirogluBlog\\Utils\\TahaMucasirogluBlog.Utils.DatabaseInstallation\\TahaMucasirogluBlog.Utils.DatabaseInstallation.csproj",
+              "RelativeDocumentMoniker": "Utils\\TahaMucasirogluBlog.Utils.DatabaseInstallation\\TahaMucasirogluBlog.Utils.DatabaseInstallation.csproj",
+              "ToolTip": "C:\\Dosyalar\\Projects\\TahaMucasirogluBlog\\TahaMucasirogluBlog\\Utils\\TahaMucasirogluBlog.Utils.DatabaseInstallation\\TahaMucasirogluBlog.Utils.DatabaseInstallation.csproj",
+              "RelativeToolTip": "Utils\\TahaMucasirogluBlog.Utils.DatabaseInstallation\\TahaMucasirogluBlog.Utils.DatabaseInstallation.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAA2AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-07-11T10:38:27.971Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "ITagDatabaseService.cs",
-              "DocumentMoniker": "C:\\Dosyalar\\Projects\\TahaMucasirogluBlog\\TahaMucasirogluBlog\\Service\\TahaMucasirogluBlog.Service.Database\\Abstract\\ITagDatabaseService.cs",
-              "RelativeDocumentMoniker": "Service\\TahaMucasirogluBlog.Service.Database\\Abstract\\ITagDatabaseService.cs",
-              "ToolTip": "C:\\Dosyalar\\Projects\\TahaMucasirogluBlog\\TahaMucasirogluBlog\\Service\\TahaMucasirogluBlog.Service.Database\\Abstract\\ITagDatabaseService.cs",
-              "RelativeToolTip": "Service\\TahaMucasirogluBlog.Service.Database\\Abstract\\ITagDatabaseService.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAAAAAAAAAAAA==",
+              "DocumentIndex": 4,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Dosyalar\\Projects\\TahaMucasirogluBlog\\TahaMucasirogluBlog\\Utils\\TahaMucasirogluBlog.Utils.DatabaseInstallation\\Program.cs",
+              "RelativeDocumentMoniker": "Utils\\TahaMucasirogluBlog.Utils.DatabaseInstallation\\Program.cs",
+              "ToolTip": "C:\\Dosyalar\\Projects\\TahaMucasirogluBlog\\TahaMucasirogluBlog\\Utils\\TahaMucasirogluBlog.Utils.DatabaseInstallation\\Program.cs",
+              "RelativeToolTip": "Utils\\TahaMucasirogluBlog.Utils.DatabaseInstallation\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-11T06:53:18.837Z",
+              "WhenOpened": "2025-07-11T10:37:25.061Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
-              "Title": "IDatabaseService.cs",
-              "DocumentMoniker": "C:\\Dosyalar\\Projects\\TahaMucasirogluBlog\\TahaMucasirogluBlog\\Service\\TahaMucasirogluBlog.Service.Database\\Abstract\\Base\\IDatabaseService.cs",
-              "RelativeDocumentMoniker": "Service\\TahaMucasirogluBlog.Service.Database\\Abstract\\Base\\IDatabaseService.cs",
-              "ToolTip": "C:\\Dosyalar\\Projects\\TahaMucasirogluBlog\\TahaMucasirogluBlog\\Service\\TahaMucasirogluBlog.Service.Database\\Abstract\\Base\\IDatabaseService.cs",
-              "RelativeToolTip": "Service\\TahaMucasirogluBlog.Service.Database\\Abstract\\Base\\IDatabaseService.cs",
-              "ViewState": "AgIAAAEAAAAAAAAAAAAQwEUAAAAVAAAAAAAAAA==",
+              "DocumentIndex": 8,
+              "Title": "UpdateBlogPostTagDTOValidation.cs",
+              "DocumentMoniker": "C:\\Dosyalar\\Projects\\TahaMucasirogluBlog\\TahaMucasirogluBlog\\Application\\TahaMucasirogluBlog.Application.Validation\\Concrete\\Entity\\BlogPostTag\\UpdateBlogPostTagDTOValidation.cs",
+              "RelativeDocumentMoniker": "Application\\TahaMucasirogluBlog.Application.Validation\\Concrete\\Entity\\BlogPostTag\\UpdateBlogPostTagDTOValidation.cs",
+              "ToolTip": "C:\\Dosyalar\\Projects\\TahaMucasirogluBlog\\TahaMucasirogluBlog\\Application\\TahaMucasirogluBlog.Application.Validation\\Concrete\\Entity\\BlogPostTag\\UpdateBlogPostTagDTOValidation.cs",
+              "RelativeToolTip": "Application\\TahaMucasirogluBlog.Application.Validation\\Concrete\\Entity\\BlogPostTag\\UpdateBlogPostTagDTOValidation.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-11T06:46:22.825Z"
+              "WhenOpened": "2025-07-11T10:33:53.617Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 5,
-              "Title": "ICommentDatabaseService.cs",
-              "DocumentMoniker": "C:\\Dosyalar\\Projects\\TahaMucasirogluBlog\\TahaMucasirogluBlog\\Service\\TahaMucasirogluBlog.Service.Database\\Abstract\\ICommentDatabaseService.cs",
-              "RelativeDocumentMoniker": "Service\\TahaMucasirogluBlog.Service.Database\\Abstract\\ICommentDatabaseService.cs",
-              "ToolTip": "C:\\Dosyalar\\Projects\\TahaMucasirogluBlog\\TahaMucasirogluBlog\\Service\\TahaMucasirogluBlog.Service.Database\\Abstract\\ICommentDatabaseService.cs",
-              "RelativeToolTip": "Service\\TahaMucasirogluBlog.Service.Database\\Abstract\\ICommentDatabaseService.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAACJAAAAAAAAAA==",
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Dosyalar\\Projects\\TahaMucasirogluBlog\\TahaMucasirogluBlog\\Presentation\\TahaMucasirogluBlog.Presentation.API\\Program.cs",
+              "RelativeDocumentMoniker": "Presentation\\TahaMucasirogluBlog.Presentation.API\\Program.cs",
+              "ToolTip": "C:\\Dosyalar\\Projects\\TahaMucasirogluBlog\\TahaMucasirogluBlog\\Presentation\\TahaMucasirogluBlog.Presentation.API\\Program.cs",
+              "RelativeToolTip": "Presentation\\TahaMucasirogluBlog.Presentation.API\\Program.cs",
+              "ViewState": "AgIAAAIAAAAAAAAAAAAuwDkAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-11T06:53:10.809Z",
+              "WhenOpened": "2025-07-11T10:29:12.069Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "ICategoryDatabaseService.cs",
-              "DocumentMoniker": "C:\\Dosyalar\\Projects\\TahaMucasirogluBlog\\TahaMucasirogluBlog\\Service\\TahaMucasirogluBlog.Service.Database\\Abstract\\ICategoryDatabaseService.cs",
-              "RelativeDocumentMoniker": "Service\\TahaMucasirogluBlog.Service.Database\\Abstract\\ICategoryDatabaseService.cs",
-              "ToolTip": "C:\\Dosyalar\\Projects\\TahaMucasirogluBlog\\TahaMucasirogluBlog\\Service\\TahaMucasirogluBlog.Service.Database\\Abstract\\ICategoryDatabaseService.cs",
-              "RelativeToolTip": "Service\\TahaMucasirogluBlog.Service.Database\\Abstract\\ICategoryDatabaseService.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAACPAAAAAAAAAA==",
+              "DocumentIndex": 10,
+              "Title": "ErrorHandlingMiddleware.cs",
+              "DocumentMoniker": "C:\\Dosyalar\\Projects\\TahaMucasirogluBlog\\TahaMucasirogluBlog\\Presentation\\TahaMucasirogluBlog.Presentation.API\\Middlewares\\ErrorHandlingMiddleware.cs",
+              "RelativeDocumentMoniker": "Presentation\\TahaMucasirogluBlog.Presentation.API\\Middlewares\\ErrorHandlingMiddleware.cs",
+              "ToolTip": "C:\\Dosyalar\\Projects\\TahaMucasirogluBlog\\TahaMucasirogluBlog\\Presentation\\TahaMucasirogluBlog.Presentation.API\\Middlewares\\ErrorHandlingMiddleware.cs",
+              "RelativeToolTip": "Presentation\\TahaMucasirogluBlog.Presentation.API\\Middlewares\\ErrorHandlingMiddleware.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACcAAAAcAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-11T06:53:03.037Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "IBlogPostTagDatabaseService.cs",
-              "DocumentMoniker": "C:\\Dosyalar\\Projects\\TahaMucasirogluBlog\\TahaMucasirogluBlog\\Service\\TahaMucasirogluBlog.Service.Database\\Abstract\\IBlogPostTagDatabaseService.cs",
-              "RelativeDocumentMoniker": "Service\\TahaMucasirogluBlog.Service.Database\\Abstract\\IBlogPostTagDatabaseService.cs",
-              "ToolTip": "C:\\Dosyalar\\Projects\\TahaMucasirogluBlog\\TahaMucasirogluBlog\\Service\\TahaMucasirogluBlog.Service.Database\\Abstract\\IBlogPostTagDatabaseService.cs",
-              "RelativeToolTip": "Service\\TahaMucasirogluBlog.Service.Database\\Abstract\\IBlogPostTagDatabaseService.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAABDAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-11T06:52:51.977Z",
+              "WhenOpened": "2025-07-11T10:25:21.016Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 11,
-              "Title": "IBlogPostDatabaseService.cs",
-              "DocumentMoniker": "C:\\Dosyalar\\Projects\\TahaMucasirogluBlog\\TahaMucasirogluBlog\\Service\\TahaMucasirogluBlog.Service.Database\\Abstract\\IBlogPostDatabaseService.cs",
-              "RelativeDocumentMoniker": "Service\\TahaMucasirogluBlog.Service.Database\\Abstract\\IBlogPostDatabaseService.cs",
-              "ToolTip": "C:\\Dosyalar\\Projects\\TahaMucasirogluBlog\\TahaMucasirogluBlog\\Service\\TahaMucasirogluBlog.Service.Database\\Abstract\\IBlogPostDatabaseService.cs",
-              "RelativeToolTip": "Service\\TahaMucasirogluBlog.Service.Database\\Abstract\\IBlogPostDatabaseService.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAAAAAAAAAAAA==",
+              "Title": "ScopedExtension.cs",
+              "DocumentMoniker": "C:\\Dosyalar\\Projects\\TahaMucasirogluBlog\\TahaMucasirogluBlog\\Presentation\\TahaMucasirogluBlog.Presentation.API\\Extensions\\ScopedExtension.cs",
+              "RelativeDocumentMoniker": "Presentation\\TahaMucasirogluBlog.Presentation.API\\Extensions\\ScopedExtension.cs",
+              "ToolTip": "C:\\Dosyalar\\Projects\\TahaMucasirogluBlog\\TahaMucasirogluBlog\\Presentation\\TahaMucasirogluBlog.Presentation.API\\Extensions\\ScopedExtension.cs",
+              "RelativeToolTip": "Presentation\\TahaMucasirogluBlog.Presentation.API\\Extensions\\ScopedExtension.cs",
+              "ViewState": "AgIAAAEAAAAAAAAAAAAiwBkAAABNAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-11T06:52:29.292Z",
+              "WhenOpened": "2025-07-11T10:07:37.157Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "TahaMucasirogluBlog.Presentation.API",
+              "DocumentMoniker": "C:\\Dosyalar\\Projects\\TahaMucasirogluBlog\\TahaMucasirogluBlog\\Presentation\\TahaMucasirogluBlog.Presentation.API\\TahaMucasirogluBlog.Presentation.API.csproj",
+              "RelativeDocumentMoniker": "Presentation\\TahaMucasirogluBlog.Presentation.API\\TahaMucasirogluBlog.Presentation.API.csproj",
+              "ToolTip": "C:\\Dosyalar\\Projects\\TahaMucasirogluBlog\\TahaMucasirogluBlog\\Presentation\\TahaMucasirogluBlog.Presentation.API\\TahaMucasirogluBlog.Presentation.API.csproj",
+              "RelativeToolTip": "Presentation\\TahaMucasirogluBlog.Presentation.API\\TahaMucasirogluBlog.Presentation.API.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-07-11T09:10:03.523Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "DeleteCategoryDTOValidation.cs",
+              "DocumentMoniker": "C:\\Dosyalar\\Projects\\TahaMucasirogluBlog\\TahaMucasirogluBlog\\Application\\TahaMucasirogluBlog.Application.Validation\\Concrete\\Entity\\Category\\DeleteCategoryDTOValidation.cs",
+              "RelativeDocumentMoniker": "Application\\TahaMucasirogluBlog.Application.Validation\\Concrete\\Entity\\Category\\DeleteCategoryDTOValidation.cs",
+              "ToolTip": "C:\\Dosyalar\\Projects\\TahaMucasirogluBlog\\TahaMucasirogluBlog\\Application\\TahaMucasirogluBlog.Application.Validation\\Concrete\\Entity\\Category\\DeleteCategoryDTOValidation.cs",
+              "RelativeToolTip": "Application\\TahaMucasirogluBlog.Application.Validation\\Concrete\\Entity\\Category\\DeleteCategoryDTOValidation.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-11T10:34:24.17Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "ValidationExtension.cs",
+              "DocumentMoniker": "C:\\Dosyalar\\Projects\\TahaMucasirogluBlog\\TahaMucasirogluBlog\\Presentation\\TahaMucasirogluBlog.Presentation.API\\Extensions\\ValidationExtension.cs",
+              "RelativeDocumentMoniker": "Presentation\\TahaMucasirogluBlog.Presentation.API\\Extensions\\ValidationExtension.cs",
+              "ToolTip": "C:\\Dosyalar\\Projects\\TahaMucasirogluBlog\\TahaMucasirogluBlog\\Presentation\\TahaMucasirogluBlog.Presentation.API\\Extensions\\ValidationExtension.cs",
+              "RelativeToolTip": "Presentation\\TahaMucasirogluBlog.Presentation.API\\Extensions\\ValidationExtension.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAABHAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-11T10:07:47.116Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "MiddlewaresExtension.cs",
+              "DocumentMoniker": "C:\\Dosyalar\\Projects\\TahaMucasirogluBlog\\TahaMucasirogluBlog\\Presentation\\TahaMucasirogluBlog.Presentation.API\\Extensions\\MiddlewaresExtension.cs",
+              "RelativeDocumentMoniker": "Presentation\\TahaMucasirogluBlog.Presentation.API\\Extensions\\MiddlewaresExtension.cs",
+              "ToolTip": "C:\\Dosyalar\\Projects\\TahaMucasirogluBlog\\TahaMucasirogluBlog\\Presentation\\TahaMucasirogluBlog.Presentation.API\\Extensions\\MiddlewaresExtension.cs",
+              "RelativeToolTip": "Presentation\\TahaMucasirogluBlog.Presentation.API\\Extensions\\MiddlewaresExtension.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-11T10:07:31.031Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "LoggerExtension.cs",
+              "DocumentMoniker": "C:\\Dosyalar\\Projects\\TahaMucasirogluBlog\\TahaMucasirogluBlog\\Presentation\\TahaMucasirogluBlog.Presentation.API\\Extensions\\LoggerExtension.cs",
+              "RelativeDocumentMoniker": "Presentation\\TahaMucasirogluBlog.Presentation.API\\Extensions\\LoggerExtension.cs",
+              "ToolTip": "C:\\Dosyalar\\Projects\\TahaMucasirogluBlog\\TahaMucasirogluBlog\\Presentation\\TahaMucasirogluBlog.Presentation.API\\Extensions\\LoggerExtension.cs",
+              "RelativeToolTip": "Presentation\\TahaMucasirogluBlog.Presentation.API\\Extensions\\LoggerExtension.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAADEAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-11T10:07:22.322Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "SingletonExtension.cs",
+              "DocumentMoniker": "C:\\Dosyalar\\Projects\\TahaMucasirogluBlog\\TahaMucasirogluBlog\\Presentation\\TahaMucasirogluBlog.Presentation.API\\Extensions\\SingletonExtension.cs",
+              "RelativeDocumentMoniker": "Presentation\\TahaMucasirogluBlog.Presentation.API\\Extensions\\SingletonExtension.cs",
+              "ToolTip": "C:\\Dosyalar\\Projects\\TahaMucasirogluBlog\\TahaMucasirogluBlog\\Presentation\\TahaMucasirogluBlog.Presentation.API\\Extensions\\SingletonExtension.cs",
+              "RelativeToolTip": "Presentation\\TahaMucasirogluBlog.Presentation.API\\Extensions\\SingletonExtension.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAABPAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-11T10:07:42.408Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "JsonExtension.cs",
+              "DocumentMoniker": "C:\\Dosyalar\\Projects\\TahaMucasirogluBlog\\TahaMucasirogluBlog\\Presentation\\TahaMucasirogluBlog.Presentation.API\\Extensions\\JsonExtension.cs",
+              "RelativeDocumentMoniker": "Presentation\\TahaMucasirogluBlog.Presentation.API\\Extensions\\JsonExtension.cs",
+              "ToolTip": "C:\\Dosyalar\\Projects\\TahaMucasirogluBlog\\TahaMucasirogluBlog\\Presentation\\TahaMucasirogluBlog.Presentation.API\\Extensions\\JsonExtension.cs",
+              "RelativeToolTip": "Presentation\\TahaMucasirogluBlog.Presentation.API\\Extensions\\JsonExtension.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAWAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-11T10:07:17.206Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "DatabaseExtension.cs",
+              "DocumentMoniker": "C:\\Dosyalar\\Projects\\TahaMucasirogluBlog\\TahaMucasirogluBlog\\Presentation\\TahaMucasirogluBlog.Presentation.API\\Extensions\\DatabaseExtension.cs",
+              "RelativeDocumentMoniker": "Presentation\\TahaMucasirogluBlog.Presentation.API\\Extensions\\DatabaseExtension.cs",
+              "ToolTip": "C:\\Dosyalar\\Projects\\TahaMucasirogluBlog\\TahaMucasirogluBlog\\Presentation\\TahaMucasirogluBlog.Presentation.API\\Extensions\\DatabaseExtension.cs",
+              "RelativeToolTip": "Presentation\\TahaMucasirogluBlog.Presentation.API\\Extensions\\DatabaseExtension.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABsAAABPAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-11T10:07:12.841Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "CorsExtension.cs",
+              "DocumentMoniker": "C:\\Dosyalar\\Projects\\TahaMucasirogluBlog\\TahaMucasirogluBlog\\Presentation\\TahaMucasirogluBlog.Presentation.API\\Extensions\\CorsExtension.cs",
+              "RelativeDocumentMoniker": "Presentation\\TahaMucasirogluBlog.Presentation.API\\Extensions\\CorsExtension.cs",
+              "ToolTip": "C:\\Dosyalar\\Projects\\TahaMucasirogluBlog\\TahaMucasirogluBlog\\Presentation\\TahaMucasirogluBlog.Presentation.API\\Extensions\\CorsExtension.cs",
+              "RelativeToolTip": "Presentation\\TahaMucasirogluBlog.Presentation.API\\Extensions\\CorsExtension.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAARAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-11T10:07:07.137Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 13,
-              "Title": "IBlogPostCategoryDatabaseService.cs",
-              "DocumentMoniker": "C:\\Dosyalar\\Projects\\TahaMucasirogluBlog\\TahaMucasirogluBlog\\Service\\TahaMucasirogluBlog.Service.Database\\Abstract\\IBlogPostCategoryDatabaseService.cs",
-              "RelativeDocumentMoniker": "Service\\TahaMucasirogluBlog.Service.Database\\Abstract\\IBlogPostCategoryDatabaseService.cs",
-              "ToolTip": "C:\\Dosyalar\\Projects\\TahaMucasirogluBlog\\TahaMucasirogluBlog\\Service\\TahaMucasirogluBlog.Service.Database\\Abstract\\IBlogPostCategoryDatabaseService.cs",
-              "RelativeToolTip": "Service\\TahaMucasirogluBlog.Service.Database\\Abstract\\IBlogPostCategoryDatabaseService.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAABAAAAAAAAAA==",
+              "Title": "MapperExtension.cs",
+              "DocumentMoniker": "C:\\Dosyalar\\Projects\\TahaMucasirogluBlog\\TahaMucasirogluBlog\\Presentation\\TahaMucasirogluBlog.Presentation.API\\Extensions\\MapperExtension.cs",
+              "RelativeDocumentMoniker": "Presentation\\TahaMucasirogluBlog.Presentation.API\\Extensions\\MapperExtension.cs",
+              "ToolTip": "C:\\Dosyalar\\Projects\\TahaMucasirogluBlog\\TahaMucasirogluBlog\\Presentation\\TahaMucasirogluBlog.Presentation.API\\Extensions\\MapperExtension.cs",
+              "RelativeToolTip": "Presentation\\TahaMucasirogluBlog.Presentation.API\\Extensions\\MapperExtension.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAA7AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-11T06:52:41.888Z",
+              "WhenOpened": "2025-07-11T10:07:26.601Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "AuthenticationExtension.cs",
+              "DocumentMoniker": "C:\\Dosyalar\\Projects\\TahaMucasirogluBlog\\TahaMucasirogluBlog\\Presentation\\TahaMucasirogluBlog.Presentation.API\\Extensions\\AuthenticationExtension.cs",
+              "RelativeDocumentMoniker": "Presentation\\TahaMucasirogluBlog.Presentation.API\\Extensions\\AuthenticationExtension.cs",
+              "ToolTip": "C:\\Dosyalar\\Projects\\TahaMucasirogluBlog\\TahaMucasirogluBlog\\Presentation\\TahaMucasirogluBlog.Presentation.API\\Extensions\\AuthenticationExtension.cs",
+              "RelativeToolTip": "Presentation\\TahaMucasirogluBlog.Presentation.API\\Extensions\\AuthenticationExtension.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABwAAABTAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-11T10:06:59.567Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "BlogPostCategoryController.cs",
+              "DocumentMoniker": "C:\\Dosyalar\\Projects\\TahaMucasirogluBlog\\TahaMucasirogluBlog\\Presentation\\TahaMucasirogluBlog.Presentation.API\\Controllers\\Concrete\\BlogPostCategoryController.cs",
+              "RelativeDocumentMoniker": "Presentation\\TahaMucasirogluBlog.Presentation.API\\Controllers\\Concrete\\BlogPostCategoryController.cs",
+              "ToolTip": "C:\\Dosyalar\\Projects\\TahaMucasirogluBlog\\TahaMucasirogluBlog\\Presentation\\TahaMucasirogluBlog.Presentation.API\\Controllers\\Concrete\\BlogPostCategoryController.cs",
+              "RelativeToolTip": "Presentation\\TahaMucasirogluBlog.Presentation.API\\Controllers\\Concrete\\BlogPostCategoryController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAqAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-11T09:57:37.422Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 20,
-              "Title": "IdRequest.cs",
-              "DocumentMoniker": "C:\\Dosyalar\\Projects\\TahaMucasirogluBlog\\TahaMucasirogluBlog\\Domain\\TahaMucasirogluBlog.Domain.DTOs\\Concrete\\Request\\IdRequest.cs",
-              "RelativeDocumentMoniker": "Domain\\TahaMucasirogluBlog.Domain.DTOs\\Concrete\\Request\\IdRequest.cs",
-              "ToolTip": "C:\\Dosyalar\\Projects\\TahaMucasirogluBlog\\TahaMucasirogluBlog\\Domain\\TahaMucasirogluBlog.Domain.DTOs\\Concrete\\Request\\IdRequest.cs",
-              "RelativeToolTip": "Domain\\TahaMucasirogluBlog.Domain.DTOs\\Concrete\\Request\\IdRequest.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAjAAAAAAAAAA==",
+              "Title": "IConfigurationExtension.cs",
+              "DocumentMoniker": "C:\\Dosyalar\\Projects\\TahaMucasirogluBlog\\TahaMucasirogluBlog\\Domain\\TahaMucasirogluBlog.Domain.Extensions\\IConfigurationExtension.cs",
+              "RelativeDocumentMoniker": "Domain\\TahaMucasirogluBlog.Domain.Extensions\\IConfigurationExtension.cs",
+              "ToolTip": "C:\\Dosyalar\\Projects\\TahaMucasirogluBlog\\TahaMucasirogluBlog\\Domain\\TahaMucasirogluBlog.Domain.Extensions\\IConfigurationExtension.cs",
+              "RelativeToolTip": "Domain\\TahaMucasirogluBlog.Domain.Extensions\\IConfigurationExtension.cs",
+              "ViewState": "AgIAAHEAAAAAAAAAAAAQwJUAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-11T06:47:50.059Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 16,
-              "Title": "Tag.cs",
-              "DocumentMoniker": "C:\\Dosyalar\\Projects\\TahaMucasirogluBlog\\TahaMucasirogluBlog\\Domain\\TahaMucasirogluBlog.Domain.Entities\\Concrete\\Tag.cs",
-              "RelativeDocumentMoniker": "Domain\\TahaMucasirogluBlog.Domain.Entities\\Concrete\\Tag.cs",
-              "ToolTip": "C:\\Dosyalar\\Projects\\TahaMucasirogluBlog\\TahaMucasirogluBlog\\Domain\\TahaMucasirogluBlog.Domain.Entities\\Concrete\\Tag.cs",
-              "RelativeToolTip": "Domain\\TahaMucasirogluBlog.Domain.Entities\\Concrete\\Tag.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-11T06:29:36.59Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 17,
-              "Title": "Comment.cs",
-              "DocumentMoniker": "C:\\Dosyalar\\Projects\\TahaMucasirogluBlog\\TahaMucasirogluBlog\\Domain\\TahaMucasirogluBlog.Domain.Entities\\Concrete\\Comment.cs",
-              "RelativeDocumentMoniker": "Domain\\TahaMucasirogluBlog.Domain.Entities\\Concrete\\Comment.cs",
-              "ToolTip": "C:\\Dosyalar\\Projects\\TahaMucasirogluBlog\\TahaMucasirogluBlog\\Domain\\TahaMucasirogluBlog.Domain.Entities\\Concrete\\Comment.cs",
-              "RelativeToolTip": "Domain\\TahaMucasirogluBlog.Domain.Entities\\Concrete\\Comment.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAqwA4AAAAkAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-11T06:28:14.931Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 21,
-              "Title": "TahaMucasirogluBlog.Service.Database.csproj",
-              "DocumentMoniker": "C:\\Dosyalar\\Projects\\TahaMucasirogluBlog\\TahaMucasirogluBlog\\Service\\TahaMucasirogluBlog.Service.Database\\TahaMucasirogluBlog.Service.Database.csproj",
-              "RelativeDocumentMoniker": "Service\\TahaMucasirogluBlog.Service.Database\\TahaMucasirogluBlog.Service.Database.csproj",
-              "ToolTip": "C:\\Dosyalar\\Projects\\TahaMucasirogluBlog\\TahaMucasirogluBlog\\Service\\TahaMucasirogluBlog.Service.Database\\TahaMucasirogluBlog.Service.Database.csproj",
-              "RelativeToolTip": "Service\\TahaMucasirogluBlog.Service.Database\\TahaMucasirogluBlog.Service.Database.csproj",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2025-07-11T06:46:48.229Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 18,
-              "Title": "Category.cs",
-              "DocumentMoniker": "C:\\Dosyalar\\Projects\\TahaMucasirogluBlog\\TahaMucasirogluBlog\\Domain\\TahaMucasirogluBlog.Domain.Entities\\Concrete\\Category.cs",
-              "RelativeDocumentMoniker": "Domain\\TahaMucasirogluBlog.Domain.Entities\\Concrete\\Category.cs",
-              "ToolTip": "C:\\Dosyalar\\Projects\\TahaMucasirogluBlog\\TahaMucasirogluBlog\\Domain\\TahaMucasirogluBlog.Domain.Entities\\Concrete\\Category.cs",
-              "RelativeToolTip": "Domain\\TahaMucasirogluBlog.Domain.Entities\\Concrete\\Category.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAqwBIAAAAlAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-11T06:34:42.726Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 24,
-              "Title": "UserRepository.cs",
-              "DocumentMoniker": "C:\\Dosyalar\\Projects\\TahaMucasirogluBlog\\TahaMucasirogluBlog\\Infrastructure\\TahaMucasirogluBlog.Infrastructure.Repository\\Repository\\Concrete\\UserRepository.cs",
-              "RelativeDocumentMoniker": "Infrastructure\\TahaMucasirogluBlog.Infrastructure.Repository\\Repository\\Concrete\\UserRepository.cs",
-              "ToolTip": "C:\\Dosyalar\\Projects\\TahaMucasirogluBlog\\TahaMucasirogluBlog\\Infrastructure\\TahaMucasirogluBlog.Infrastructure.Repository\\Repository\\Concrete\\UserRepository.cs",
-              "RelativeToolTip": "Infrastructure\\TahaMucasirogluBlog.Infrastructure.Repository\\Repository\\Concrete\\UserRepository.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAABYAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-11T06:42:55.485Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 19,
-              "Title": "BlogPostTag.cs",
-              "DocumentMoniker": "C:\\Dosyalar\\Projects\\TahaMucasirogluBlog\\TahaMucasirogluBlog\\Domain\\TahaMucasirogluBlog.Domain.Entities\\Concrete\\BlogPostTag.cs",
-              "RelativeDocumentMoniker": "Domain\\TahaMucasirogluBlog.Domain.Entities\\Concrete\\BlogPostTag.cs",
-              "ToolTip": "C:\\Dosyalar\\Projects\\TahaMucasirogluBlog\\TahaMucasirogluBlog\\Domain\\TahaMucasirogluBlog.Domain.Entities\\Concrete\\BlogPostTag.cs",
-              "RelativeToolTip": "Domain\\TahaMucasirogluBlog.Domain.Entities\\Concrete\\BlogPostTag.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAqwAQAAAARAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-11T06:27:00.804Z"
+              "WhenOpened": "2025-07-11T10:12:01.127Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 26,
-              "Title": "TagRepository.cs",
-              "DocumentMoniker": "C:\\Dosyalar\\Projects\\TahaMucasirogluBlog\\TahaMucasirogluBlog\\Infrastructure\\TahaMucasirogluBlog.Infrastructure.Repository\\Repository\\Concrete\\TagRepository.cs",
-              "RelativeDocumentMoniker": "Infrastructure\\TahaMucasirogluBlog.Infrastructure.Repository\\Repository\\Concrete\\TagRepository.cs",
-              "ToolTip": "C:\\Dosyalar\\Projects\\TahaMucasirogluBlog\\TahaMucasirogluBlog\\Infrastructure\\TahaMucasirogluBlog.Infrastructure.Repository\\Repository\\Concrete\\TagRepository.cs",
-              "RelativeToolTip": "Infrastructure\\TahaMucasirogluBlog.Infrastructure.Repository\\Repository\\Concrete\\TagRepository.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAABJAAAAAAAAAA==",
+              "Title": "BlogPostController.cs",
+              "DocumentMoniker": "C:\\Dosyalar\\Projects\\TahaMucasirogluBlog\\TahaMucasirogluBlog\\Presentation\\TahaMucasirogluBlog.Presentation.API\\Controllers\\Concrete\\BlogPostController.cs",
+              "RelativeDocumentMoniker": "Presentation\\TahaMucasirogluBlog.Presentation.API\\Controllers\\Concrete\\BlogPostController.cs",
+              "ToolTip": "C:\\Dosyalar\\Projects\\TahaMucasirogluBlog\\TahaMucasirogluBlog\\Presentation\\TahaMucasirogluBlog.Presentation.API\\Controllers\\Concrete\\BlogPostController.cs",
+              "RelativeToolTip": "Presentation\\TahaMucasirogluBlog.Presentation.API\\Controllers\\Concrete\\BlogPostController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAArAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-11T06:42:27.979Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 28,
-              "Title": "CommentRepository.cs",
-              "DocumentMoniker": "C:\\Dosyalar\\Projects\\TahaMucasirogluBlog\\TahaMucasirogluBlog\\Infrastructure\\TahaMucasirogluBlog.Infrastructure.Repository\\Repository\\Concrete\\CommentRepository.cs",
-              "RelativeDocumentMoniker": "Infrastructure\\TahaMucasirogluBlog.Infrastructure.Repository\\Repository\\Concrete\\CommentRepository.cs",
-              "ToolTip": "C:\\Dosyalar\\Projects\\TahaMucasirogluBlog\\TahaMucasirogluBlog\\Infrastructure\\TahaMucasirogluBlog.Infrastructure.Repository\\Repository\\Concrete\\CommentRepository.cs",
-              "RelativeToolTip": "Infrastructure\\TahaMucasirogluBlog.Infrastructure.Repository\\Repository\\Concrete\\CommentRepository.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAABNAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-11T06:42:02.308Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 30,
-              "Title": "CategoryRepository.cs",
-              "DocumentMoniker": "C:\\Dosyalar\\Projects\\TahaMucasirogluBlog\\TahaMucasirogluBlog\\Infrastructure\\TahaMucasirogluBlog.Infrastructure.Repository\\Repository\\Concrete\\CategoryRepository.cs",
-              "RelativeDocumentMoniker": "Infrastructure\\TahaMucasirogluBlog.Infrastructure.Repository\\Repository\\Concrete\\CategoryRepository.cs",
-              "ToolTip": "C:\\Dosyalar\\Projects\\TahaMucasirogluBlog\\TahaMucasirogluBlog\\Infrastructure\\TahaMucasirogluBlog.Infrastructure.Repository\\Repository\\Concrete\\CategoryRepository.cs",
-              "RelativeToolTip": "Infrastructure\\TahaMucasirogluBlog.Infrastructure.Repository\\Repository\\Concrete\\CategoryRepository.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAABOAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-11T06:41:36.429Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 23,
-              "Title": "TahaMucasirogluBlogContext.cs",
-              "DocumentMoniker": "C:\\Dosyalar\\Projects\\TahaMucasirogluBlog\\TahaMucasirogluBlog\\Infrastructure\\TahaMucasirogluBlog.Infrastructure.Repository\\Context\\TahaMucasirogluBlogContext.cs",
-              "RelativeDocumentMoniker": "Infrastructure\\TahaMucasirogluBlog.Infrastructure.Repository\\Context\\TahaMucasirogluBlogContext.cs",
-              "ToolTip": "C:\\Dosyalar\\Projects\\TahaMucasirogluBlog\\TahaMucasirogluBlog\\Infrastructure\\TahaMucasirogluBlog.Infrastructure.Repository\\Context\\TahaMucasirogluBlogContext.cs",
-              "RelativeToolTip": "Infrastructure\\TahaMucasirogluBlog.Infrastructure.Repository\\Context\\TahaMucasirogluBlogContext.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAsAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-11T06:18:24.227Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 22,
-              "Title": "TahaMucasirogluBlog.Infrastructure.Repository.csproj",
-              "DocumentMoniker": "C:\\Dosyalar\\Projects\\TahaMucasirogluBlog\\TahaMucasirogluBlog\\Infrastructure\\TahaMucasirogluBlog.Infrastructure.Repository\\TahaMucasirogluBlog.Infrastructure.Repository.csproj",
-              "RelativeDocumentMoniker": "Infrastructure\\TahaMucasirogluBlog.Infrastructure.Repository\\TahaMucasirogluBlog.Infrastructure.Repository.csproj",
-              "ToolTip": "C:\\Dosyalar\\Projects\\TahaMucasirogluBlog\\TahaMucasirogluBlog\\Infrastructure\\TahaMucasirogluBlog.Infrastructure.Repository\\TahaMucasirogluBlog.Infrastructure.Repository.csproj",
-              "RelativeToolTip": "Infrastructure\\TahaMucasirogluBlog.Infrastructure.Repository\\TahaMucasirogluBlog.Infrastructure.Repository.csproj",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAADAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2025-07-11T06:10:59.628Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 32,
-              "Title": "BlogPostTagRepository.cs",
-              "DocumentMoniker": "C:\\Dosyalar\\Projects\\TahaMucasirogluBlog\\TahaMucasirogluBlog\\Infrastructure\\TahaMucasirogluBlog.Infrastructure.Repository\\Repository\\Concrete\\BlogPostTagRepository.cs",
-              "RelativeDocumentMoniker": "Infrastructure\\TahaMucasirogluBlog.Infrastructure.Repository\\Repository\\Concrete\\BlogPostTagRepository.cs",
-              "ToolTip": "C:\\Dosyalar\\Projects\\TahaMucasirogluBlog\\TahaMucasirogluBlog\\Infrastructure\\TahaMucasirogluBlog.Infrastructure.Repository\\Repository\\Concrete\\BlogPostTagRepository.cs",
-              "RelativeToolTip": "Infrastructure\\TahaMucasirogluBlog.Infrastructure.Repository\\Repository\\Concrete\\BlogPostTagRepository.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAABRAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-11T06:40:24.806Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 34,
-              "Title": "BlogPostRepository.cs",
-              "DocumentMoniker": "C:\\Dosyalar\\Projects\\TahaMucasirogluBlog\\TahaMucasirogluBlog\\Infrastructure\\TahaMucasirogluBlog.Infrastructure.Repository\\Repository\\Concrete\\BlogPostRepository.cs",
-              "RelativeDocumentMoniker": "Infrastructure\\TahaMucasirogluBlog.Infrastructure.Repository\\Repository\\Concrete\\BlogPostRepository.cs",
-              "ToolTip": "C:\\Dosyalar\\Projects\\TahaMucasirogluBlog\\TahaMucasirogluBlog\\Infrastructure\\TahaMucasirogluBlog.Infrastructure.Repository\\Repository\\Concrete\\BlogPostRepository.cs",
-              "RelativeToolTip": "Infrastructure\\TahaMucasirogluBlog.Infrastructure.Repository\\Repository\\Concrete\\BlogPostRepository.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAABOAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-11T06:40:00.729Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 36,
-              "Title": "BlogPostCategoryRepository.cs",
-              "DocumentMoniker": "C:\\Dosyalar\\Projects\\TahaMucasirogluBlog\\TahaMucasirogluBlog\\Infrastructure\\TahaMucasirogluBlog.Infrastructure.Repository\\Repository\\Concrete\\BlogPostCategoryRepository.cs",
-              "RelativeDocumentMoniker": "Infrastructure\\TahaMucasirogluBlog.Infrastructure.Repository\\Repository\\Concrete\\BlogPostCategoryRepository.cs",
-              "ToolTip": "C:\\Dosyalar\\Projects\\TahaMucasirogluBlog\\TahaMucasirogluBlog\\Infrastructure\\TahaMucasirogluBlog.Infrastructure.Repository\\Repository\\Concrete\\BlogPostCategoryRepository.cs",
-              "RelativeToolTip": "Infrastructure\\TahaMucasirogluBlog.Infrastructure.Repository\\Repository\\Concrete\\BlogPostCategoryRepository.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAABwAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-11T06:38:04.046Z"
+              "WhenOpened": "2025-07-11T09:33:58.348Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 25,
-              "Title": "IUserRepository.cs",
-              "DocumentMoniker": "C:\\Dosyalar\\Projects\\TahaMucasirogluBlog\\TahaMucasirogluBlog\\Infrastructure\\TahaMucasirogluBlog.Infrastructure.Repository\\Repository\\Abstract\\IUserRepository.cs",
-              "RelativeDocumentMoniker": "Infrastructure\\TahaMucasirogluBlog.Infrastructure.Repository\\Repository\\Abstract\\IUserRepository.cs",
-              "ToolTip": "C:\\Dosyalar\\Projects\\TahaMucasirogluBlog\\TahaMucasirogluBlog\\Infrastructure\\TahaMucasirogluBlog.Infrastructure.Repository\\Repository\\Abstract\\IUserRepository.cs",
-              "RelativeToolTip": "Infrastructure\\TahaMucasirogluBlog.Infrastructure.Repository\\Repository\\Abstract\\IUserRepository.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAAAAAAAAAAAA==",
+              "Title": "BlogPostTagController.cs",
+              "DocumentMoniker": "C:\\Dosyalar\\Projects\\TahaMucasirogluBlog\\TahaMucasirogluBlog\\Presentation\\TahaMucasirogluBlog.Presentation.API\\Controllers\\Concrete\\BlogPostTagController.cs",
+              "RelativeDocumentMoniker": "Presentation\\TahaMucasirogluBlog.Presentation.API\\Controllers\\Concrete\\BlogPostTagController.cs",
+              "ToolTip": "C:\\Dosyalar\\Projects\\TahaMucasirogluBlog\\TahaMucasirogluBlog\\Presentation\\TahaMucasirogluBlog.Presentation.API\\Controllers\\Concrete\\BlogPostTagController.cs",
+              "RelativeToolTip": "Presentation\\TahaMucasirogluBlog.Presentation.API\\Controllers\\Concrete\\BlogPostTagController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAxAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-11T06:17:14.023Z"
+              "WhenOpened": "2025-07-11T09:58:33.896Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 37,
-              "Title": "Repository.cs",
-              "DocumentMoniker": "C:\\Dosyalar\\Projects\\TahaMucasirogluBlog\\TahaMucasirogluBlog\\Infrastructure\\TahaMucasirogluBlog.Infrastructure.Repository\\Repository\\Base\\Repository.cs",
-              "RelativeDocumentMoniker": "Infrastructure\\TahaMucasirogluBlog.Infrastructure.Repository\\Repository\\Base\\Repository.cs",
-              "ToolTip": "C:\\Dosyalar\\Projects\\TahaMucasirogluBlog\\TahaMucasirogluBlog\\Infrastructure\\TahaMucasirogluBlog.Infrastructure.Repository\\Repository\\Base\\Repository.cs",
-              "RelativeToolTip": "Infrastructure\\TahaMucasirogluBlog.Infrastructure.Repository\\Repository\\Base\\Repository.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAADkCAAAAAAAAAAAAAA==",
+              "DocumentIndex": 24,
+              "Title": "CategoryController.cs",
+              "DocumentMoniker": "C:\\Dosyalar\\Projects\\TahaMucasirogluBlog\\TahaMucasirogluBlog\\Presentation\\TahaMucasirogluBlog.Presentation.API\\Controllers\\Concrete\\CategoryController.cs",
+              "RelativeDocumentMoniker": "Presentation\\TahaMucasirogluBlog.Presentation.API\\Controllers\\Concrete\\CategoryController.cs",
+              "ToolTip": "C:\\Dosyalar\\Projects\\TahaMucasirogluBlog\\TahaMucasirogluBlog\\Presentation\\TahaMucasirogluBlog.Presentation.API\\Controllers\\Concrete\\CategoryController.cs",
+              "RelativeToolTip": "Presentation\\TahaMucasirogluBlog.Presentation.API\\Controllers\\Concrete\\CategoryController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAA6AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-11T06:17:35.453Z"
+              "WhenOpened": "2025-07-11T09:58:47.788Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 27,
-              "Title": "ITagRepository.cs",
-              "DocumentMoniker": "C:\\Dosyalar\\Projects\\TahaMucasirogluBlog\\TahaMucasirogluBlog\\Infrastructure\\TahaMucasirogluBlog.Infrastructure.Repository\\Repository\\Abstract\\ITagRepository.cs",
-              "RelativeDocumentMoniker": "Infrastructure\\TahaMucasirogluBlog.Infrastructure.Repository\\Repository\\Abstract\\ITagRepository.cs",
-              "ToolTip": "C:\\Dosyalar\\Projects\\TahaMucasirogluBlog\\TahaMucasirogluBlog\\Infrastructure\\TahaMucasirogluBlog.Infrastructure.Repository\\Repository\\Abstract\\ITagRepository.cs",
-              "RelativeToolTip": "Infrastructure\\TahaMucasirogluBlog.Infrastructure.Repository\\Repository\\Abstract\\ITagRepository.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAA1AAAAAAAAAA==",
+              "DocumentIndex": 23,
+              "Title": "CommentController.cs",
+              "DocumentMoniker": "C:\\Dosyalar\\Projects\\TahaMucasirogluBlog\\TahaMucasirogluBlog\\Presentation\\TahaMucasirogluBlog.Presentation.API\\Controllers\\Concrete\\CommentController.cs",
+              "RelativeDocumentMoniker": "Presentation\\TahaMucasirogluBlog.Presentation.API\\Controllers\\Concrete\\CommentController.cs",
+              "ToolTip": "C:\\Dosyalar\\Projects\\TahaMucasirogluBlog\\TahaMucasirogluBlog\\Presentation\\TahaMucasirogluBlog.Presentation.API\\Controllers\\Concrete\\CommentController.cs",
+              "RelativeToolTip": "Presentation\\TahaMucasirogluBlog.Presentation.API\\Controllers\\Concrete\\CommentController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAA4AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-11T06:16:56.523Z"
+              "WhenOpened": "2025-07-11T09:59:09.46Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 39,
-              "Title": "UserConfiguration.cs",
-              "DocumentMoniker": "C:\\Dosyalar\\Projects\\TahaMucasirogluBlog\\TahaMucasirogluBlog\\Infrastructure\\TahaMucasirogluBlog.Infrastructure.Repository\\Configuration\\UserConfiguration.cs",
-              "RelativeDocumentMoniker": "Infrastructure\\TahaMucasirogluBlog.Infrastructure.Repository\\Configuration\\UserConfiguration.cs",
-              "ToolTip": "C:\\Dosyalar\\Projects\\TahaMucasirogluBlog\\TahaMucasirogluBlog\\Infrastructure\\TahaMucasirogluBlog.Infrastructure.Repository\\Configuration\\UserConfiguration.cs",
-              "RelativeToolTip": "Infrastructure\\TahaMucasirogluBlog.Infrastructure.Repository\\Configuration\\UserConfiguration.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAAAAAAAAAAAA==",
+              "DocumentIndex": 22,
+              "Title": "TagController.cs",
+              "DocumentMoniker": "C:\\Dosyalar\\Projects\\TahaMucasirogluBlog\\TahaMucasirogluBlog\\Presentation\\TahaMucasirogluBlog.Presentation.API\\Controllers\\Concrete\\TagController.cs",
+              "RelativeDocumentMoniker": "Presentation\\TahaMucasirogluBlog.Presentation.API\\Controllers\\Concrete\\TagController.cs",
+              "ToolTip": "C:\\Dosyalar\\Projects\\TahaMucasirogluBlog\\TahaMucasirogluBlog\\Presentation\\TahaMucasirogluBlog.Presentation.API\\Controllers\\Concrete\\TagController.cs",
+              "RelativeToolTip": "Presentation\\TahaMucasirogluBlog.Presentation.API\\Controllers\\Concrete\\TagController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAhAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-11T06:30:40.363Z"
+              "WhenOpened": "2025-07-11T09:59:19.973Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "UserController.cs",
+              "DocumentMoniker": "C:\\Dosyalar\\Projects\\TahaMucasirogluBlog\\TahaMucasirogluBlog\\Presentation\\TahaMucasirogluBlog.Presentation.API\\Controllers\\Concrete\\UserController.cs",
+              "RelativeDocumentMoniker": "Presentation\\TahaMucasirogluBlog.Presentation.API\\Controllers\\Concrete\\UserController.cs",
+              "ToolTip": "C:\\Dosyalar\\Projects\\TahaMucasirogluBlog\\TahaMucasirogluBlog\\Presentation\\TahaMucasirogluBlog.Presentation.API\\Controllers\\Concrete\\UserController.cs",
+              "RelativeToolTip": "Presentation\\TahaMucasirogluBlog.Presentation.API\\Controllers\\Concrete\\UserController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAjAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-11T09:59:30.401Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 28,
+              "Title": "DatabaseService.cs",
+              "DocumentMoniker": "C:\\Dosyalar\\Projects\\TahaMucasirogluBlog\\TahaMucasirogluBlog\\Service\\TahaMucasirogluBlog.Service.Database\\Base\\DatabaseService.cs",
+              "RelativeDocumentMoniker": "Service\\TahaMucasirogluBlog.Service.Database\\Base\\DatabaseService.cs",
+              "ToolTip": "C:\\Dosyalar\\Projects\\TahaMucasirogluBlog\\TahaMucasirogluBlog\\Service\\TahaMucasirogluBlog.Service.Database\\Base\\DatabaseService.cs",
+              "RelativeToolTip": "Service\\TahaMucasirogluBlog.Service.Database\\Base\\DatabaseService.cs",
+              "ViewState": "AgIAAKMAAAAAAAAAAAAgwKQAAACjAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-11T09:21:21.281Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 29,
-              "Title": "ICommentRepository.cs",
-              "DocumentMoniker": "C:\\Dosyalar\\Projects\\TahaMucasirogluBlog\\TahaMucasirogluBlog\\Infrastructure\\TahaMucasirogluBlog.Infrastructure.Repository\\Repository\\Abstract\\ICommentRepository.cs",
-              "RelativeDocumentMoniker": "Infrastructure\\TahaMucasirogluBlog.Infrastructure.Repository\\Repository\\Abstract\\ICommentRepository.cs",
-              "ToolTip": "C:\\Dosyalar\\Projects\\TahaMucasirogluBlog\\TahaMucasirogluBlog\\Infrastructure\\TahaMucasirogluBlog.Infrastructure.Repository\\Repository\\Abstract\\ICommentRepository.cs",
-              "RelativeToolTip": "Infrastructure\\TahaMucasirogluBlog.Infrastructure.Repository\\Repository\\Abstract\\ICommentRepository.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAA9AAAAAAAAAA==",
+              "Title": "Attributes.cs",
+              "DocumentMoniker": "C:\\Dosyalar\\Projects\\TahaMucasirogluBlog\\TahaMucasirogluBlog\\Presentation\\TahaMucasirogluBlog.Presentation.API\\Attributes\\Attributes.cs",
+              "RelativeDocumentMoniker": "Presentation\\TahaMucasirogluBlog.Presentation.API\\Attributes\\Attributes.cs",
+              "ToolTip": "C:\\Dosyalar\\Projects\\TahaMucasirogluBlog\\TahaMucasirogluBlog\\Presentation\\TahaMucasirogluBlog.Presentation.API\\Attributes\\Attributes.cs",
+              "RelativeToolTip": "Presentation\\TahaMucasirogluBlog.Presentation.API\\Attributes\\Attributes.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABoAAABJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-11T06:16:26.163Z"
+              "WhenOpened": "2025-07-11T09:13:53.35Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 40,
-              "Title": "TagConfiguration.cs",
-              "DocumentMoniker": "C:\\Dosyalar\\Projects\\TahaMucasirogluBlog\\TahaMucasirogluBlog\\Infrastructure\\TahaMucasirogluBlog.Infrastructure.Repository\\Configuration\\TagConfiguration.cs",
-              "RelativeDocumentMoniker": "Infrastructure\\TahaMucasirogluBlog.Infrastructure.Repository\\Configuration\\TagConfiguration.cs",
-              "ToolTip": "C:\\Dosyalar\\Projects\\TahaMucasirogluBlog\\TahaMucasirogluBlog\\Infrastructure\\TahaMucasirogluBlog.Infrastructure.Repository\\Configuration\\TagConfiguration.cs",
-              "RelativeToolTip": "Infrastructure\\TahaMucasirogluBlog.Infrastructure.Repository\\Configuration\\TagConfiguration.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAAAAAAAAAAAA==",
+              "DocumentIndex": 27,
+              "Title": "Controller.cs",
+              "DocumentMoniker": "C:\\Dosyalar\\Projects\\TahaMucasirogluBlog\\TahaMucasirogluBlog\\Presentation\\TahaMucasirogluBlog.Presentation.API\\Controllers\\Base\\Controller.cs",
+              "RelativeDocumentMoniker": "Presentation\\TahaMucasirogluBlog.Presentation.API\\Controllers\\Base\\Controller.cs",
+              "ToolTip": "C:\\Dosyalar\\Projects\\TahaMucasirogluBlog\\TahaMucasirogluBlog\\Presentation\\TahaMucasirogluBlog.Presentation.API\\Controllers\\Base\\Controller.cs",
+              "RelativeToolTip": "Presentation\\TahaMucasirogluBlog.Presentation.API\\Controllers\\Base\\Controller.cs",
+              "ViewState": "AgIAAG0AAAAAAAAAAAAswIcAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-11T06:29:55.801Z"
+              "WhenOpened": "2025-07-11T09:13:11.336Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 31,
-              "Title": "ICategoryRepository.cs",
-              "DocumentMoniker": "C:\\Dosyalar\\Projects\\TahaMucasirogluBlog\\TahaMucasirogluBlog\\Infrastructure\\TahaMucasirogluBlog.Infrastructure.Repository\\Repository\\Abstract\\ICategoryRepository.cs",
-              "RelativeDocumentMoniker": "Infrastructure\\TahaMucasirogluBlog.Infrastructure.Repository\\Repository\\Abstract\\ICategoryRepository.cs",
-              "ToolTip": "C:\\Dosyalar\\Projects\\TahaMucasirogluBlog\\TahaMucasirogluBlog\\Infrastructure\\TahaMucasirogluBlog.Infrastructure.Repository\\Repository\\Abstract\\ICategoryRepository.cs",
-              "RelativeToolTip": "Infrastructure\\TahaMucasirogluBlog.Infrastructure.Repository\\Repository\\Abstract\\ICategoryRepository.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAA/AAAAAAAAAA==",
+              "DocumentIndex": 30,
+              "Title": "HealthCheckRequestDTO.cs",
+              "DocumentMoniker": "C:\\Dosyalar\\Projects\\TahaMucasirogluBlog\\TahaMucasirogluBlog\\Domain\\TahaMucasirogluBlog.Domain.DTOs\\Concrete\\Request\\HealthCheckRequestDTO.cs",
+              "RelativeDocumentMoniker": "Domain\\TahaMucasirogluBlog.Domain.DTOs\\Concrete\\Request\\HealthCheckRequestDTO.cs",
+              "ToolTip": "C:\\Dosyalar\\Projects\\TahaMucasirogluBlog\\TahaMucasirogluBlog\\Domain\\TahaMucasirogluBlog.Domain.DTOs\\Concrete\\Request\\HealthCheckRequestDTO.cs",
+              "RelativeToolTip": "Domain\\TahaMucasirogluBlog.Domain.DTOs\\Concrete\\Request\\HealthCheckRequestDTO.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-11T06:16:04.065Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 41,
-              "Title": "CommentConfiguration.cs",
-              "DocumentMoniker": "C:\\Dosyalar\\Projects\\TahaMucasirogluBlog\\TahaMucasirogluBlog\\Infrastructure\\TahaMucasirogluBlog.Infrastructure.Repository\\Configuration\\CommentConfiguration.cs",
-              "RelativeDocumentMoniker": "Infrastructure\\TahaMucasirogluBlog.Infrastructure.Repository\\Configuration\\CommentConfiguration.cs",
-              "ToolTip": "C:\\Dosyalar\\Projects\\TahaMucasirogluBlog\\TahaMucasirogluBlog\\Infrastructure\\TahaMucasirogluBlog.Infrastructure.Repository\\Configuration\\CommentConfiguration.cs",
-              "RelativeToolTip": "Infrastructure\\TahaMucasirogluBlog.Infrastructure.Repository\\Configuration\\CommentConfiguration.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAA+AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-11T06:28:20.56Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 33,
-              "Title": "IBlogPostTagRepository.cs",
-              "DocumentMoniker": "C:\\Dosyalar\\Projects\\TahaMucasirogluBlog\\TahaMucasirogluBlog\\Infrastructure\\TahaMucasirogluBlog.Infrastructure.Repository\\Repository\\Abstract\\IBlogPostTagRepository.cs",
-              "RelativeDocumentMoniker": "Infrastructure\\TahaMucasirogluBlog.Infrastructure.Repository\\Repository\\Abstract\\IBlogPostTagRepository.cs",
-              "ToolTip": "C:\\Dosyalar\\Projects\\TahaMucasirogluBlog\\TahaMucasirogluBlog\\Infrastructure\\TahaMucasirogluBlog.Infrastructure.Repository\\Repository\\Abstract\\IBlogPostTagRepository.cs",
-              "RelativeToolTip": "Infrastructure\\TahaMucasirogluBlog.Infrastructure.Repository\\Repository\\Abstract\\IBlogPostTagRepository.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAABFAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-11T06:15:44.573Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 42,
-              "Title": "CategoryConfiguration.cs",
-              "DocumentMoniker": "C:\\Dosyalar\\Projects\\TahaMucasirogluBlog\\TahaMucasirogluBlog\\Infrastructure\\TahaMucasirogluBlog.Infrastructure.Repository\\Configuration\\CategoryConfiguration.cs",
-              "RelativeDocumentMoniker": "Infrastructure\\TahaMucasirogluBlog.Infrastructure.Repository\\Configuration\\CategoryConfiguration.cs",
-              "ToolTip": "C:\\Dosyalar\\Projects\\TahaMucasirogluBlog\\TahaMucasirogluBlog\\Infrastructure\\TahaMucasirogluBlog.Infrastructure.Repository\\Configuration\\CategoryConfiguration.cs",
-              "RelativeToolTip": "Infrastructure\\TahaMucasirogluBlog.Infrastructure.Repository\\Configuration\\CategoryConfiguration.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABoAAAAhAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-11T06:27:51.346Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 35,
-              "Title": "IBlogPostRepository.cs",
-              "DocumentMoniker": "C:\\Dosyalar\\Projects\\TahaMucasirogluBlog\\TahaMucasirogluBlog\\Infrastructure\\TahaMucasirogluBlog.Infrastructure.Repository\\Repository\\Abstract\\IBlogPostRepository.cs",
-              "RelativeDocumentMoniker": "Infrastructure\\TahaMucasirogluBlog.Infrastructure.Repository\\Repository\\Abstract\\IBlogPostRepository.cs",
-              "ToolTip": "C:\\Dosyalar\\Projects\\TahaMucasirogluBlog\\TahaMucasirogluBlog\\Infrastructure\\TahaMucasirogluBlog.Infrastructure.Repository\\Repository\\Abstract\\IBlogPostRepository.cs",
-              "RelativeToolTip": "Infrastructure\\TahaMucasirogluBlog.Infrastructure.Repository\\Repository\\Abstract\\IBlogPostRepository.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAA/AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-11T06:14:40.511Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 38,
-              "Title": "IBlogPostCategoryRepository.cs",
-              "DocumentMoniker": "C:\\Dosyalar\\Projects\\TahaMucasirogluBlog\\TahaMucasirogluBlog\\Infrastructure\\TahaMucasirogluBlog.Infrastructure.Repository\\Repository\\Abstract\\IBlogPostCategoryRepository.cs",
-              "RelativeDocumentMoniker": "Infrastructure\\TahaMucasirogluBlog.Infrastructure.Repository\\Repository\\Abstract\\IBlogPostCategoryRepository.cs",
-              "ToolTip": "C:\\Dosyalar\\Projects\\TahaMucasirogluBlog\\TahaMucasirogluBlog\\Infrastructure\\TahaMucasirogluBlog.Infrastructure.Repository\\Repository\\Abstract\\IBlogPostCategoryRepository.cs",
-              "RelativeToolTip": "Infrastructure\\TahaMucasirogluBlog.Infrastructure.Repository\\Repository\\Abstract\\IBlogPostCategoryRepository.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAABPAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-11T06:15:19.763Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 43,
-              "Title": "BlogPost.cs",
-              "DocumentMoniker": "C:\\Dosyalar\\Projects\\TahaMucasirogluBlog\\TahaMucasirogluBlog\\Domain\\TahaMucasirogluBlog.Domain.Entities\\Concrete\\BlogPost.cs",
-              "RelativeDocumentMoniker": "Domain\\TahaMucasirogluBlog.Domain.Entities\\Concrete\\BlogPost.cs",
-              "ToolTip": "C:\\Dosyalar\\Projects\\TahaMucasirogluBlog\\TahaMucasirogluBlog\\Domain\\TahaMucasirogluBlog.Domain.Entities\\Concrete\\BlogPost.cs",
-              "RelativeToolTip": "Domain\\TahaMucasirogluBlog.Domain.Entities\\Concrete\\BlogPost.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAABQAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-11T06:36:01.886Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 44,
-              "Title": "BlogPostTagConfiguration.cs",
-              "DocumentMoniker": "C:\\Dosyalar\\Projects\\TahaMucasirogluBlog\\TahaMucasirogluBlog\\Infrastructure\\TahaMucasirogluBlog.Infrastructure.Repository\\Configuration\\BlogPostTagConfiguration.cs",
-              "RelativeDocumentMoniker": "Infrastructure\\TahaMucasirogluBlog.Infrastructure.Repository\\Configuration\\BlogPostTagConfiguration.cs",
-              "ToolTip": "C:\\Dosyalar\\Projects\\TahaMucasirogluBlog\\TahaMucasirogluBlog\\Infrastructure\\TahaMucasirogluBlog.Infrastructure.Repository\\Configuration\\BlogPostTagConfiguration.cs",
-              "RelativeToolTip": "Infrastructure\\TahaMucasirogluBlog.Infrastructure.Repository\\Configuration\\BlogPostTagConfiguration.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABcAAAA0AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-11T06:27:09.137Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 45,
-              "Title": "BlogPostConfiguration.cs",
-              "DocumentMoniker": "C:\\Dosyalar\\Projects\\TahaMucasirogluBlog\\TahaMucasirogluBlog\\Infrastructure\\TahaMucasirogluBlog.Infrastructure.Repository\\Configuration\\BlogPostConfiguration.cs",
-              "RelativeDocumentMoniker": "Infrastructure\\TahaMucasirogluBlog.Infrastructure.Repository\\Configuration\\BlogPostConfiguration.cs",
-              "ToolTip": "C:\\Dosyalar\\Projects\\TahaMucasirogluBlog\\TahaMucasirogluBlog\\Infrastructure\\TahaMucasirogluBlog.Infrastructure.Repository\\Configuration\\BlogPostConfiguration.cs",
-              "RelativeToolTip": "Infrastructure\\TahaMucasirogluBlog.Infrastructure.Repository\\Configuration\\BlogPostConfiguration.cs",
-              "ViewState": "AgIAAAoAAAAAAAAAAAAgwC4AAAAwAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-11T06:23:35.876Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 46,
-              "Title": "BlogPostCategoryConfiguration.cs",
-              "DocumentMoniker": "C:\\Dosyalar\\Projects\\TahaMucasirogluBlog\\TahaMucasirogluBlog\\Infrastructure\\TahaMucasirogluBlog.Infrastructure.Repository\\Configuration\\BlogPostCategoryConfiguration.cs",
-              "RelativeDocumentMoniker": "Infrastructure\\TahaMucasirogluBlog.Infrastructure.Repository\\Configuration\\BlogPostCategoryConfiguration.cs",
-              "ToolTip": "C:\\Dosyalar\\Projects\\TahaMucasirogluBlog\\TahaMucasirogluBlog\\Infrastructure\\TahaMucasirogluBlog.Infrastructure.Repository\\Configuration\\BlogPostCategoryConfiguration.cs",
-              "RelativeToolTip": "Infrastructure\\TahaMucasirogluBlog.Infrastructure.Repository\\Configuration\\BlogPostCategoryConfiguration.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABcAAAAxAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-11T06:26:07.607Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 47,
-              "Title": "EntityConfiguration.cs",
-              "DocumentMoniker": "C:\\Dosyalar\\Projects\\TahaMucasirogluBlog\\TahaMucasirogluBlog\\Infrastructure\\TahaMucasirogluBlog.Infrastructure.Repository\\Configuration\\Base\\EntityConfiguration.cs",
-              "RelativeDocumentMoniker": "Infrastructure\\TahaMucasirogluBlog.Infrastructure.Repository\\Configuration\\Base\\EntityConfiguration.cs",
-              "ToolTip": "C:\\Dosyalar\\Projects\\TahaMucasirogluBlog\\TahaMucasirogluBlog\\Infrastructure\\TahaMucasirogluBlog.Infrastructure.Repository\\Configuration\\Base\\EntityConfiguration.cs",
-              "RelativeToolTip": "Infrastructure\\TahaMucasirogluBlog.Infrastructure.Repository\\Configuration\\Base\\EntityConfiguration.cs",
-              "ViewState": "AgIAAA0AAAAAAAAAAAAAwDUAAAArAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-11T06:20:21.146Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 48,
-              "Title": "IRepository.cs",
-              "DocumentMoniker": "C:\\Dosyalar\\Projects\\TahaMucasirogluBlog\\TahaMucasirogluBlog\\Infrastructure\\TahaMucasirogluBlog.Infrastructure.Repository\\Repository\\Abstract\\Base\\IRepository.cs",
-              "RelativeDocumentMoniker": "Infrastructure\\TahaMucasirogluBlog.Infrastructure.Repository\\Repository\\Abstract\\Base\\IRepository.cs",
-              "ToolTip": "C:\\Dosyalar\\Projects\\TahaMucasirogluBlog\\TahaMucasirogluBlog\\Infrastructure\\TahaMucasirogluBlog.Infrastructure.Repository\\Repository\\Abstract\\Base\\IRepository.cs",
-              "RelativeToolTip": "Infrastructure\\TahaMucasirogluBlog.Infrastructure.Repository\\Repository\\Abstract\\Base\\IRepository.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAgAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-11T06:13:30.172Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 49,
-              "Title": "TahaMucasirogluBlog.Application.Managers.csproj",
-              "DocumentMoniker": "C:\\Dosyalar\\Projects\\TahaMucasirogluBlog\\TahaMucasirogluBlog\\Application\\TahaMucasirogluBlog.Application.Managers\\TahaMucasirogluBlog.Application.Managers.csproj",
-              "RelativeDocumentMoniker": "Application\\TahaMucasirogluBlog.Application.Managers\\TahaMucasirogluBlog.Application.Managers.csproj",
-              "ToolTip": "C:\\Dosyalar\\Projects\\TahaMucasirogluBlog\\TahaMucasirogluBlog\\Application\\TahaMucasirogluBlog.Application.Managers\\TahaMucasirogluBlog.Application.Managers.csproj",
-              "RelativeToolTip": "Application\\TahaMucasirogluBlog.Application.Managers\\TahaMucasirogluBlog.Application.Managers.csproj",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2025-07-11T06:10:58.309Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 50,
-              "Title": "TahaMucasirogluBlog.Application.Mapper.csproj",
-              "DocumentMoniker": "C:\\Dosyalar\\Projects\\TahaMucasirogluBlog\\TahaMucasirogluBlog\\Application\\TahaMucasirogluBlog.Application.Mapper\\TahaMucasirogluBlog.Application.Mapper.csproj",
-              "RelativeDocumentMoniker": "Application\\TahaMucasirogluBlog.Application.Mapper\\TahaMucasirogluBlog.Application.Mapper.csproj",
-              "ToolTip": "C:\\Dosyalar\\Projects\\TahaMucasirogluBlog\\TahaMucasirogluBlog\\Application\\TahaMucasirogluBlog.Application.Mapper\\TahaMucasirogluBlog.Application.Mapper.csproj",
-              "RelativeToolTip": "Application\\TahaMucasirogluBlog.Application.Mapper\\TahaMucasirogluBlog.Application.Mapper.csproj",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2025-07-11T06:10:57.694Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 51,
-              "Title": "TahaMucasirogluBlog.Application.Validation.csproj",
-              "DocumentMoniker": "C:\\Dosyalar\\Projects\\TahaMucasirogluBlog\\TahaMucasirogluBlog\\Application\\TahaMucasirogluBlog.Application.Validation\\TahaMucasirogluBlog.Application.Validation.csproj",
-              "RelativeDocumentMoniker": "Application\\TahaMucasirogluBlog.Application.Validation\\TahaMucasirogluBlog.Application.Validation.csproj",
-              "ToolTip": "C:\\Dosyalar\\Projects\\TahaMucasirogluBlog\\TahaMucasirogluBlog\\Application\\TahaMucasirogluBlog.Application.Validation\\TahaMucasirogluBlog.Application.Validation.csproj",
-              "RelativeToolTip": "Application\\TahaMucasirogluBlog.Application.Validation\\TahaMucasirogluBlog.Application.Validation.csproj",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2025-07-11T06:10:55.982Z"
+              "WhenOpened": "2025-07-11T09:11:16.756Z",
+              "EditorCaption": ""
             }
           ]
         }
