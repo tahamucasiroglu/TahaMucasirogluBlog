@@ -12,6 +12,9 @@ Experience - deneyim kısmında isim-sebep-tarih-ne yaptın-referans olabilecek.
 
 son iletişim kısmınıda veritabanından çek Info tablosu ondan oluştu bilgilerim oalcak.
 
+konumlarım ekle, pdf indirme ekle, pdf göster de, frontend kısmında javascript ile animasyonları kullan animejs yada threejs gibi. 3d işlere bak.
+
+project tablosunu ayır olmadı githupları oradan çek ama hangfire ile oto taramayı bulmaya bak. linkedin ve github bilgilerini çekme olayı var mı araştır
 
 
 
