@@ -1,4 +1,5 @@
-﻿using TahaMucasirogluBlog.Domain.Entities.Base;
+﻿using System.Xml.Linq;
+using TahaMucasirogluBlog.Domain.Entities.Base;
 
 namespace TahaMucasirogluBlog.Domain.Entities.Concrete
 {
@@ -15,5 +16,6 @@ namespace TahaMucasirogluBlog.Domain.Entities.Concrete
 
         public ICollection<BlogPostCategory> PostCategories { get; set; } = new HashSet<BlogPostCategory>();
         public ICollection<BlogPostTag> PostTags { get; set; } = new HashSet<BlogPostTag>();
+        public ICollection<Comment> Comments { get; set; } = new HashSet<Comment>();
     }
 }

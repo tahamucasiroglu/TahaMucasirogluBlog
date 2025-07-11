@@ -16,6 +16,7 @@ namespace TahaMucasirogluBlog.Domain.Entities.Concrete
         public Category? ParrentCategory { get; set; } = default!;
         
         public ICollection<BlogPostCategory> PostCategories { get; set; } = new HashSet<BlogPostCategory>();
+        public ICollection<Category>? SubCategories { get; set; } = new HashSet<Category>();
         
     }
 }

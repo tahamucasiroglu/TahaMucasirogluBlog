@@ -1,0 +1,1 @@
+logger manager program alışınca geçir test et
