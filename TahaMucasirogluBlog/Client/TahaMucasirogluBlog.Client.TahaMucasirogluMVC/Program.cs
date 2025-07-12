@@ -12,7 +12,7 @@ builder.AddSingleton();
 builder.AddScoped();
 builder.Services.AddRazorPages();
 
-builder.NTNAddFluentValidation();
+builder.AddFluentValidation();
 
 builder.Services.AddHttpClient();
 

@@ -9,6 +9,13 @@ using TahaMucasirogluBlog.Domain.DTOs.Concrete.Entity.BlogPostTag;
 
 namespace TahaMucasirogluBlog.Application.Validation.Concrete.Entity.BlogPostTag
 {
+    public class UpdateBlogPostTagListDTOValidation : AbstractValidator<IEnumerable<UpdateBlogPostTagDTO>>
+    {
+        public UpdateBlogPostTagListDTOValidation()
+        {
+            RuleForEach(x => x).SetValidator(new UpdateBlogPostTagDTOValidation());
+        }
+    }
     public class UpdateBlogPostTagDTOValidation : UpdateValidation<UpdateBlogPostTagDTO>
     {
         public UpdateBlogPostTagDTOValidation() : base()

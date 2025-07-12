@@ -30,7 +30,7 @@ namespace TahaMucasirogluBlog.Infrastructure.Repository.Configuration
             builder.HasMany(t => t.PostTags)
                    .WithOne(pt => pt.Tag)
                    .HasForeignKey(pt => pt.TagId)
-                   .OnDelete(DeleteBehavior.Cascade);
+                   .OnDelete(DeleteBehavior.NoAction);
         }
     }
 }

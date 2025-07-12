@@ -24,7 +24,7 @@ namespace TahaMucasirogluBlog.Infrastructure.Repository.Configuration
                 .HasOne<Skill>()
                 .WithMany(s => s.SubSkills)
                 .HasForeignKey(ss => ss.SkillId)
-                .OnDelete(DeleteBehavior.Cascade);
+                .OnDelete(DeleteBehavior.NoAction);
 
             builder.HasIndex(ss => new { ss.SkillId, ss.Name }).IsUnique();
         }

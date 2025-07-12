@@ -9,6 +9,13 @@ using TahaMucasirogluBlog.Domain.DTOs.Concrete.Entity.Skill;
 
 namespace TahaMucasirogluBlog.Application.Validation.Concrete.Entity.Skill
 {
+    public class UpdateSkillListDTOValidation : AbstractValidator<IEnumerable<UpdateSkillDTO>>
+    {
+        public UpdateSkillListDTOValidation()
+        {
+            RuleForEach(x => x).SetValidator(new UpdateSkillDTOValidation());
+        }
+    }
     public class UpdateSkillDTOValidation : UpdateValidation<UpdateSkillDTO>
     {
         public UpdateSkillDTOValidation() : base()

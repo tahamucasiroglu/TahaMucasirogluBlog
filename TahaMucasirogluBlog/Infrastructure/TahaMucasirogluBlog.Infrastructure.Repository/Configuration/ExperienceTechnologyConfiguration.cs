@@ -20,13 +20,13 @@ namespace TahaMucasirogluBlog.Infrastructure.Repository.Configuration
                 .HasOne(et => et.Experience)
                 .WithMany(e => e.ExperienceTechnologies)
                 .HasForeignKey(et => et.ExperienceId)
-                .OnDelete(DeleteBehavior.Cascade);
+                .OnDelete(DeleteBehavior.NoAction);
 
             builder
                 .HasOne(et => et.SubSkill)
                 .WithMany()
                 .HasForeignKey(et => et.SubSkillId)
-                .OnDelete(DeleteBehavior.Restrict);
+                .OnDelete(DeleteBehavior.NoAction);
 
             builder.HasIndex(et => new { et.ExperienceId, et.SubSkillId }).IsUnique();
         }

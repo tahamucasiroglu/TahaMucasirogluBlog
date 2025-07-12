@@ -20,7 +20,7 @@ namespace TahaMucasirogluBlog.Infrastructure.Repository.Configuration
                 .HasOne(e => e.ExperienceType)
                 .WithMany()
                 .HasForeignKey(e => e.ExperienceTypeId)
-                .OnDelete(DeleteBehavior.Restrict);
+                .OnDelete(DeleteBehavior.NoAction);
 
             builder.Property(e => e.Title)
                    .IsRequired()

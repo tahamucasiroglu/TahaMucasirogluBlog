@@ -5,10 +5,19 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using TahaMucasirogluBlog.Application.Validation.Base;
+using TahaMucasirogluBlog.Application.Validation.Concrete.Entity.Info;
+using TahaMucasirogluBlog.Domain.DTOs.Concrete.Entity.Info;
 using TahaMucasirogluBlog.Domain.DTOs.Concrete.Entity.Skill;
 
 namespace TahaMucasirogluBlog.Application.Validation.Concrete.Entity.Skill
 {
+    public class AddSkillListDTOValidation : AbstractValidator<IEnumerable<AddSkillDTO>>
+    {
+        public AddSkillListDTOValidation()
+        {
+            RuleForEach(x => x).SetValidator(new AddSkillDTOValidation());
+        }
+    }
     public class AddSkillDTOValidation : AddValidation<AddSkillDTO>
     {
         public AddSkillDTOValidation() : base()

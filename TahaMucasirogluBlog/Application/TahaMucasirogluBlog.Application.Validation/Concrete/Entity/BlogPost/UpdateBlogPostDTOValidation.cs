@@ -9,6 +9,14 @@ using TahaMucasirogluBlog.Domain.DTOs.Concrete.Entity.BlogPost;
 
 namespace TahaMucasirogluBlog.Application.Validation.Concrete.Entity.BlogPost
 {
+
+    public class UpdateBlogPostListDTOValidation : AbstractValidator<IEnumerable<UpdateBlogPostDTO>>
+    {
+        public UpdateBlogPostListDTOValidation()
+        {
+            RuleForEach(x => x).SetValidator(new UpdateBlogPostDTOValidation());
+        }
+    }
     public class UpdateBlogPostDTOValidation : UpdateValidation<UpdateBlogPostDTO>
     {
         public UpdateBlogPostDTOValidation() : base()

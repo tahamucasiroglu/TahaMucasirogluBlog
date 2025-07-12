@@ -16,7 +16,7 @@ namespace TahaMucasirogluBlog.Infrastructure.Repository.Configuration
             builder.HasOne(c => c.ParrentCategory)
                    .WithMany(pc => pc.SubCategories) // alt kategoriler koleksiyonu
                    .HasForeignKey(c => c.ParentCategoryId)
-                   .OnDelete(DeleteBehavior.Restrict);
+                   .OnDelete(DeleteBehavior.NoAction);
 
             // Name: zorunlu, max 100 karakter
             builder.Property(c => c.Name)

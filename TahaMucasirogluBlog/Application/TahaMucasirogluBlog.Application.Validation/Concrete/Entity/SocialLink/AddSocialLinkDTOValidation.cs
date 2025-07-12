@@ -5,11 +5,20 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using TahaMucasirogluBlog.Application.Validation.Base;
+using TahaMucasirogluBlog.Application.Validation.Concrete.Entity.Skill;
 using TahaMucasirogluBlog.Application.Validation.Extensions;
+using TahaMucasirogluBlog.Domain.DTOs.Concrete.Entity.Skill;
 using TahaMucasirogluBlog.Domain.DTOs.Concrete.Entity.SocialLink;
 
 namespace TahaMucasirogluBlog.Application.Validation.Concrete.Entity.SocialLink
 {
+    public class AddSocialLinkListDTOValidation : AbstractValidator<IEnumerable<AddSocialLinkDTO>>
+    {
+        public AddSocialLinkListDTOValidation()
+        {
+            RuleForEach(x => x).SetValidator(new AddSocialLinkDTOValidation());
+        }
+    }
     public class AddSocialLinkDTOValidation : AddValidation<AddSocialLinkDTO>
     {
         public AddSocialLinkDTOValidation() : base()

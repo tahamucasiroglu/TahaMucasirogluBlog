@@ -22,16 +22,34 @@ namespace TahaMucasirogluBlog.Presentation.API.Extensions
             builder.Services.AddScoped<IBlogPostTagRepository, BlogPostTagRepository>();
             builder.Services.AddScoped<ICategoryRepository, CategoryRepository>();
             builder.Services.AddScoped<ICommentRepository, CommentRepository>();
+            builder.Services.AddScoped<IExperienceRepository, ExperienceRepository>();
+            builder.Services.AddScoped<IExperienceTechnologyRepository, ExperienceTechnologyRepository>();
+            builder.Services.AddScoped<IExperienceTypeRepository, ExperienceTypeRepository>();
+            builder.Services.AddScoped<IInfoRepository, InfoRepository>();
+            builder.Services.AddScoped<ISkillRepository, SkillRepository>();
+            builder.Services.AddScoped<ISocialLinkRepository, SocialLinkRepository>();
+            builder.Services.AddScoped<ISubSkillRepository, SubSkillRepository>();
             builder.Services.AddScoped<ITagRepository, TagRepository>();
             builder.Services.AddScoped<IUserRepository, UserRepository>();
 
-            builder.Services.AddScoped<IBlogPostCategoryDatabaseService, BlogPostCategoryDatabaseService >();
-            builder.Services.AddScoped<IBlogPostDatabaseService, BlogPostDatabaseService >();
-            builder.Services.AddScoped<IBlogPostTagDatabaseService, BlogPostTagDatabaseService >();
-            builder.Services.AddScoped<ICategoryDatabaseService, CategoryDatabaseService >();
-            builder.Services.AddScoped<ICommentDatabaseService, CommentDatabaseService >();
-            builder.Services.AddScoped<ITagDatabaseService, TagDatabaseService >();
-            builder.Services.AddScoped<IUserDatabaseService, UserDatabaseService >();
+
+
+
+
+            builder.Services.AddScoped<IBlogPostCategoryDatabaseService, BlogPostCategoryDatabaseService>();
+            builder.Services.AddScoped<IBlogPostDatabaseService, BlogPostDatabaseService>();
+            builder.Services.AddScoped<IBlogPostTagDatabaseService, BlogPostTagDatabaseService>();
+            builder.Services.AddScoped<ICategoryDatabaseService, CategoryDatabaseService>();
+            builder.Services.AddScoped<ICommentDatabaseService, CommentDatabaseService>();
+            builder.Services.AddScoped<IExperienceDatabaseService, ExperienceDatabaseService>();
+            builder.Services.AddScoped<IExperienceTechnologyDatabaseService, ExperienceTechnologyDatabaseService>();
+            builder.Services.AddScoped<IExperienceTypeDatabaseService, ExperienceTypeDatabaseService>();
+            builder.Services.AddScoped<IInfoDatabaseService, InfoDatabaseService>();
+            builder.Services.AddScoped<ISkillDatabaseService, SkillDatabaseService>();
+            builder.Services.AddScoped<ISocialLinkDatabaseService, SocialLinkDatabaseService>();
+            builder.Services.AddScoped<ISubSkillDatabaseService, SubSkillDatabaseService>();
+            builder.Services.AddScoped<ITagDatabaseService, TagDatabaseService>();
+            builder.Services.AddScoped<IUserDatabaseService, UserDatabaseService>();
 
 
 

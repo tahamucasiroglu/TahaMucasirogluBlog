@@ -1,6 +1,7 @@
 ﻿using TahaMucasirogluBlog.Domain.DTOs.Base;
 using TahaMucasirogluBlog.Domain.DTOs.Concrete.Entity.ExperienceTechnology;
 using TahaMucasirogluBlog.Domain.DTOs.Concrete.Entity.ExperienceType;
+using TahaMucasirogluBlog.Domain.DTOs.Concrete.Entity.SubSkill;
 
 namespace TahaMucasirogluBlog.Domain.DTOs.Concrete.Entity.Experience
 {
@@ -14,6 +15,6 @@ namespace TahaMucasirogluBlog.Domain.DTOs.Concrete.Entity.Experience
         public string? Reference { get; init; }
 
         public GetExperienceTypeDTO ExperienceType { get; init; } = default!;
-        public List<GetExperienceTechnologyDTO> ExperienceTechnologies { get; init; } = new();
+        public List<GetSubSkillDTO> SubSkills { get; init; } = new();
     }
 }

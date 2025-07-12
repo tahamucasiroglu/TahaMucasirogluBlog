@@ -22,7 +22,7 @@ namespace TahaMucasirogluBlog.Infrastructure.Repository.Configuration
             builder.HasOne(c => c.ParentComment)
                    .WithMany(pc => pc.Replies)
                    .HasForeignKey(c => c.ParentCommentId)
-                   .OnDelete(DeleteBehavior.Restrict); // silince alt yorumları bozmamak için
+                   .OnDelete(DeleteBehavior.NoAction); // silince alt yorumları bozmamak için
 
             // Content: zorunlu alan
             builder.Property(c => c.Content)

@@ -5,10 +5,19 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using TahaMucasirogluBlog.Application.Validation.Base;
+using TahaMucasirogluBlog.Application.Validation.Concrete.Entity.SocialLink;
+using TahaMucasirogluBlog.Domain.DTOs.Concrete.Entity.SocialLink;
 using TahaMucasirogluBlog.Domain.DTOs.Concrete.Entity.SubSkill;
 
 namespace TahaMucasirogluBlog.Application.Validation.Concrete.Entity.SubSkill
 {
+    public class AddSubSkillListDTOValidation : AbstractValidator<IEnumerable<AddSubSkillDTO>>
+    {
+        public AddSubSkillListDTOValidation()
+        {
+            RuleForEach(x => x).SetValidator(new AddSubSkillDTOValidation());
+        }
+    }
     public class AddSubSkillDTOValidation : AddValidation<AddSubSkillDTO>
     {
         public AddSubSkillDTOValidation() : base()

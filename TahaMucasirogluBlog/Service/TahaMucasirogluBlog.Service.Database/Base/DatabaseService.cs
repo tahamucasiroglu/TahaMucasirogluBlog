@@ -1,23 +1,15 @@
 ﻿using AutoMapper;
-using Azure;
 using FluentValidation;
 using FluentValidation.Results;
-using Microsoft.AspNetCore.Http.HttpResults;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.Logging;
-using System;
-using System.Collections.Generic;
-using System.Linq;
 using System.Linq.Expressions;
-using System.Text;
-using System.Threading.Tasks;
 using TahaMucasirogluBlog.Domain.DTOs.Abstract;
 using TahaMucasirogluBlog.Domain.DTOs.Concrete.Request;
 using TahaMucasirogluBlog.Domain.Entities.Abstract;
 using TahaMucasirogluBlog.Domain.Extensions;
 using TahaMucasirogluBlog.Domain.Return.Abstract;
 using TahaMucasirogluBlog.Domain.Return.Concrete;
-using TahaMucasirogluBlog.Domain.Return.Constant;
 using TahaMucasirogluBlog.Infrastructure.Repository.Repository.Abstract.Base;
 using TahaMucasirogluBlog.Service.Database.Abstract.Base;
 
@@ -52,11 +44,11 @@ namespace TahaMucasirogluBlog.Service.Database.Base
         {
             try
             {
-                if(model.Status && model.Data != null)
+                if (model.Status && model.Data != null)
                 {
                     return new SuccessReturn<Tout>(message: message, data: mapper.Map<Tout>(model.Data));
                 }
-                else if(model.Status && model.Data == null)
+                else if (model.Status && model.Data == null)
                 {
                     return new SuccessReturn<Tout>(message: message);
                 }
@@ -67,12 +59,12 @@ namespace TahaMucasirogluBlog.Service.Database.Base
                 }
 
             }
-            catch(Exception e)
+            catch (Exception e)
             {
                 logger.LogError(e, $"Serivce AutoReturn Hata. \nKullanıcı Hata Mesajı = {errorMessage}\nGelen Hata Mesajı = {model.Message}\nHata = {model.Exception?.Message}\nException Hatası = {e.Message}");
                 return new ErrorReturn<Tout>();
             }
-    
+
         }
 
 
@@ -190,7 +182,7 @@ namespace TahaMucasirogluBlog.Service.Database.Base
             IConfiguration configuration,
             IValidator<TAddRequest> addValidator,
             IValidator<IEnumerable<TAddRequest>> addValidatorList,
-            ILogger<DatabaseService<TEntity, TResponse>> logger) : base(repository, mapper, configuration, logger) 
+            ILogger<DatabaseService<TEntity, TResponse>> logger) : base(repository, mapper, configuration, logger)
         {
             this.addValidator = addValidator;
             this.addValidatorList = addValidatorList;
@@ -248,7 +240,7 @@ namespace TahaMucasirogluBlog.Service.Database.Base
             IValidator<IEnumerable<TAddRequest>> addValidatorList,
             IValidator<TUpdateRequest> updateValidator,
             IValidator<IEnumerable<TUpdateRequest>> updateValidatorList,
-            ILogger<DatabaseService<TEntity, TResponse>> logger) : base(repository, mapper, configuration, addValidator, addValidatorList, logger) 
+            ILogger<DatabaseService<TEntity, TResponse>> logger) : base(repository, mapper, configuration, addValidator, addValidatorList, logger)
         {
             this.updateValidator = updateValidator;
             this.updateValidatorList = updateValidatorList;
@@ -310,7 +302,7 @@ namespace TahaMucasirogluBlog.Service.Database.Base
             IValidator<IEnumerable<TUpdateRequest>> updateValidatorList,
             IValidator<TDeleteRequest> deleteValidator,
             IValidator<IEnumerable<TDeleteRequest>> deleteValidatorList,
-            ILogger<DatabaseService<TEntity, TResponse>> logger) : base(repository, mapper, configuration, addValidator, addValidatorList, updateValidator, updateValidatorList, logger) 
+            ILogger<DatabaseService<TEntity, TResponse>> logger) : base(repository, mapper, configuration, addValidator, addValidatorList, updateValidator, updateValidatorList, logger)
         {
             this.deleteValidator = deleteValidator;
             this.deleteValidatorList = deleteValidatorList;
@@ -345,5 +337,5 @@ namespace TahaMucasirogluBlog.Service.Database.Base
         }
     }
 
-   
+
 }

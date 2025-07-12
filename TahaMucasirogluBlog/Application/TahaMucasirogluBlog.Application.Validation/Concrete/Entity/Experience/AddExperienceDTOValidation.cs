@@ -5,10 +5,19 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using TahaMucasirogluBlog.Application.Validation.Base;
+using TahaMucasirogluBlog.Application.Validation.Concrete.Entity.Comment;
+using TahaMucasirogluBlog.Domain.DTOs.Concrete.Entity.Comment;
 using TahaMucasirogluBlog.Domain.DTOs.Concrete.Entity.Experience;
 
 namespace TahaMucasirogluBlog.Application.Validation.Concrete.Entity.Experience
 {
+    public class AddExperienceListDTOValidation : AbstractValidator<IEnumerable<AddExperienceDTO>>
+    {
+        public AddExperienceListDTOValidation()
+        {
+            RuleForEach(x => x).SetValidator(new AddExperienceDTOValidation());
+        }
+    }
     public class AddExperienceDTOValidation : AddValidation<AddExperienceDTO>
     {
         public AddExperienceDTOValidation() : base()

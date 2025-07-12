@@ -9,6 +9,13 @@ using TahaMucasirogluBlog.Domain.DTOs.Concrete.Entity.SubSkill;
 
 namespace TahaMucasirogluBlog.Application.Validation.Concrete.Entity.SubSkill
 {
+    public class UpdateSubSkillListDTOValidation : AbstractValidator<IEnumerable<UpdateSubSkillDTO>>
+    {
+        public UpdateSubSkillListDTOValidation()
+        {
+            RuleForEach(x => x).SetValidator(new UpdateSubSkillDTOValidation());
+        }
+    }
     public class UpdateSubSkillDTOValidation : UpdateValidation<UpdateSubSkillDTO>
     {
         public UpdateSubSkillDTOValidation() : base()

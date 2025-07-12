@@ -9,6 +9,13 @@ using TahaMucasirogluBlog.Domain.DTOs.Concrete.Entity.Category;
 
 namespace TahaMucasirogluBlog.Application.Validation.Concrete.Entity.Category
 {
+    public class UpdateCategoryListDTOValidation : AbstractValidator<IEnumerable<UpdateCategoryDTO>>
+    {
+        public UpdateCategoryListDTOValidation()
+        {
+            RuleForEach(x => x).SetValidator(new UpdateCategoryDTOValidation());
+        }
+    }
     public class UpdateCategoryDTOValidation : UpdateValidation<UpdateCategoryDTO>
     {
         public UpdateCategoryDTOValidation() : base()

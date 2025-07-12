@@ -9,6 +9,13 @@ using TahaMucasirogluBlog.Domain.DTOs.Concrete.Entity.ExperienceType;
 
 namespace TahaMucasirogluBlog.Application.Validation.Concrete.Entity.ExperienceType
 {
+    public class UpdateExperienceTypeListDTOValidation : AbstractValidator<IEnumerable<UpdateExperienceTypeDTO>>
+    {
+        public UpdateExperienceTypeListDTOValidation()
+        {
+            RuleForEach(x => x).SetValidator(new UpdateExperienceTypeDTOValidation());
+        }
+    }
     public class UpdateExperienceTypeDTOValidation : UpdateValidation<UpdateExperienceTypeDTO>
     {
         public UpdateExperienceTypeDTOValidation() : base()

@@ -9,6 +9,13 @@ using TahaMucasirogluBlog.Domain.DTOs.Concrete.Entity.Info;
 
 namespace TahaMucasirogluBlog.Application.Validation.Concrete.Entity.Info
 {
+    public class UpdateInfoListDTOValidation : AbstractValidator<IEnumerable<UpdateInfoDTO>>
+    {
+        public UpdateInfoListDTOValidation()
+        {
+            RuleForEach(x => x).SetValidator(new UpdateInfoDTOValidation());
+        }
+    }
     public class UpdateInfoDTOValidation : UpdateValidation<UpdateInfoDTO>
     {
         public UpdateInfoDTOValidation() : base()

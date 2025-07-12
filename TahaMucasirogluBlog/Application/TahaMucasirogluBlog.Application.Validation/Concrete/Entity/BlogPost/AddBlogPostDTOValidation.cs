@@ -4,6 +4,14 @@ using TahaMucasirogluBlog.Domain.DTOs.Concrete.Entity.BlogPost;
 
 namespace TahaMucasirogluBlog.Application.Validation.Concrete.Entity.BlogPost
 {
+
+    public class AddBlogPostListDTOValidation : AbstractValidator<IEnumerable<AddBlogPostDTO>>
+    {
+        public AddBlogPostListDTOValidation()
+        {
+            RuleForEach(x => x).SetValidator(new AddBlogPostDTOValidation());
+        }
+    }
     public class AddBlogPostDTOValidation : AddValidation<AddBlogPostDTO>
     {
         public AddBlogPostDTOValidation() : base()

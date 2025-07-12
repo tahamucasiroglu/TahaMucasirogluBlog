@@ -5,10 +5,19 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using TahaMucasirogluBlog.Application.Validation.Base;
+using TahaMucasirogluBlog.Application.Validation.Concrete.Entity.BlogPostCategory;
+using TahaMucasirogluBlog.Domain.DTOs.Concrete.Entity.BlogPostCategory;
 using TahaMucasirogluBlog.Domain.DTOs.Concrete.Entity.BlogPostTag;
 
 namespace TahaMucasirogluBlog.Application.Validation.Concrete.Entity.BlogPostTag
 {
+    public class AddBlogPostTagListDTOValidation : AbstractValidator<IEnumerable<AddBlogPostTagDTO>>
+    {
+        public AddBlogPostTagListDTOValidation()
+        {
+            RuleForEach(x => x).SetValidator(new AddBlogPostTagDTOValidation());
+        }
+    }
     public class AddBlogPostTagDTOValidation : AddValidation<AddBlogPostTagDTO>
     {
         public AddBlogPostTagDTOValidation() : base()

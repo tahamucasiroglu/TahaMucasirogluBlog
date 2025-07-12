@@ -19,7 +19,7 @@ namespace TahaMucasirogluBlog.Application.Mapper.MapProfile.Response
             // Experience => GetExperienceWithTechnologyAndTypeDTO
             CreateMap<Experience, GetExperienceWithTechnologyAndTypeDTO>()
                 .ForMember(dest => dest.ExperienceType, opt => opt.MapFrom(src => src.ExperienceType))
-                .ForMember(dest => dest.ExperienceTechnologies, opt => opt.MapFrom(src => src.ExperienceTechnologies));
+                .ForMember(dest => dest.SubSkills, opt => opt.MapFrom(src => src.ExperienceTechnologies));//burada dönüşüm hatası olacak
 
             // Skill => GetSkillWithSubSkillsDTO
             CreateMap<Skill, GetSkillWithSubSkillsDTO>()

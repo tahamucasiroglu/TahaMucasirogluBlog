@@ -9,6 +9,13 @@ using TahaMucasirogluBlog.Domain.DTOs.Concrete.Entity.User;
 
 namespace TahaMucasirogluBlog.Application.Validation.Concrete.Entity.User
 {
+    public class UpdateUserListDTOValidation : AbstractValidator<IEnumerable<UpdateUserDTO>>
+    {
+        public UpdateUserListDTOValidation()
+        {
+            RuleForEach(x => x).SetValidator(new UpdateUserDTOValidation());
+        }
+    }
     public class UpdateUserDTOValidation : UpdateValidation<UpdateUserDTO>
     {
         public UpdateUserDTOValidation() : base()

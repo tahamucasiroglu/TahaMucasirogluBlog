@@ -309,6 +309,422 @@ namespace TahaMucasirogluBlog.Infrastructure.Repository.Migrations
                     b.ToTable("Comments", "dbo");
                 });
 
+            modelBuilder.Entity("TahaMucasirogluBlog.Domain.Entities.Concrete.Experience", b =>
+                {
+                    b.Property<Guid>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("uniqueidentifier");
+
+                    b.Property<DateTime?>("DeletedAt")
+                        .HasColumnType("datetime2(0)");
+
+                    b.Property<Guid?>("DeletedBy")
+                        .HasColumnType("uniqueidentifier");
+
+                    b.Property<string>("Description")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<DateTime?>("EndDate")
+                        .HasColumnType("datetime2");
+
+                    b.Property<Guid>("ExperienceTypeId")
+                        .HasColumnType("uniqueidentifier");
+
+                    b.Property<DateTime>("InsertedAt")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("datetime2(0)")
+                        .HasDefaultValueSql("SYSDATETIME()");
+
+                    b.Property<Guid>("InsertedBy")
+                        .HasColumnType("uniqueidentifier");
+
+                    b.Property<bool>("IsDeleted")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("bit")
+                        .HasDefaultValue(false);
+
+                    b.Property<string>("Provider")
+                        .IsRequired()
+                        .HasMaxLength(200)
+                        .HasColumnType("nvarchar(200)");
+
+                    b.Property<string>("Reference")
+                        .HasMaxLength(200)
+                        .HasColumnType("nvarchar(200)");
+
+                    b.Property<DateTime>("StartDate")
+                        .HasColumnType("datetime2");
+
+                    b.Property<string>("Title")
+                        .IsRequired()
+                        .HasMaxLength(200)
+                        .HasColumnType("nvarchar(200)");
+
+                    b.Property<DateTime?>("UpdatedAt")
+                        .HasColumnType("datetime2(0)");
+
+                    b.Property<Guid?>("UpdatedBy")
+                        .HasColumnType("uniqueidentifier");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("ExperienceTypeId");
+
+                    b.HasIndex("Id");
+
+                    b.HasIndex("IsDeleted");
+
+                    b.HasIndex("Id", "IsDeleted");
+
+                    b.ToTable("Experiences", "dbo");
+                });
+
+            modelBuilder.Entity("TahaMucasirogluBlog.Domain.Entities.Concrete.ExperienceTechnology", b =>
+                {
+                    b.Property<Guid>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("uniqueidentifier");
+
+                    b.Property<DateTime?>("DeletedAt")
+                        .HasColumnType("datetime2(0)");
+
+                    b.Property<Guid?>("DeletedBy")
+                        .HasColumnType("uniqueidentifier");
+
+                    b.Property<Guid>("ExperienceId")
+                        .HasColumnType("uniqueidentifier");
+
+                    b.Property<DateTime>("InsertedAt")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("datetime2(0)")
+                        .HasDefaultValueSql("SYSDATETIME()");
+
+                    b.Property<Guid>("InsertedBy")
+                        .HasColumnType("uniqueidentifier");
+
+                    b.Property<bool>("IsDeleted")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("bit")
+                        .HasDefaultValue(false);
+
+                    b.Property<Guid>("SubSkillId")
+                        .HasColumnType("uniqueidentifier");
+
+                    b.Property<Guid?>("SubSkillId1")
+                        .HasColumnType("uniqueidentifier");
+
+                    b.Property<DateTime?>("UpdatedAt")
+                        .HasColumnType("datetime2(0)");
+
+                    b.Property<Guid?>("UpdatedBy")
+                        .HasColumnType("uniqueidentifier");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("Id");
+
+                    b.HasIndex("IsDeleted");
+
+                    b.HasIndex("SubSkillId");
+
+                    b.HasIndex("SubSkillId1");
+
+                    b.HasIndex("ExperienceId", "SubSkillId")
+                        .IsUnique();
+
+                    b.HasIndex("Id", "IsDeleted");
+
+                    b.ToTable("ExperienceTechnologies", "dbo");
+                });
+
+            modelBuilder.Entity("TahaMucasirogluBlog.Domain.Entities.Concrete.ExperienceType", b =>
+                {
+                    b.Property<Guid>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("uniqueidentifier");
+
+                    b.Property<DateTime?>("DeletedAt")
+                        .HasColumnType("datetime2(0)");
+
+                    b.Property<Guid?>("DeletedBy")
+                        .HasColumnType("uniqueidentifier");
+
+                    b.Property<DateTime>("InsertedAt")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("datetime2(0)")
+                        .HasDefaultValueSql("SYSDATETIME()");
+
+                    b.Property<Guid>("InsertedBy")
+                        .HasColumnType("uniqueidentifier");
+
+                    b.Property<bool>("IsDeleted")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("bit")
+                        .HasDefaultValue(false);
+
+                    b.Property<string>("Name")
+                        .IsRequired()
+                        .HasMaxLength(100)
+                        .HasColumnType("nvarchar(100)");
+
+                    b.Property<DateTime?>("UpdatedAt")
+                        .HasColumnType("datetime2(0)");
+
+                    b.Property<Guid?>("UpdatedBy")
+                        .HasColumnType("uniqueidentifier");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("Id");
+
+                    b.HasIndex("IsDeleted");
+
+                    b.HasIndex("Name")
+                        .IsUnique();
+
+                    b.HasIndex("Id", "IsDeleted");
+
+                    b.ToTable("ExperienceTypes", "dbo");
+                });
+
+            modelBuilder.Entity("TahaMucasirogluBlog.Domain.Entities.Concrete.Info", b =>
+                {
+                    b.Property<Guid>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("uniqueidentifier");
+
+                    b.Property<DateTime?>("DeletedAt")
+                        .HasColumnType("datetime2(0)");
+
+                    b.Property<Guid?>("DeletedBy")
+                        .HasColumnType("uniqueidentifier");
+
+                    b.Property<string>("Email")
+                        .IsRequired()
+                        .HasMaxLength(200)
+                        .HasColumnType("nvarchar(200)");
+
+                    b.Property<string>("FullName")
+                        .IsRequired()
+                        .HasMaxLength(200)
+                        .HasColumnType("nvarchar(200)");
+
+                    b.Property<DateTime>("InsertedAt")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("datetime2(0)")
+                        .HasDefaultValueSql("SYSDATETIME()");
+
+                    b.Property<Guid>("InsertedBy")
+                        .HasColumnType("uniqueidentifier");
+
+                    b.Property<bool>("IsDeleted")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("bit")
+                        .HasDefaultValue(false);
+
+                    b.Property<string>("Location")
+                        .IsRequired()
+                        .HasMaxLength(200)
+                        .HasColumnType("nvarchar(200)");
+
+                    b.Property<string>("Phone")
+                        .IsRequired()
+                        .HasMaxLength(20)
+                        .HasColumnType("nvarchar(20)");
+
+                    b.Property<DateTime?>("UpdatedAt")
+                        .HasColumnType("datetime2(0)");
+
+                    b.Property<Guid?>("UpdatedBy")
+                        .HasColumnType("uniqueidentifier");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("Id");
+
+                    b.HasIndex("IsDeleted");
+
+                    b.HasIndex("Id", "IsDeleted");
+
+                    b.ToTable("Infos", "dbo");
+                });
+
+            modelBuilder.Entity("TahaMucasirogluBlog.Domain.Entities.Concrete.Skill", b =>
+                {
+                    b.Property<Guid>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("uniqueidentifier");
+
+                    b.Property<DateTime?>("DeletedAt")
+                        .HasColumnType("datetime2(0)");
+
+                    b.Property<Guid?>("DeletedBy")
+                        .HasColumnType("uniqueidentifier");
+
+                    b.Property<DateTime>("InsertedAt")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("datetime2(0)")
+                        .HasDefaultValueSql("SYSDATETIME()");
+
+                    b.Property<Guid>("InsertedBy")
+                        .HasColumnType("uniqueidentifier");
+
+                    b.Property<bool>("IsDeleted")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("bit")
+                        .HasDefaultValue(false);
+
+                    b.Property<string>("Name")
+                        .IsRequired()
+                        .HasMaxLength(100)
+                        .HasColumnType("nvarchar(100)");
+
+                    b.Property<DateTime?>("UpdatedAt")
+                        .HasColumnType("datetime2(0)");
+
+                    b.Property<Guid?>("UpdatedBy")
+                        .HasColumnType("uniqueidentifier");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("Id");
+
+                    b.HasIndex("IsDeleted");
+
+                    b.HasIndex("Name")
+                        .IsUnique();
+
+                    b.HasIndex("Id", "IsDeleted");
+
+                    b.ToTable("Skills", "dbo");
+                });
+
+            modelBuilder.Entity("TahaMucasirogluBlog.Domain.Entities.Concrete.SocialLink", b =>
+                {
+                    b.Property<Guid>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("uniqueidentifier");
+
+                    b.Property<DateTime?>("DeletedAt")
+                        .HasColumnType("datetime2(0)");
+
+                    b.Property<Guid?>("DeletedBy")
+                        .HasColumnType("uniqueidentifier");
+
+                    b.Property<int>("DisplayOrder")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int")
+                        .HasDefaultValue(0);
+
+                    b.Property<string>("IconClass")
+                        .IsRequired()
+                        .HasMaxLength(100)
+                        .HasColumnType("nvarchar(100)");
+
+                    b.Property<DateTime>("InsertedAt")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("datetime2(0)")
+                        .HasDefaultValueSql("SYSDATETIME()");
+
+                    b.Property<Guid>("InsertedBy")
+                        .HasColumnType("uniqueidentifier");
+
+                    b.Property<bool>("IsDeleted")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("bit")
+                        .HasDefaultValue(false);
+
+                    b.Property<bool>("IsVisible")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("bit")
+                        .HasDefaultValue(true);
+
+                    b.Property<string>("Name")
+                        .IsRequired()
+                        .HasMaxLength(100)
+                        .HasColumnType("nvarchar(100)");
+
+                    b.Property<DateTime?>("UpdatedAt")
+                        .HasColumnType("datetime2(0)");
+
+                    b.Property<Guid?>("UpdatedBy")
+                        .HasColumnType("uniqueidentifier");
+
+                    b.Property<string>("Url")
+                        .IsRequired()
+                        .HasMaxLength(500)
+                        .HasColumnType("nvarchar(500)");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("Id");
+
+                    b.HasIndex("IsDeleted");
+
+                    b.HasIndex("Id", "IsDeleted");
+
+                    b.ToTable("SocialLinks", "dbo");
+                });
+
+            modelBuilder.Entity("TahaMucasirogluBlog.Domain.Entities.Concrete.SubSkill", b =>
+                {
+                    b.Property<Guid>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("uniqueidentifier");
+
+                    b.Property<DateTime?>("DeletedAt")
+                        .HasColumnType("datetime2(0)");
+
+                    b.Property<Guid?>("DeletedBy")
+                        .HasColumnType("uniqueidentifier");
+
+                    b.Property<DateTime>("InsertedAt")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("datetime2(0)")
+                        .HasDefaultValueSql("SYSDATETIME()");
+
+                    b.Property<Guid>("InsertedBy")
+                        .HasColumnType("uniqueidentifier");
+
+                    b.Property<bool>("IsDeleted")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("bit")
+                        .HasDefaultValue(false);
+
+                    b.Property<string>("Name")
+                        .IsRequired()
+                        .HasMaxLength(100)
+                        .HasColumnType("nvarchar(100)");
+
+                    b.Property<Guid>("SkillId")
+                        .HasColumnType("uniqueidentifier");
+
+                    b.Property<Guid>("SkillId1")
+                        .HasColumnType("uniqueidentifier");
+
+                    b.Property<DateTime?>("UpdatedAt")
+                        .HasColumnType("datetime2(0)");
+
+                    b.Property<Guid?>("UpdatedBy")
+                        .HasColumnType("uniqueidentifier");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("Id");
+
+                    b.HasIndex("IsDeleted");
+
+                    b.HasIndex("SkillId1");
+
+                    b.HasIndex("Id", "IsDeleted");
+
+                    b.HasIndex("SkillId", "Name")
+                        .IsUnique();
+
+                    b.ToTable("SubSkills", "dbo");
+                });
+
             modelBuilder.Entity("TahaMucasirogluBlog.Domain.Entities.Concrete.Tag", b =>
                 {
                     b.Property<Guid>("Id")
@@ -434,7 +850,7 @@ namespace TahaMucasirogluBlog.Infrastructure.Repository.Migrations
                     b.HasOne("TahaMucasirogluBlog.Domain.Entities.Concrete.User", "User")
                         .WithMany("Posts")
                         .HasForeignKey("AuthorId")
-                        .OnDelete(DeleteBehavior.Cascade)
+                        .OnDelete(DeleteBehavior.NoAction)
                         .IsRequired();
 
                     b.Navigation("User");
@@ -470,7 +886,7 @@ namespace TahaMucasirogluBlog.Infrastructure.Repository.Migrations
                     b.HasOne("TahaMucasirogluBlog.Domain.Entities.Concrete.Tag", "Tag")
                         .WithMany("PostTags")
                         .HasForeignKey("TagId")
-                        .OnDelete(DeleteBehavior.Cascade)
+                        .OnDelete(DeleteBehavior.NoAction)
                         .IsRequired();
 
                     b.Navigation("BlogPost");
@@ -483,7 +899,7 @@ namespace TahaMucasirogluBlog.Infrastructure.Repository.Migrations
                     b.HasOne("TahaMucasirogluBlog.Domain.Entities.Concrete.Category", "ParrentCategory")
                         .WithMany("SubCategories")
                         .HasForeignKey("ParentCategoryId")
-                        .OnDelete(DeleteBehavior.Restrict);
+                        .OnDelete(DeleteBehavior.NoAction);
 
                     b.Navigation("ParrentCategory");
                 });
@@ -493,7 +909,7 @@ namespace TahaMucasirogluBlog.Infrastructure.Repository.Migrations
                     b.HasOne("TahaMucasirogluBlog.Domain.Entities.Concrete.Comment", "ParentComment")
                         .WithMany("Replies")
                         .HasForeignKey("ParentCommentId")
-                        .OnDelete(DeleteBehavior.Restrict);
+                        .OnDelete(DeleteBehavior.NoAction);
 
                     b.HasOne("TahaMucasirogluBlog.Domain.Entities.Concrete.BlogPost", "BlogPost")
                         .WithMany("Comments")
@@ -504,6 +920,57 @@ namespace TahaMucasirogluBlog.Infrastructure.Repository.Migrations
                     b.Navigation("BlogPost");
 
                     b.Navigation("ParentComment");
+                });
+
+            modelBuilder.Entity("TahaMucasirogluBlog.Domain.Entities.Concrete.Experience", b =>
+                {
+                    b.HasOne("TahaMucasirogluBlog.Domain.Entities.Concrete.ExperienceType", "ExperienceType")
+                        .WithMany()
+                        .HasForeignKey("ExperienceTypeId")
+                        .OnDelete(DeleteBehavior.NoAction)
+                        .IsRequired();
+
+                    b.Navigation("ExperienceType");
+                });
+
+            modelBuilder.Entity("TahaMucasirogluBlog.Domain.Entities.Concrete.ExperienceTechnology", b =>
+                {
+                    b.HasOne("TahaMucasirogluBlog.Domain.Entities.Concrete.Experience", "Experience")
+                        .WithMany("ExperienceTechnologies")
+                        .HasForeignKey("ExperienceId")
+                        .OnDelete(DeleteBehavior.NoAction)
+                        .IsRequired();
+
+                    b.HasOne("TahaMucasirogluBlog.Domain.Entities.Concrete.SubSkill", "SubSkill")
+                        .WithMany()
+                        .HasForeignKey("SubSkillId")
+                        .OnDelete(DeleteBehavior.NoAction)
+                        .IsRequired();
+
+                    b.HasOne("TahaMucasirogluBlog.Domain.Entities.Concrete.SubSkill", null)
+                        .WithMany("ExperienceTechnologies")
+                        .HasForeignKey("SubSkillId1");
+
+                    b.Navigation("Experience");
+
+                    b.Navigation("SubSkill");
+                });
+
+            modelBuilder.Entity("TahaMucasirogluBlog.Domain.Entities.Concrete.SubSkill", b =>
+                {
+                    b.HasOne("TahaMucasirogluBlog.Domain.Entities.Concrete.Skill", null)
+                        .WithMany("SubSkills")
+                        .HasForeignKey("SkillId")
+                        .OnDelete(DeleteBehavior.NoAction)
+                        .IsRequired();
+
+                    b.HasOne("TahaMucasirogluBlog.Domain.Entities.Concrete.Skill", "Skill")
+                        .WithMany()
+                        .HasForeignKey("SkillId1")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("Skill");
                 });
 
             modelBuilder.Entity("TahaMucasirogluBlog.Domain.Entities.Concrete.BlogPost", b =>
@@ -525,6 +992,21 @@ namespace TahaMucasirogluBlog.Infrastructure.Repository.Migrations
             modelBuilder.Entity("TahaMucasirogluBlog.Domain.Entities.Concrete.Comment", b =>
                 {
                     b.Navigation("Replies");
+                });
+
+            modelBuilder.Entity("TahaMucasirogluBlog.Domain.Entities.Concrete.Experience", b =>
+                {
+                    b.Navigation("ExperienceTechnologies");
+                });
+
+            modelBuilder.Entity("TahaMucasirogluBlog.Domain.Entities.Concrete.Skill", b =>
+                {
+                    b.Navigation("SubSkills");
+                });
+
+            modelBuilder.Entity("TahaMucasirogluBlog.Domain.Entities.Concrete.SubSkill", b =>
+                {
+                    b.Navigation("ExperienceTechnologies");
                 });
 
             modelBuilder.Entity("TahaMucasirogluBlog.Domain.Entities.Concrete.Tag", b =>

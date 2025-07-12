@@ -50,7 +50,7 @@ namespace TahaMucasirogluBlog.Presentation.API.Controllers.Base
             return Ok("Sistem Çalışırıyor");
         }
 
-        [HttpGet("[action]")]
+        [HttpPost("[action]")]
         [ServiceFilter(typeof(LogConnectionAttribute))]
         public IActionResult HealthCheck([FromBody] HealthCheckRequestDTO model)
         {

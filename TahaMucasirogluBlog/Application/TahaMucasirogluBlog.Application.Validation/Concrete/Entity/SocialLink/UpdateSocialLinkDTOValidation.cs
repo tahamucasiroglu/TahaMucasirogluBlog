@@ -10,6 +10,13 @@ using TahaMucasirogluBlog.Domain.DTOs.Concrete.Entity.SocialLink;
 
 namespace TahaMucasirogluBlog.Application.Validation.Concrete.Entity.SocialLink
 {
+    public class UpdateSocialLinkListDTOValidation : AbstractValidator<IEnumerable<UpdateSocialLinkDTO>>
+    {
+        public UpdateSocialLinkListDTOValidation()
+        {
+            RuleForEach(x => x).SetValidator(new UpdateSocialLinkDTOValidation());
+        }
+    }
     public class UpdateSocialLinkDTOValidation : UpdateValidation<UpdateSocialLinkDTO>
     {
         public UpdateSocialLinkDTOValidation() : base()

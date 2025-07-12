@@ -6,7 +6,7 @@ using Microsoft.EntityFrameworkCore.Migrations;
 namespace TahaMucasirogluBlog.Infrastructure.Repository.Migrations
 {
     /// <inheritdoc />
-    public partial class AutoMig_2025_7_11_15_41_58 : Migration
+    public partial class AutoMig_2025_7_12_21_26_47 : Migration
     {
         /// <inheritdoc />
         protected override void Up(MigrationBuilder migrationBuilder)
@@ -39,8 +39,94 @@ namespace TahaMucasirogluBlog.Infrastructure.Repository.Migrations
                         column: x => x.ParentCategoryId,
                         principalSchema: "dbo",
                         principalTable: "Categories",
-                        principalColumn: "Id",
-                        onDelete: ReferentialAction.Restrict);
+                        principalColumn: "Id");
+                });
+
+            migrationBuilder.CreateTable(
+                name: "ExperienceTypes",
+                schema: "dbo",
+                columns: table => new
+                {
+                    Id = table.Column<Guid>(type: "uniqueidentifier", nullable: false),
+                    Name = table.Column<string>(type: "nvarchar(100)", maxLength: 100, nullable: false),
+                    IsDeleted = table.Column<bool>(type: "bit", nullable: false, defaultValue: false),
+                    InsertedAt = table.Column<DateTime>(type: "datetime2(0)", nullable: false, defaultValueSql: "SYSDATETIME()"),
+                    UpdatedAt = table.Column<DateTime>(type: "datetime2(0)", nullable: true),
+                    DeletedAt = table.Column<DateTime>(type: "datetime2(0)", nullable: true),
+                    InsertedBy = table.Column<Guid>(type: "uniqueidentifier", nullable: false),
+                    UpdatedBy = table.Column<Guid>(type: "uniqueidentifier", nullable: true),
+                    DeletedBy = table.Column<Guid>(type: "uniqueidentifier", nullable: true)
+                },
+                constraints: table =>
+                {
+                    table.PrimaryKey("PK_ExperienceTypes", x => x.Id);
+                });
+
+            migrationBuilder.CreateTable(
+                name: "Infos",
+                schema: "dbo",
+                columns: table => new
+                {
+                    Id = table.Column<Guid>(type: "uniqueidentifier", nullable: false),
+                    FullName = table.Column<string>(type: "nvarchar(200)", maxLength: 200, nullable: false),
+                    Email = table.Column<string>(type: "nvarchar(200)", maxLength: 200, nullable: false),
+                    Phone = table.Column<string>(type: "nvarchar(20)", maxLength: 20, nullable: false),
+                    Location = table.Column<string>(type: "nvarchar(200)", maxLength: 200, nullable: false),
+                    IsDeleted = table.Column<bool>(type: "bit", nullable: false, defaultValue: false),
+                    InsertedAt = table.Column<DateTime>(type: "datetime2(0)", nullable: false, defaultValueSql: "SYSDATETIME()"),
+                    UpdatedAt = table.Column<DateTime>(type: "datetime2(0)", nullable: true),
+                    DeletedAt = table.Column<DateTime>(type: "datetime2(0)", nullable: true),
+                    InsertedBy = table.Column<Guid>(type: "uniqueidentifier", nullable: false),
+                    UpdatedBy = table.Column<Guid>(type: "uniqueidentifier", nullable: true),
+                    DeletedBy = table.Column<Guid>(type: "uniqueidentifier", nullable: true)
+                },
+                constraints: table =>
+                {
+                    table.PrimaryKey("PK_Infos", x => x.Id);
+                });
+
+            migrationBuilder.CreateTable(
+                name: "Skills",
+                schema: "dbo",
+                columns: table => new
+                {
+                    Id = table.Column<Guid>(type: "uniqueidentifier", nullable: false),
+                    Name = table.Column<string>(type: "nvarchar(100)", maxLength: 100, nullable: false),
+                    IsDeleted = table.Column<bool>(type: "bit", nullable: false, defaultValue: false),
+                    InsertedAt = table.Column<DateTime>(type: "datetime2(0)", nullable: false, defaultValueSql: "SYSDATETIME()"),
+                    UpdatedAt = table.Column<DateTime>(type: "datetime2(0)", nullable: true),
+                    DeletedAt = table.Column<DateTime>(type: "datetime2(0)", nullable: true),
+                    InsertedBy = table.Column<Guid>(type: "uniqueidentifier", nullable: false),
+                    UpdatedBy = table.Column<Guid>(type: "uniqueidentifier", nullable: true),
+                    DeletedBy = table.Column<Guid>(type: "uniqueidentifier", nullable: true)
+                },
+                constraints: table =>
+                {
+                    table.PrimaryKey("PK_Skills", x => x.Id);
+                });
+
+            migrationBuilder.CreateTable(
+                name: "SocialLinks",
+                schema: "dbo",
+                columns: table => new
+                {
+                    Id = table.Column<Guid>(type: "uniqueidentifier", nullable: false),
+                    Name = table.Column<string>(type: "nvarchar(100)", maxLength: 100, nullable: false),
+                    Url = table.Column<string>(type: "nvarchar(500)", maxLength: 500, nullable: false),
+                    IconClass = table.Column<string>(type: "nvarchar(100)", maxLength: 100, nullable: false),
+                    DisplayOrder = table.Column<int>(type: "int", nullable: false, defaultValue: 0),
+                    IsVisible = table.Column<bool>(type: "bit", nullable: false, defaultValue: true),
+                    IsDeleted = table.Column<bool>(type: "bit", nullable: false, defaultValue: false),
+                    InsertedAt = table.Column<DateTime>(type: "datetime2(0)", nullable: false, defaultValueSql: "SYSDATETIME()"),
+                    UpdatedAt = table.Column<DateTime>(type: "datetime2(0)", nullable: true),
+                    DeletedAt = table.Column<DateTime>(type: "datetime2(0)", nullable: true),
+                    InsertedBy = table.Column<Guid>(type: "uniqueidentifier", nullable: false),
+                    UpdatedBy = table.Column<Guid>(type: "uniqueidentifier", nullable: true),
+                    DeletedBy = table.Column<Guid>(type: "uniqueidentifier", nullable: true)
+                },
+                constraints: table =>
+                {
+                    table.PrimaryKey("PK_SocialLinks", x => x.Id);
                 });
 
             migrationBuilder.CreateTable(
@@ -88,6 +174,73 @@ namespace TahaMucasirogluBlog.Infrastructure.Repository.Migrations
                 });
 
             migrationBuilder.CreateTable(
+                name: "Experiences",
+                schema: "dbo",
+                columns: table => new
+                {
+                    Id = table.Column<Guid>(type: "uniqueidentifier", nullable: false),
+                    ExperienceTypeId = table.Column<Guid>(type: "uniqueidentifier", nullable: false),
+                    Title = table.Column<string>(type: "nvarchar(200)", maxLength: 200, nullable: false),
+                    Provider = table.Column<string>(type: "nvarchar(200)", maxLength: 200, nullable: false),
+                    StartDate = table.Column<DateTime>(type: "datetime2", nullable: false),
+                    EndDate = table.Column<DateTime>(type: "datetime2", nullable: true),
+                    Description = table.Column<string>(type: "nvarchar(max)", nullable: false),
+                    Reference = table.Column<string>(type: "nvarchar(200)", maxLength: 200, nullable: true),
+                    IsDeleted = table.Column<bool>(type: "bit", nullable: false, defaultValue: false),
+                    InsertedAt = table.Column<DateTime>(type: "datetime2(0)", nullable: false, defaultValueSql: "SYSDATETIME()"),
+                    UpdatedAt = table.Column<DateTime>(type: "datetime2(0)", nullable: true),
+                    DeletedAt = table.Column<DateTime>(type: "datetime2(0)", nullable: true),
+                    InsertedBy = table.Column<Guid>(type: "uniqueidentifier", nullable: false),
+                    UpdatedBy = table.Column<Guid>(type: "uniqueidentifier", nullable: true),
+                    DeletedBy = table.Column<Guid>(type: "uniqueidentifier", nullable: true)
+                },
+                constraints: table =>
+                {
+                    table.PrimaryKey("PK_Experiences", x => x.Id);
+                    table.ForeignKey(
+                        name: "FK_Experiences_ExperienceTypes_ExperienceTypeId",
+                        column: x => x.ExperienceTypeId,
+                        principalSchema: "dbo",
+                        principalTable: "ExperienceTypes",
+                        principalColumn: "Id");
+                });
+
+            migrationBuilder.CreateTable(
+                name: "SubSkills",
+                schema: "dbo",
+                columns: table => new
+                {
+                    Id = table.Column<Guid>(type: "uniqueidentifier", nullable: false),
+                    SkillId = table.Column<Guid>(type: "uniqueidentifier", nullable: false),
+                    Name = table.Column<string>(type: "nvarchar(100)", maxLength: 100, nullable: false),
+                    SkillId1 = table.Column<Guid>(type: "uniqueidentifier", nullable: false),
+                    IsDeleted = table.Column<bool>(type: "bit", nullable: false, defaultValue: false),
+                    InsertedAt = table.Column<DateTime>(type: "datetime2(0)", nullable: false, defaultValueSql: "SYSDATETIME()"),
+                    UpdatedAt = table.Column<DateTime>(type: "datetime2(0)", nullable: true),
+                    DeletedAt = table.Column<DateTime>(type: "datetime2(0)", nullable: true),
+                    InsertedBy = table.Column<Guid>(type: "uniqueidentifier", nullable: false),
+                    UpdatedBy = table.Column<Guid>(type: "uniqueidentifier", nullable: true),
+                    DeletedBy = table.Column<Guid>(type: "uniqueidentifier", nullable: true)
+                },
+                constraints: table =>
+                {
+                    table.PrimaryKey("PK_SubSkills", x => x.Id);
+                    table.ForeignKey(
+                        name: "FK_SubSkills_Skills_SkillId",
+                        column: x => x.SkillId,
+                        principalSchema: "dbo",
+                        principalTable: "Skills",
+                        principalColumn: "Id");
+                    table.ForeignKey(
+                        name: "FK_SubSkills_Skills_SkillId1",
+                        column: x => x.SkillId1,
+                        principalSchema: "dbo",
+                        principalTable: "Skills",
+                        principalColumn: "Id",
+                        onDelete: ReferentialAction.Cascade);
+                });
+
+            migrationBuilder.CreateTable(
                 name: "BlogPosts",
                 schema: "dbo",
                 columns: table => new
@@ -114,8 +267,47 @@ namespace TahaMucasirogluBlog.Infrastructure.Repository.Migrations
                         column: x => x.AuthorId,
                         principalSchema: "dbo",
                         principalTable: "Users",
-                        principalColumn: "Id",
-                        onDelete: ReferentialAction.Cascade);
+                        principalColumn: "Id");
+                });
+
+            migrationBuilder.CreateTable(
+                name: "ExperienceTechnologies",
+                schema: "dbo",
+                columns: table => new
+                {
+                    Id = table.Column<Guid>(type: "uniqueidentifier", nullable: false),
+                    ExperienceId = table.Column<Guid>(type: "uniqueidentifier", nullable: false),
+                    SubSkillId = table.Column<Guid>(type: "uniqueidentifier", nullable: false),
+                    SubSkillId1 = table.Column<Guid>(type: "uniqueidentifier", nullable: true),
+                    IsDeleted = table.Column<bool>(type: "bit", nullable: false, defaultValue: false),
+                    InsertedAt = table.Column<DateTime>(type: "datetime2(0)", nullable: false, defaultValueSql: "SYSDATETIME()"),
+                    UpdatedAt = table.Column<DateTime>(type: "datetime2(0)", nullable: true),
+                    DeletedAt = table.Column<DateTime>(type: "datetime2(0)", nullable: true),
+                    InsertedBy = table.Column<Guid>(type: "uniqueidentifier", nullable: false),
+                    UpdatedBy = table.Column<Guid>(type: "uniqueidentifier", nullable: true),
+                    DeletedBy = table.Column<Guid>(type: "uniqueidentifier", nullable: true)
+                },
+                constraints: table =>
+                {
+                    table.PrimaryKey("PK_ExperienceTechnologies", x => x.Id);
+                    table.ForeignKey(
+                        name: "FK_ExperienceTechnologies_Experiences_ExperienceId",
+                        column: x => x.ExperienceId,
+                        principalSchema: "dbo",
+                        principalTable: "Experiences",
+                        principalColumn: "Id");
+                    table.ForeignKey(
+                        name: "FK_ExperienceTechnologies_SubSkills_SubSkillId",
+                        column: x => x.SubSkillId,
+                        principalSchema: "dbo",
+                        principalTable: "SubSkills",
+                        principalColumn: "Id");
+                    table.ForeignKey(
+                        name: "FK_ExperienceTechnologies_SubSkills_SubSkillId1",
+                        column: x => x.SubSkillId1,
+                        principalSchema: "dbo",
+                        principalTable: "SubSkills",
+                        principalColumn: "Id");
                 });
 
             migrationBuilder.CreateTable(
@@ -181,8 +373,7 @@ namespace TahaMucasirogluBlog.Infrastructure.Repository.Migrations
                         column: x => x.TagId,
                         principalSchema: "dbo",
                         principalTable: "Tags",
-                        principalColumn: "Id",
-                        onDelete: ReferentialAction.Cascade);
+                        principalColumn: "Id");
                 });
 
             migrationBuilder.CreateTable(
@@ -217,8 +408,7 @@ namespace TahaMucasirogluBlog.Infrastructure.Repository.Migrations
                         column: x => x.ParentCommentId,
                         principalSchema: "dbo",
                         principalTable: "Comments",
-                        principalColumn: "Id",
-                        onDelete: ReferentialAction.Restrict);
+                        principalColumn: "Id");
                 });
 
             migrationBuilder.CreateIndex(
@@ -362,6 +552,184 @@ namespace TahaMucasirogluBlog.Infrastructure.Repository.Migrations
                 column: "PostId");
 
             migrationBuilder.CreateIndex(
+                name: "IX_Experiences_ExperienceTypeId",
+                schema: "dbo",
+                table: "Experiences",
+                column: "ExperienceTypeId");
+
+            migrationBuilder.CreateIndex(
+                name: "IX_Experiences_Id",
+                schema: "dbo",
+                table: "Experiences",
+                column: "Id");
+
+            migrationBuilder.CreateIndex(
+                name: "IX_Experiences_Id_IsDeleted",
+                schema: "dbo",
+                table: "Experiences",
+                columns: new[] { "Id", "IsDeleted" });
+
+            migrationBuilder.CreateIndex(
+                name: "IX_Experiences_IsDeleted",
+                schema: "dbo",
+                table: "Experiences",
+                column: "IsDeleted");
+
+            migrationBuilder.CreateIndex(
+                name: "IX_ExperienceTechnologies_ExperienceId_SubSkillId",
+                schema: "dbo",
+                table: "ExperienceTechnologies",
+                columns: new[] { "ExperienceId", "SubSkillId" },
+                unique: true);
+
+            migrationBuilder.CreateIndex(
+                name: "IX_ExperienceTechnologies_Id",
+                schema: "dbo",
+                table: "ExperienceTechnologies",
+                column: "Id");
+
+            migrationBuilder.CreateIndex(
+                name: "IX_ExperienceTechnologies_Id_IsDeleted",
+                schema: "dbo",
+                table: "ExperienceTechnologies",
+                columns: new[] { "Id", "IsDeleted" });
+
+            migrationBuilder.CreateIndex(
+                name: "IX_ExperienceTechnologies_IsDeleted",
+                schema: "dbo",
+                table: "ExperienceTechnologies",
+                column: "IsDeleted");
+
+            migrationBuilder.CreateIndex(
+                name: "IX_ExperienceTechnologies_SubSkillId",
+                schema: "dbo",
+                table: "ExperienceTechnologies",
+                column: "SubSkillId");
+
+            migrationBuilder.CreateIndex(
+                name: "IX_ExperienceTechnologies_SubSkillId1",
+                schema: "dbo",
+                table: "ExperienceTechnologies",
+                column: "SubSkillId1");
+
+            migrationBuilder.CreateIndex(
+                name: "IX_ExperienceTypes_Id",
+                schema: "dbo",
+                table: "ExperienceTypes",
+                column: "Id");
+
+            migrationBuilder.CreateIndex(
+                name: "IX_ExperienceTypes_Id_IsDeleted",
+                schema: "dbo",
+                table: "ExperienceTypes",
+                columns: new[] { "Id", "IsDeleted" });
+
+            migrationBuilder.CreateIndex(
+                name: "IX_ExperienceTypes_IsDeleted",
+                schema: "dbo",
+                table: "ExperienceTypes",
+                column: "IsDeleted");
+
+            migrationBuilder.CreateIndex(
+                name: "IX_ExperienceTypes_Name",
+                schema: "dbo",
+                table: "ExperienceTypes",
+                column: "Name",
+                unique: true);
+
+            migrationBuilder.CreateIndex(
+                name: "IX_Infos_Id",
+                schema: "dbo",
+                table: "Infos",
+                column: "Id");
+
+            migrationBuilder.CreateIndex(
+                name: "IX_Infos_Id_IsDeleted",
+                schema: "dbo",
+                table: "Infos",
+                columns: new[] { "Id", "IsDeleted" });
+
+            migrationBuilder.CreateIndex(
+                name: "IX_Infos_IsDeleted",
+                schema: "dbo",
+                table: "Infos",
+                column: "IsDeleted");
+
+            migrationBuilder.CreateIndex(
+                name: "IX_Skills_Id",
+                schema: "dbo",
+                table: "Skills",
+                column: "Id");
+
+            migrationBuilder.CreateIndex(
+                name: "IX_Skills_Id_IsDeleted",
+                schema: "dbo",
+                table: "Skills",
+                columns: new[] { "Id", "IsDeleted" });
+
+            migrationBuilder.CreateIndex(
+                name: "IX_Skills_IsDeleted",
+                schema: "dbo",
+                table: "Skills",
+                column: "IsDeleted");
+
+            migrationBuilder.CreateIndex(
+                name: "IX_Skills_Name",
+                schema: "dbo",
+                table: "Skills",
+                column: "Name",
+                unique: true);
+
+            migrationBuilder.CreateIndex(
+                name: "IX_SocialLinks_Id",
+                schema: "dbo",
+                table: "SocialLinks",
+                column: "Id");
+
+            migrationBuilder.CreateIndex(
+                name: "IX_SocialLinks_Id_IsDeleted",
+                schema: "dbo",
+                table: "SocialLinks",
+                columns: new[] { "Id", "IsDeleted" });
+
+            migrationBuilder.CreateIndex(
+                name: "IX_SocialLinks_IsDeleted",
+                schema: "dbo",
+                table: "SocialLinks",
+                column: "IsDeleted");
+
+            migrationBuilder.CreateIndex(
+                name: "IX_SubSkills_Id",
+                schema: "dbo",
+                table: "SubSkills",
+                column: "Id");
+
+            migrationBuilder.CreateIndex(
+                name: "IX_SubSkills_Id_IsDeleted",
+                schema: "dbo",
+                table: "SubSkills",
+                columns: new[] { "Id", "IsDeleted" });
+
+            migrationBuilder.CreateIndex(
+                name: "IX_SubSkills_IsDeleted",
+                schema: "dbo",
+                table: "SubSkills",
+                column: "IsDeleted");
+
+            migrationBuilder.CreateIndex(
+                name: "IX_SubSkills_SkillId_Name",
+                schema: "dbo",
+                table: "SubSkills",
+                columns: new[] { "SkillId", "Name" },
+                unique: true);
+
+            migrationBuilder.CreateIndex(
+                name: "IX_SubSkills_SkillId1",
+                schema: "dbo",
+                table: "SubSkills",
+                column: "SkillId1");
+
+            migrationBuilder.CreateIndex(
                 name: "IX_Tags_Id",
                 schema: "dbo",
                 table: "Tags",
@@ -428,6 +796,18 @@ namespace TahaMucasirogluBlog.Infrastructure.Repository.Migrations
                 schema: "dbo");
 
             migrationBuilder.DropTable(
+                name: "ExperienceTechnologies",
+                schema: "dbo");
+
+            migrationBuilder.DropTable(
+                name: "Infos",
+                schema: "dbo");
+
+            migrationBuilder.DropTable(
+                name: "SocialLinks",
+                schema: "dbo");
+
+            migrationBuilder.DropTable(
                 name: "Categories",
                 schema: "dbo");
 
@@ -440,7 +820,23 @@ namespace TahaMucasirogluBlog.Infrastructure.Repository.Migrations
                 schema: "dbo");
 
             migrationBuilder.DropTable(
+                name: "Experiences",
+                schema: "dbo");
+
+            migrationBuilder.DropTable(
+                name: "SubSkills",
+                schema: "dbo");
+
+            migrationBuilder.DropTable(
                 name: "Users",
+                schema: "dbo");
+
+            migrationBuilder.DropTable(
+                name: "ExperienceTypes",
+                schema: "dbo");
+
+            migrationBuilder.DropTable(
+                name: "Skills",
                 schema: "dbo");
         }
     }
