@@ -1,4 +1,7 @@
 ﻿using AutoMapper;
+using Azure;
+using FluentValidation;
+using FluentValidation.Results;
 using Microsoft.AspNetCore.Http.HttpResults;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.Logging;
@@ -39,6 +42,11 @@ namespace TahaMucasirogluBlog.Service.Database.Base
             this.configuration = configuration;
             this.logger = logger;
         }
+
+        public ErrorReturn<T> ValidationReturn<T>(ValidationResult validationResult)
+            => new ErrorReturn<T>(message: string.Join("", validationResult.Errors.Select(e => $"{e.PropertyName} - {e.ErrorMessage}\n")));
+
+
 
         public IReturn<Tout> AutoReturn<Tout, Tin>(IReturn<Tin> model, string message = "", string errorMessage = "", bool log = true)
         {
@@ -174,33 +182,50 @@ namespace TahaMucasirogluBlog.Service.Database.Base
        where TResponse : class, IGetDTO
         where TAddRequest : class, IAddDTO
     {
+        internal readonly IValidator<TAddRequest> addValidator;
+        internal readonly IValidator<IEnumerable<TAddRequest>> addValidatorList;
         public DatabaseService(
             IRepository<TEntity> repository,
             IMapper mapper,
             IConfiguration configuration,
-            ILogger<DatabaseService<TEntity, TResponse>> logger) : base(repository, mapper, configuration, logger) { }
+            IValidator<TAddRequest> addValidator,
+            IValidator<IEnumerable<TAddRequest>> addValidatorList,
+            ILogger<DatabaseService<TEntity, TResponse>> logger) : base(repository, mapper, configuration, logger) 
+        {
+            this.addValidator = addValidator;
+            this.addValidatorList = addValidatorList;
+        }
 
 
         public virtual IReturn<TResponse> Add(TAddRequest entity)
         {
+            ValidationResult addValidationResult = addValidator.Validate(entity);
+            if (!addValidationResult.IsValid) return ValidationReturn<TResponse>(addValidationResult);
             TEntity ent = mapper.Map<TEntity>(entity);
             return AutoReturn<TResponse, TEntity>(repository.Add(ent));
         }
 
         public virtual IReturn<IEnumerable<TResponse>> Add(IEnumerable<TAddRequest> entity)
         {
+            ValidationResult addValidationResult = addValidatorList.Validate(entity);
+            if (!addValidationResult.IsValid) return ValidationReturn<IEnumerable<TResponse>>(addValidationResult);
             IEnumerable<TEntity> ent = mapper.Map<IEnumerable<TEntity>>(entity);
             return AutoReturn<IEnumerable<TResponse>, IEnumerable<TEntity>>(repository.Add(ent));
         }
 
         public virtual async Task<IReturn<TResponse>> AddAsync(TAddRequest entity)
         {
+            ValidationResult addValidationResult = await addValidator.ValidateAsync(entity);
+            if (!addValidationResult.IsValid) return ValidationReturn<TResponse>(addValidationResult);
             TEntity ent = mapper.Map<TEntity>(entity);
             return AutoReturn<TResponse, TEntity>(await repository.AddAsync(ent));
         }
 
         public virtual async Task<IReturn<IEnumerable<TResponse>>> AddAsync(IEnumerable<TAddRequest> entity)
         {
+
+            ValidationResult addValidationResult = await addValidatorList.ValidateAsync(entity);
+            if (!addValidationResult.IsValid) return ValidationReturn<IEnumerable<TResponse>>(addValidationResult);
             IEnumerable<TEntity> ent = mapper.Map<IEnumerable<TEntity>>(entity);
             return AutoReturn<IEnumerable<TResponse>, IEnumerable<TEntity>>(await repository.AddAsync(ent));
         }
@@ -213,34 +238,52 @@ namespace TahaMucasirogluBlog.Service.Database.Base
        where TAddRequest : class, IAddDTO
         where TUpdateRequest : class, IUpdateDTO
     {
+        internal readonly IValidator<TUpdateRequest> updateValidator;
+        internal readonly IValidator<IEnumerable<TUpdateRequest>> updateValidatorList;
         public DatabaseService(
             IRepository<TEntity> repository,
             IMapper mapper,
             IConfiguration configuration,
-            ILogger<DatabaseService<TEntity, TResponse>> logger) : base(repository, mapper, configuration, logger) { }
+            IValidator<TAddRequest> addValidator,
+            IValidator<IEnumerable<TAddRequest>> addValidatorList,
+            IValidator<TUpdateRequest> updateValidator,
+            IValidator<IEnumerable<TUpdateRequest>> updateValidatorList,
+            ILogger<DatabaseService<TEntity, TResponse>> logger) : base(repository, mapper, configuration, addValidator, addValidatorList, logger) 
+        {
+            this.updateValidator = updateValidator;
+            this.updateValidatorList = updateValidatorList;
+        }
 
 
 
         public virtual IReturn<TResponse> Update(TUpdateRequest entity)
         {
+            ValidationResult updateValidationResult = updateValidator.Validate(entity);
+            if (!updateValidationResult.IsValid) return ValidationReturn<TResponse>(updateValidationResult);
             TEntity ent = mapper.Map<TEntity>(entity);
             return AutoReturn<TResponse, TEntity>(repository.Update(ent));
         }
 
         public virtual IReturn<IEnumerable<TResponse>> Update(IEnumerable<TUpdateRequest> entity)
         {
+            ValidationResult updateValidationResult = updateValidatorList.Validate(entity);
+            if (!updateValidationResult.IsValid) return ValidationReturn<IEnumerable<TResponse>>(updateValidationResult);
             IEnumerable<TEntity> ent = mapper.Map<IEnumerable<TEntity>>(entity);
             return AutoReturn<IEnumerable<TResponse>, IEnumerable<TEntity>>(repository.Update(ent));
         }
 
         public virtual async Task<IReturn<TResponse>> UpdateAsync(TUpdateRequest entity)
         {
+            ValidationResult updateValidationResult = await updateValidator.ValidateAsync(entity);
+            if (!updateValidationResult.IsValid) return ValidationReturn<TResponse>(updateValidationResult);
             TEntity ent = mapper.Map<TEntity>(entity);
             return AutoReturn<TResponse, TEntity>(await repository.UpdateAsync(ent));
         }
 
         public virtual async Task<IReturn<IEnumerable<TResponse>>> UpdateAsync(IEnumerable<TUpdateRequest> entity)
         {
+            ValidationResult updateValidationResult = await updateValidatorList.ValidateAsync(entity);
+            if (!updateValidationResult.IsValid) return ValidationReturn<IEnumerable<TResponse>>(updateValidationResult);
             IEnumerable<TEntity> ent = mapper.Map<IEnumerable<TEntity>>(entity);
             return AutoReturn<IEnumerable<TResponse>, IEnumerable<TEntity>>(await repository.UpdateAsync(ent));
         }
@@ -255,29 +298,49 @@ namespace TahaMucasirogluBlog.Service.Database.Base
         where TUpdateRequest : class, IUpdateDTO
         where TDeleteRequest : class, IDeleteDTO
     {
+        private readonly IValidator<TDeleteRequest> deleteValidator;
+        private readonly IValidator<IEnumerable<TDeleteRequest>> deleteValidatorList;
         public DatabaseService(
             IRepository<TEntity> repository,
             IMapper mapper,
             IConfiguration configuration,
-            ILogger<DatabaseService<TEntity, TResponse>> logger) : base(repository, mapper, configuration, logger) { }
+            IValidator<TAddRequest> addValidator,
+            IValidator<IEnumerable<TAddRequest>> addValidatorList,
+            IValidator<TUpdateRequest> updateValidator,
+            IValidator<IEnumerable<TUpdateRequest>> updateValidatorList,
+            IValidator<TDeleteRequest> deleteValidator,
+            IValidator<IEnumerable<TDeleteRequest>> deleteValidatorList,
+            ILogger<DatabaseService<TEntity, TResponse>> logger) : base(repository, mapper, configuration, addValidator, addValidatorList, updateValidator, updateValidatorList, logger) 
+        {
+            this.deleteValidator = deleteValidator;
+            this.deleteValidatorList = deleteValidatorList;
+        }
 
         public virtual IReturn<TResponse> Delete(TDeleteRequest entity)
         {
+            ValidationResult deleteValidationResult = deleteValidator.Validate(entity);
+            if (!deleteValidationResult.IsValid) return ValidationReturn<TResponse>(deleteValidationResult);
             return AutoReturn<TResponse, TEntity>(repository.Delete(mapper.Map<TEntity>(entity)));
         }
 
         public virtual IReturn<IEnumerable<TResponse>> Delete(IEnumerable<TDeleteRequest> entity)
         {
+            ValidationResult deleteValidationResult = deleteValidatorList.Validate(entity);
+            if (!deleteValidationResult.IsValid) return ValidationReturn<IEnumerable<TResponse>>(deleteValidationResult);
             return AutoReturn<IEnumerable<TResponse>, IEnumerable<TEntity>>(repository.Delete(mapper.Map<IEnumerable<TEntity>>(entity)));
         }
 
         public virtual async Task<IReturn<TResponse>> DeleteAsync(TDeleteRequest entity)
         {
+            ValidationResult deleteValidationResult = await deleteValidator.ValidateAsync(entity);
+            if (!deleteValidationResult.IsValid) return ValidationReturn<TResponse>(deleteValidationResult);
             return AutoReturn<TResponse, TEntity>(await repository.DeleteAsync(mapper.Map<TEntity>(entity)));
         }
 
         public virtual async Task<IReturn<IEnumerable<TResponse>>> DeleteAsync(IEnumerable<TDeleteRequest> entity)
         {
+            ValidationResult deleteValidationResult = await deleteValidatorList.ValidateAsync(entity);
+            if (!deleteValidationResult.IsValid) return ValidationReturn<IEnumerable<TResponse>>(deleteValidationResult);
             return AutoReturn<IEnumerable<TResponse>, IEnumerable<TEntity>>(await repository.DeleteAsync(mapper.Map<IEnumerable<TEntity>>(entity)));
         }
     }

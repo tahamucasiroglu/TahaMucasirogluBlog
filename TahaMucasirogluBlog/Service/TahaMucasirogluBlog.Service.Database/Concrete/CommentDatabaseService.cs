@@ -1,4 +1,5 @@
 ﻿using AutoMapper;
+using FluentValidation;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.Logging;
 using System;
@@ -17,7 +18,7 @@ namespace TahaMucasirogluBlog.Service.Database.Concrete
 {
     public class CommentDatabaseService : DatabaseService<Comment, GetCommentDTO, AddCommentDTO, UpdateCommentDTO, DeleteCommentDTO>, ICommentDatabaseService
     {
-        public CommentDatabaseService(ICommentRepository repository, IMapper mapper, IConfiguration configuration, ILogger<CommentDatabaseService> logger) : base(repository, mapper, configuration, logger)
+        public CommentDatabaseService(ICommentRepository repository, IMapper mapper, IConfiguration configuration, IValidator<AddCommentDTO> addValidator, IValidator<IEnumerable<AddCommentDTO>> addValidatorList, IValidator<UpdateCommentDTO> updateValidator, IValidator<IEnumerable<UpdateCommentDTO>> updateValidatorList, IValidator<DeleteCommentDTO> deleteValidator, IValidator<IEnumerable<DeleteCommentDTO>> deleteValidatorList, ILogger<CommentDatabaseService> logger) : base(repository, mapper, configuration, addValidator, addValidatorList, updateValidator, updateValidatorList, deleteValidator, deleteValidatorList, logger)
         {
         }
     }

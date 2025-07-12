@@ -2,6 +2,8 @@
 using TahaMucasirogluBlog.Application.Managers.LoggerManager;
 using TahaMucasirogluBlog.Infrastructure.Repository.Repository.Abstract;
 using TahaMucasirogluBlog.Infrastructure.Repository.Repository.Concrete;
+using TahaMucasirogluBlog.Service.Cv.Abstract;
+using TahaMucasirogluBlog.Service.Cv.Concrete;
 using TahaMucasirogluBlog.Service.Database.Abstract;
 using TahaMucasirogluBlog.Service.Database.Concrete;
 
@@ -31,6 +33,10 @@ namespace TahaMucasirogluBlog.Presentation.API.Extensions
             builder.Services.AddScoped<ITagDatabaseService, TagDatabaseService >();
             builder.Services.AddScoped<IUserDatabaseService, UserDatabaseService >();
 
+
+
+
+            builder.Services.AddScoped<ICvService, CvService>();
 
 
 

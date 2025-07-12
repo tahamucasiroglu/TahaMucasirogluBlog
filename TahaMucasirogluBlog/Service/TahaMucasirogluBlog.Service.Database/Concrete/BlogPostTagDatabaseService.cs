@@ -1,4 +1,5 @@
 ﻿using AutoMapper;
+using FluentValidation;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.Logging;
 using System;
@@ -17,7 +18,17 @@ namespace TahaMucasirogluBlog.Service.Database.Concrete
 {
     public class BlogPostTagDatabaseService : DatabaseService<BlogPostTag, GetBlogPostTagDTO, AddBlogPostTagDTO, UpdateBlogPostTagDTO, DeleteBlogPostTagDTO>, IBlogPostTagDatabaseService
     {
-        public BlogPostTagDatabaseService(IBlogPostTagRepository repository, IMapper mapper, IConfiguration configuration, ILogger<BlogPostTagDatabaseService> logger) : base(repository, mapper, configuration, logger)
+        public BlogPostTagDatabaseService(
+            IBlogPostTagRepository repository, 
+            IMapper mapper, 
+            IConfiguration configuration,
+            IValidator<AddBlogPostTagDTO> addValidator, 
+            IValidator<IEnumerable<AddBlogPostTagDTO>> addValidatorList, 
+            IValidator<UpdateBlogPostTagDTO> updateValidator, 
+            IValidator<IEnumerable<UpdateBlogPostTagDTO>> updateValidatorList, 
+            IValidator<DeleteBlogPostTagDTO> deleteValidator, 
+            IValidator<IEnumerable<DeleteBlogPostTagDTO>> deleteValidatorList, 
+            ILogger<BlogPostTagDatabaseService> logger) : base(repository, mapper, configuration, addValidator, addValidatorList, updateValidator, updateValidatorList, deleteValidator, deleteValidatorList, logger)
         {
         }
     }

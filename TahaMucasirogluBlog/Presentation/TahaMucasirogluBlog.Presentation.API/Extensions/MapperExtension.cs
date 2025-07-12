@@ -1,4 +1,5 @@
 ﻿using TahaMucasirogluBlog.Application.Mapper.MapProfile.Entity;
+using TahaMucasirogluBlog.Application.Mapper.MapProfile.Response;
 
 namespace TahaMucasirogluBlog.Presentation.API.Extensions
 {
@@ -13,6 +14,7 @@ namespace TahaMucasirogluBlog.Presentation.API.Extensions
             services.AddAutoMapper(typeof(CommentMapProfile));
             services.AddAutoMapper(typeof(TagMapProfile));
             services.AddAutoMapper(typeof(UserMapProfile));
+            services.AddAutoMapper(typeof(CvResponseDTOMappingProfile));
         }
     }
 }

@@ -323,6 +323,32 @@ namespace TahaMucasirogluBlog.Infrastructure.Repository.Repository.Base
                 return ErrorReturn<TEntity>(e);
             }
         }
+
+        public virtual IReturn<TEntity> GetLast(Expression<Func<TEntity, bool>> filter)
+        {
+            try
+            {
+                var result = context.Set<TEntity>().AsNoTracking().LastOrDefault(filter);
+                return CheckIsNull(result);
+            }
+            catch (Exception e)
+            {
+                return ErrorReturn<TEntity>(e);
+            }
+        }
+
+        public virtual async Task<IReturn<TEntity>> GetLastAsync(Expression<Func<TEntity, bool>> filter)
+        {
+            try
+            {
+                var result = await context.Set<TEntity>().AsNoTracking().LastOrDefaultAsync(filter);
+                return CheckIsNull(result);
+            }
+            catch (Exception e)
+            {
+                return ErrorReturn<TEntity>(e);
+            }
+        }
         public virtual IReturn<IEnumerable<TEntity>> GetAll(Expression<Func<TEntity, bool>>? filter = null, bool reverse = false)
         {
             try

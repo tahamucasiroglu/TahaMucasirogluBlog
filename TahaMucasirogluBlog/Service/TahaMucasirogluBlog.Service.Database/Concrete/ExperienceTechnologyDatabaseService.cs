@@ -1,4 +1,5 @@
 ﻿using AutoMapper;
+using FluentValidation;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.Logging;
 using System;
@@ -17,7 +18,7 @@ namespace TahaMucasirogluBlog.Service.Database.Concrete
 {
     public class ExperienceTechnologyDatabaseService : DatabaseService<ExperienceTechnology, GetExperienceTechnologyDTO, AddExperienceTechnologyDTO, UpdateExperienceTechnologyDTO, DeleteExperienceTechnologyDTO>, IExperienceTechnologyDatabaseService
     {
-        public ExperienceTechnologyDatabaseService(IExperienceTechnologyRepository repository, IMapper mapper, IConfiguration configuration, ILogger<ExperienceTechnologyDatabaseService> logger) : base(repository, mapper, configuration, logger)
+        public ExperienceTechnologyDatabaseService(IExperienceTechnologyRepository repository, IMapper mapper, IConfiguration configuration, IValidator<AddExperienceTechnologyDTO> addValidator, IValidator<IEnumerable<AddExperienceTechnologyDTO>> addValidatorList, IValidator<UpdateExperienceTechnologyDTO> updateValidator, IValidator<IEnumerable<UpdateExperienceTechnologyDTO>> updateValidatorList, IValidator<DeleteExperienceTechnologyDTO> deleteValidator, IValidator<IEnumerable<DeleteExperienceTechnologyDTO>> deleteValidatorList, ILogger<ExperienceTechnologyDatabaseService> logger) : base(repository, mapper, configuration, addValidator, addValidatorList, updateValidator, updateValidatorList, deleteValidator, deleteValidatorList, logger)
         {
         }
     }

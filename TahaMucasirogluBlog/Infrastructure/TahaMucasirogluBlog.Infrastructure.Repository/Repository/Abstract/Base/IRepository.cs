@@ -36,6 +36,9 @@ namespace TahaMucasirogluBlog.Infrastructure.Repository.Repository.Abstract.Base
         public IReturn<TEntity> Get(Expression<Func<TEntity, bool>> filter);
         public Task<IReturn<TEntity>> GetAsync(Expression<Func<TEntity, bool>> filter);
 
+        public IReturn<TEntity> GetLast(Expression<Func<TEntity, bool>> filter);
+        public Task<IReturn<TEntity>> GetLastAsync(Expression<Func<TEntity, bool>> filter);
+
         public IReturn<IEnumerable<TEntity>> GetAll(Expression<Func<TEntity, bool>>? filter = null, bool reverse = false);
         public Task<IReturn<IEnumerable<TEntity>>> GetAllAsync(Expression<Func<TEntity, bool>>? filter = null, bool reverse = false);
 

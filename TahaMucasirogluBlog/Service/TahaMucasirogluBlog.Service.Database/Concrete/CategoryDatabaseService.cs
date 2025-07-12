@@ -1,4 +1,5 @@
 ﻿using AutoMapper;
+using FluentValidation;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.Logging;
 using System;
@@ -17,7 +18,7 @@ namespace TahaMucasirogluBlog.Service.Database.Concrete
 {
     public class CategoryDatabaseService : DatabaseService<Category, GetCategoryDTO, AddCategoryDTO, UpdateCategoryDTO, DeleteCategoryDTO>, ICategoryDatabaseService
     {
-        public CategoryDatabaseService(ICategoryRepository repository, IMapper mapper, IConfiguration configuration, ILogger<CategoryDatabaseService> logger) : base(repository, mapper, configuration, logger)
+        public CategoryDatabaseService(ICategoryRepository repository, IMapper mapper, IConfiguration configuration, IValidator<AddCategoryDTO> addValidator, IValidator<IEnumerable<AddCategoryDTO>> addValidatorList, IValidator<UpdateCategoryDTO> updateValidator, IValidator<IEnumerable<UpdateCategoryDTO>> updateValidatorList, IValidator<DeleteCategoryDTO> deleteValidator, IValidator<IEnumerable<DeleteCategoryDTO>> deleteValidatorList, ILogger<CategoryDatabaseService> logger) : base(repository, mapper, configuration, addValidator, addValidatorList, updateValidator, updateValidatorList, deleteValidator, deleteValidatorList, logger)
         {
         }
     }
