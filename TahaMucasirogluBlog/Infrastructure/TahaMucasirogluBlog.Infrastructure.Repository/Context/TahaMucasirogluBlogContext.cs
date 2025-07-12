@@ -20,6 +20,17 @@ namespace TahaMucasirogluBlog.Infrastructure.Repository.Context
         public DbSet<User> Users { get; set; }
         public DbSet<SocialLink> SocialLinks { get; set; }
 
+        
+
+        public DbSet<Experience> Experiences { get; set; }
+        public DbSet<ExperienceTechnology> ExperienceTechnologies { get; set; }
+        public DbSet<ExperienceType> ExperienceTypes { get; set; }
+        public DbSet<Info> Infos { get; set; }
+        public DbSet<Skill> Skills { get; set; }
+        public DbSet<SubSkill> SubSkills { get; set; }
+
+
+
         public TahaMucasirogluBlogContext(DbContextOptions<TahaMucasirogluBlogContext> opt) : base(opt) { }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
@@ -34,6 +45,13 @@ namespace TahaMucasirogluBlog.Infrastructure.Repository.Context
             modelBuilder.ApplyConfiguration(new TagConfiguration());
             modelBuilder.ApplyConfiguration(new UserConfiguration());
             modelBuilder.ApplyConfiguration(new SocialLinkConfiguration());
+
+            modelBuilder.ApplyConfiguration(new ExperienceConfiguration());
+            modelBuilder.ApplyConfiguration(new ExperienceTechnologyConfiguration());
+            modelBuilder.ApplyConfiguration(new ExperienceTypeConfiguration());
+            modelBuilder.ApplyConfiguration(new InfoConfiguration());
+            modelBuilder.ApplyConfiguration(new SkillConfiguration());
+            modelBuilder.ApplyConfiguration(new SubSkillConfiguration());
         }
     }
 }

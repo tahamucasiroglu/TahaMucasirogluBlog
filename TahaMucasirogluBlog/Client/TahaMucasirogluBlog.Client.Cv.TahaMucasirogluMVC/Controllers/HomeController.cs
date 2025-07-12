@@ -1,6 +1,5 @@
 using Microsoft.AspNetCore.Mvc;
 using System.Diagnostics;
-using TahaMucasirogluBlog.Client.Cv.TahaMucasirogluMVC.Models;
 
 namespace TahaMucasirogluBlog.Client.Cv.TahaMucasirogluMVC.Controllers
 {
@@ -23,10 +22,6 @@ namespace TahaMucasirogluBlog.Client.Cv.TahaMucasirogluMVC.Controllers
             return View();
         }
 
-        [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
-        public IActionResult Error()
-        {
-            return View(new ErrorViewModel { RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier });
-        }
+ 
     }
 }

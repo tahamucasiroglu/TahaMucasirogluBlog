@@ -16,26 +16,26 @@ namespace TahaMucasirogluBlog.Service.Database.Abstract.Base
         where TEntity : class, IEntity
         where TResponse : class, IGetDTO
     {
-        public IReturn<TResponse> GetById(IdRequest model) => Get(model, e => e.Id == model.Id);
-        public Task<IReturn<TResponse>> GetByIdAsync(IdRequest model) => GetAsync(model, e => e.Id == model.Id);
+        public IReturn<TResponse> GetById(IdRequestDTO model) => Get(model, e => e.Id == model.Id);
+        public Task<IReturn<TResponse>> GetByIdAsync(IdRequestDTO model) => GetAsync(model, e => e.Id == model.Id);
 
-        public IReturn<TResponse> Get(IdRequest model, Expression<Func<TEntity, bool>> filter);
-        public Task<IReturn<TResponse>> GetAsync(IdRequest model, Expression<Func<TEntity, bool>> filter);
+        public IReturn<TResponse> Get(IdRequestDTO model, Expression<Func<TEntity, bool>> filter);
+        public Task<IReturn<TResponse>> GetAsync(IdRequestDTO model, Expression<Func<TEntity, bool>> filter);
 
-        public IReturn<IEnumerable<TResponse>> GetAll(IdRequest model, Expression<Func<TEntity, bool>>? filter = null, bool reverse = false);
-        public Task<IReturn<IEnumerable<TResponse>>> GetAllAsync(IdRequest model, Expression<Func<TEntity, bool>>? filter = null, bool reverse = false);
+        public IReturn<IEnumerable<TResponse>> GetAll(IdRequestDTO model, Expression<Func<TEntity, bool>>? filter = null, bool reverse = false);
+        public Task<IReturn<IEnumerable<TResponse>>> GetAllAsync(IdRequestDTO model, Expression<Func<TEntity, bool>>? filter = null, bool reverse = false);
 
-        public IReturn<IEnumerable<TResponse>> GetAllDeleted(IdRequest model, Expression<Func<TEntity, bool>>? filter = null, bool reverse = false);
-        public Task<IReturn<IEnumerable<TResponse>>> GetAllDeletedAsync(IdRequest model, Expression<Func<TEntity, bool>>? filter = null, bool reverse = false);
+        public IReturn<IEnumerable<TResponse>> GetAllDeleted(IdRequestDTO model, Expression<Func<TEntity, bool>>? filter = null, bool reverse = false);
+        public Task<IReturn<IEnumerable<TResponse>>> GetAllDeletedAsync(IdRequestDTO model, Expression<Func<TEntity, bool>>? filter = null, bool reverse = false);
 
-        public IReturn<TResponse> GetDeleted(IdRequest model, Expression<Func<TEntity, bool>> filter);
-        public Task<IReturn<TResponse>> GetDeletedAsync(IdRequest model, Expression<Func<TEntity, bool>> filter);
+        public IReturn<TResponse> GetDeleted(IdRequestDTO model, Expression<Func<TEntity, bool>> filter);
+        public Task<IReturn<TResponse>> GetDeletedAsync(IdRequestDTO model, Expression<Func<TEntity, bool>> filter);
 
-        public IReturn<int> Count(IdRequest model, Expression<Func<TEntity, bool>>? filter = null);
-        public Task<IReturn<int>> CountAsync(IdRequest model, Expression<Func<TEntity, bool>>? filter = null);
+        public IReturn<int> Count(IdRequestDTO model, Expression<Func<TEntity, bool>>? filter = null);
+        public Task<IReturn<int>> CountAsync(IdRequestDTO model, Expression<Func<TEntity, bool>>? filter = null);
 
-        public IReturn<bool> IsExist(IdRequest model, Expression<Func<TEntity, bool>> filter);
-        public Task<IReturn<bool>> IsExistAsync(IdRequest model, Expression<Func<TEntity, bool>> filter);
+        public IReturn<bool> IsExist(IdRequestDTO model, Expression<Func<TEntity, bool>> filter);
+        public Task<IReturn<bool>> IsExistAsync(IdRequestDTO model, Expression<Func<TEntity, bool>> filter);
     }
 
     public interface IDatabaseService<TEntity, TResponse, TAddRequest> : IDatabaseService<TEntity, TResponse>

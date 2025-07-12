@@ -20,25 +20,25 @@ namespace TahaMucasirogluBlog.Presentation.API.Controllers.Base
 
         [HttpGet("[action]")]
         [ServiceFilter(typeof(LogConnectionAttribute))]
-        public IActionResult GetAll([FromBody]IdRequest model)
+        public IActionResult GetAll([FromBody]IdRequestDTO model)
         {
             return new OkObjectResult(service.GetAll(model));
         }
         [HttpGet("[action]Async")]
         [ServiceFilter(typeof(LogConnectionAttribute))]
-        public async Task<IActionResult> GetAllAsync([FromBody] IdRequest model)
+        public async Task<IActionResult> GetAllAsync([FromBody] IdRequestDTO model)
         {
             return new OkObjectResult(await service.GetAllAsync(model));
         }
         [HttpGet("[action]")]
         [ServiceFilter(typeof(LogConnectionAttribute))]
-        public IActionResult GetById([FromBody] IdRequest model)
+        public IActionResult GetById([FromBody] IdRequestDTO model)
         {
             return new OkObjectResult(service.GetById(model));
         }
         [HttpGet("[action]Async")]
         [ServiceFilter(typeof(LogConnectionAttribute))]
-        public async Task<IActionResult> GetByIdAsync([FromBody] IdRequest model)
+        public async Task<IActionResult> GetByIdAsync([FromBody] IdRequestDTO model)
         {
             return new OkObjectResult(await service.GetByIdAsync(model));
         }

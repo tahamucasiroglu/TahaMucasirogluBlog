@@ -1,12 +1,18 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using TahaMucasirogluBlog.Domain.Entities.Base;
 
 namespace TahaMucasirogluBlog.Domain.Entities.Concrete
 {
-    internal class Experience
+    public class Experience : Entity
     {
+        public Guid ExperienceTypeId { get; set; }
+        public string Title { get; set; } = string.Empty;
+        public string Provider { get; set; } = string.Empty;
+        public DateTime StartDate { get; set; }
+        public DateTime? EndDate { get; set; }
+        public string Description { get; set; } = string.Empty;
+        public string? Reference { get; set; }
+
+        public ExperienceType ExperienceType { get; set; } = default!;
+        public ICollection<ExperienceTechnology> ExperienceTechnologies { get; set; } = new HashSet<ExperienceTechnology>();
     }
 }

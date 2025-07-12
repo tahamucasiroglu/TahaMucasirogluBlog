@@ -25,6 +25,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\..\Service\TahaMucasirogluBlog.Service.Cv\TahaMucasirogluBlog.Service.Cv.csproj" />
     <ProjectReference Include="..\..\Service\TahaMucasirogluBlog.Service.Database\TahaMucasirogluBlog.Service.Database.csproj" />
   </ItemGroup>
 

@@ -1,12 +1,10 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using TahaMucasirogluBlog.Domain.Entities.Base;
 
 namespace TahaMucasirogluBlog.Domain.Entities.Concrete
 {
-    internal class Skill
+    public class Skill : Entity
     {
+        public string Name { get; set; } = default!; // "Backend", "Soft Skill" gibi
+        public ICollection<SubSkill> SubSkills { get; set; } = new List<SubSkill>();
     }
 }

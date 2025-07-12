@@ -8,10 +8,10 @@ namespace TahaMucasirogluBlog.Presentation.API.Controllers.Abstract
     {
         public IActionResult HealthCheck();
         public IActionResult HealthCheck([FromBody] HealthCheckRequestDTO model);
-        public IActionResult GetAll([FromBody] IdRequest model);
-        public Task<IActionResult> GetAllAsync([FromBody] IdRequest model);
-        public IActionResult GetById([FromBody] IdRequest model);
-        public Task<IActionResult> GetByIdAsync([FromBody] IdRequest model);
+        public IActionResult GetAll([FromBody] IdRequestDTO model);
+        public Task<IActionResult> GetAllAsync([FromBody] IdRequestDTO model);
+        public IActionResult GetById([FromBody] IdRequestDTO model);
+        public Task<IActionResult> GetByIdAsync([FromBody] IdRequestDTO model);
     }
     public interface IController<TAdd> : IController
         where TAdd : class, IAddDTO
