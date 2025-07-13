@@ -10,5 +10,6 @@ namespace TahaMucasirogluBlog.Domain.Models.Entity
     {
         public Guid SkillId { get; set; }
         public string Name { get; set; } = default!; // ".NET", "Teamwork" vb.
+        public string? Explanation { get; set; }
     }
 }

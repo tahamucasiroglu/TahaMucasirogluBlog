@@ -6,5 +6,6 @@ namespace TahaMucasirogluBlog.Domain.DTOs.Concrete.Entity.SubSkill
     {
         public Guid SkillId { get; init; }
         public string Name { get; init; } = default!; // ".NET", "Teamwork" vb.
+        public string? Explanation { get; set; }
     }
 }

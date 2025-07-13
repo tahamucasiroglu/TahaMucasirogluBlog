@@ -1,11 +1,7 @@
 using Microsoft.AspNetCore.Mvc;
 using Newtonsoft.Json;
-using System;
-using System.Diagnostics;
 using System.Net;
-using System.Net.Http;
 using TahaMucasirogluBlog.Client.Cv.TahaMucasirogluMVC.Managers.UrlManager;
-using TahaMucasirogluBlog.Domain.Models.Entity;
 using TahaMucasirogluBlog.Domain.Models.Response;
 using TahaMucasirogluBlog.Domain.Return.Base;
 using TahaMucasirogluBlog.Domain.Return.Concrete;
@@ -16,7 +12,7 @@ namespace TahaMucasirogluBlog.Client.Cv.TahaMucasirogluMVC.Controllers
     {
         private readonly ILogger<HomeController> logger;
         private readonly IUrlManager urlManager;
-        private readonly HttpClient httpClient;    
+        private readonly HttpClient httpClient;
         public HomeController(ILogger<HomeController> logger, IUrlManager urlManager, HttpClient httpClient)
         {
             this.logger = logger;
@@ -24,24 +20,27 @@ namespace TahaMucasirogluBlog.Client.Cv.TahaMucasirogluMVC.Controllers
             this.httpClient = httpClient;
         }
 
-        //public async Task<IActionResult> Index()
-        //{
-        //    string requestUri = urlManager.Build("Cv", "GetTest");
-        //    using HttpResponseMessage response = await httpClient.GetAsync(requestUri);
-        //    if (response.StatusCode == HttpStatusCode.Unauthorized)
-        //    {
-        //        logger.LogWarning("GET isteði yetkisiz: {RequestUri}", requestUri);
-        //        throw new UnauthorizedAccessException("API returned 401 Unauthorized");
-        //    }
-        //    string json = await response.Content.ReadAsStringAsync();
-        //    Return<CvResponseModel>? result = JsonConvert.DeserializeObject<Return<CvResponseModel>>(json);
-        //    if (result == null)
-        //    {
-        //        logger.LogError("GET isteði sonucu deserialize edilemedi: {RequestUri}", requestUri);
-        //        return Ok(new ErrorReturn(message: "Gelen veri parçalanamadý."));
-        //    }
-        //    return View(result);
-        //}
+        public async Task<IActionResult> Index()
+        {
+            string requestUri = urlManager.Build("Cv", "GetTest");
+            using HttpResponseMessage response = await httpClient.GetAsync(requestUri);
+            if (response.StatusCode == HttpStatusCode.Unauthorized)
+            {
+                logger.LogWarning("GET isteði yetkisiz: {RequestUri}", requestUri);
+                throw new UnauthorizedAccessException("API returned 401 Unauthorized");
+            }
+            string json = await response.Content.ReadAsStringAsync();
+            Return<CvResponseModel>? result = JsonConvert.DeserializeObject<Return<CvResponseModel>>(json);
+            if (result == null)
+            {
+                logger.LogError("GET isteði sonucu deserialize edilemedi: {RequestUri}", requestUri);
+                return Ok(new ErrorReturn(message: "Gelen veri parçalanamadý."));
+            }
+            return View(result);
+        }
+
+
+        /*
         public IActionResult Index()
         {
             GetExperienceTypeModel staj = new GetExperienceTypeModel()
@@ -663,5 +662,7 @@ namespace TahaMucasirogluBlog.Client.Cv.TahaMucasirogluMVC.Controllers
             };
             return View(new SuccessReturn<CvResponseModel>(cvResponseModel));
         }
+
+        */
     }
 }

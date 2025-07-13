@@ -16,5 +16,7 @@ namespace TahaMucasirogluBlog.Domain.DTOs.Concrete.Entity.Experience
         public DateTime? EndDate { get; init; }
         public string Description { get; init; } = string.Empty;
         public string? Reference { get; init; }
+        public string? Url { get; set; }
+        public string? ImageUrl { get; set; }
     }
 }

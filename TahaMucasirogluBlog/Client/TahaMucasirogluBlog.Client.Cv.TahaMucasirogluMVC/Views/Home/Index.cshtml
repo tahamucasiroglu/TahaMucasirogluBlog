@@ -22,7 +22,7 @@
         <title>@Model.Data.Info.FullName - CV</title>
         <meta name="description" content="@Model.Data.Info.FullName - .NET Full Stack Developer CV" />
         <meta name="keywords" content="@Model.Data.Info.FullName, developer, yazılımcı, cv, portfolio" />
-        <meta name="image" content=""/>
+        <meta name="image" content="" />
         <!-- Bootstrap 5 -->
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
         <!-- Font Awesome -->
@@ -123,6 +123,21 @@
                             </div>
                         </div>
 
+                        <!-- Cover Letter Section in Hero -->
+                        @if (!string.IsNullOrEmpty(Model.Data.Info.CoverLetter))
+                        {
+                            <div class="cover-letter-hero" data-aos="fade-up" data-aos-delay="550">
+                                <div class="cover-letter-card">
+                                    <h5 class="cover-letter-title">
+                                        <i class="fas fa-envelope-open-text"></i> Cover Letter
+                                    </h5>
+                                    <div class="cover-letter-content">
+                                        <p>@Model.Data.Info.CoverLetter</p>
+                                    </div>
+                                </div>
+                            </div>
+                        }
+
                         <div class="scroll-indicator" data-aos="fade-up" data-aos-delay="600">
                             <a href="#skills" class="scroll-down">
                                 <i class="fas fa-chevron-down"></i>
@@ -152,10 +167,13 @@
                                 <div class="skill-tags">
                                     @foreach (var subSkill in skill.SubSkills)
                                     {
-                                        <span class="skill-tag" data-skill="@subSkill.Name">
+                                        <span class="skill-tag" data-skill="@subSkill.Name" data-explanation="@(subSkill.Explanation ?? "Açıklama yok")">
                                             @subSkill.Name
                                         </span>
                                     }
+                                </div>
+                                <div class="skill-explanation" id="skillExplanation" style="display: none;">
+                                    <p class="explanation-text"></p>
                                 </div>
                             </div>
                         </div>
@@ -198,6 +216,12 @@
                                     <i class="@GetExperienceIcon(exp.ExperienceType.Name)"></i>
                                 </div>
                                 <div class="timeline-panel">
+                                    @if (!string.IsNullOrEmpty(exp.ImageUrl))
+                                    {
+                                        <div class="experience-image">
+                                            <img src="@exp.ImageUrl" alt="@exp.Title" class="exp-img" />
+                                        </div>
+                                    }
                                     <div class="timeline-heading">
                                         <h4 class="timeline-title">@exp.Title</h4>
                                         <p class="timeline-meta">
@@ -221,10 +245,18 @@
                                         {
                                             <p class="text-muted"><strong>Referans:</strong> @exp.Reference</p>
                                         }
+                                        @if (!string.IsNullOrEmpty(exp.Url))
+                                        {
+                                            <div class="experience-url mt-3">
+                                                <a href="@exp.Url" target="_blank" class="btn btn-outline-primary btn-sm">
+                                                    <i class="fas fa-external-link-alt"></i> Linke Git
+                                                </a>
+                                            </div>
+                                        }
                                         <div class="experience-skills">
                                             @foreach (var tech in exp.SubSkills)
                                             {
-                                                <span class="skill-badge">@tech.Name</span>
+                                                <span class="skill-badge" data-skill="@tech.Name" data-explanation="@(tech.Explanation ?? "Açıklama yok")">@tech.Name</span>
                                             }
                                         </div>
                                     </div>

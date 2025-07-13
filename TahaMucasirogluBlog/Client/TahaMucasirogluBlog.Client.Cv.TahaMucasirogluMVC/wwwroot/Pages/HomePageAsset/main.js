@@ -122,9 +122,19 @@
         }
     );
 
-    // Skill tag click to highlight related experience technologies
+    // Skill tag click to show explanation and highlight related experience technologies
     $('.skill-tag').click(function () {
         const skillName = $(this).data('skill');
+        const explanation = $(this).data('explanation');
+
+        // Remove active class from all skill tags
+        $('.skill-tag').removeClass('active');
+        $(this).addClass('active');
+
+        // Show explanation
+        showSkillExplanation(explanation, $(this));
+
+        // Highlight related skills
         highlightRelatedSkills(skillName);
     });
 
@@ -152,8 +162,54 @@
             $('.skill-badge').removeClass('highlight');
         }, 3000);
 
-        showNotification(`"${skillName}" ile ilgili deneyimler vurgulandı!`, 'info');
+        // showNotification(`"${skillName}" ile ilgili deneyimler vurgulandı!`, 'info');
     }
+
+    // Show skill explanation function
+    function showSkillExplanation(explanation, element) {
+        // Find the skill card container
+        const skillCard = element.closest('.skill-card');
+        let explanationDiv = skillCard.find('.skill-explanation');
+
+        if (explanationDiv.length === 0) {
+            explanationDiv = $('<div class="skill-explanation" style="display: none;"><p class="explanation-text"></p></div>');
+            skillCard.append(explanationDiv);
+        }
+
+        // Update explanation text
+        explanationDiv.find('.explanation-text').text(explanation);
+
+        // Show explanation with animation
+        explanationDiv.slideDown(300);
+
+        // Hide after 5 seconds
+        setTimeout(function () {
+            explanationDiv.slideUp(300);
+            $('.skill-tag').removeClass('active');
+        }, 5000);
+    }
+
+    // Experience skill badge click to show explanation
+    $(document).on('click', '.skill-badge', function () {
+        const skillName = $(this).data('skill');
+        const explanation = $(this).data('explanation');
+
+        if (explanation && explanation !== 'Açıklama yok') {
+            // Remove active class from all skill badges
+            $('.skill-badge').removeClass('active');
+            $(this).addClass('active');
+
+            // Show notification with explanation
+            showNotification(`${skillName}: ${explanation}`, 'info');
+
+            // Remove active class after 3 seconds
+            setTimeout(function () {
+                $('.skill-badge').removeClass('active');
+            }, 3000);
+        } else {
+            showNotification(`${skillName}: Açıklama yok`, 'warning');
+        }
+    });
 
     // Contact form animation (if needed in future)
     $('.contact-info-item').hover(

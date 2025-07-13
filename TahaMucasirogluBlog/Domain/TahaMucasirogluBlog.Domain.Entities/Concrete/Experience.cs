@@ -11,6 +11,8 @@ namespace TahaMucasirogluBlog.Domain.Entities.Concrete
         public DateTime? EndDate { get; set; }
         public string Description { get; set; } = string.Empty;
         public string? Reference { get; set; }
+        public string? Url { get; set; }
+        public string? ImageUrl { get; set; }
 
         public ExperienceType ExperienceType { get; set; } = default!;
         public ICollection<ExperienceTechnology> ExperienceTechnologies { get; set; } = new HashSet<ExperienceTechnology>();

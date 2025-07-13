@@ -14,6 +14,8 @@ namespace TahaMucasirogluBlog.Domain.Models.Entity
         public DateTime? EndDate { get; set; }
         public string Description { get; set; } = string.Empty;
         public string? Reference { get; set; }
+        public string? Url { get; set; }
+        public string? ImageUrl { get; set; }
 
         public GetExperienceTypeModel ExperienceType { get; set; } = default!;
         public List<GetSubSkillModel> SubSkills { get; set; } = new();
