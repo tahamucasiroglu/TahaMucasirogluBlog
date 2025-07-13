@@ -5,8 +5,10 @@ using TahaMucasirogluBlog.Domain.DTOs.Concrete.Entity.ExperienceTechnology;
 using TahaMucasirogluBlog.Domain.DTOs.Concrete.Entity.ExperienceType;
 using TahaMucasirogluBlog.Domain.DTOs.Concrete.Entity.Info;
 using TahaMucasirogluBlog.Domain.DTOs.Concrete.Entity.Skill;
+using TahaMucasirogluBlog.Domain.DTOs.Concrete.Entity.SocialLink;
 using TahaMucasirogluBlog.Domain.DTOs.Concrete.Entity.SubSkill;
 using TahaMucasirogluBlog.Domain.DTOs.Concrete.Response;
+using TahaMucasirogluBlog.Domain.Return.Concrete;
 using TahaMucasirogluBlog.Service.Cv.Abstract;
 
 namespace TahaMucasirogluBlog.Presentation.API.Controllers.Concrete
@@ -67,6 +69,46 @@ namespace TahaMucasirogluBlog.Presentation.API.Controllers.Concrete
                     FullName = "Ahmet Taha Mücasiroğlu",
                     Location = "İstanbul - İzmir - Muğla/Fethiye - Ankara",
                     Phone = "553 735 62 89",
+                },
+
+                SocialLinks = new List<GetSocialLinkDTO>()
+                {
+                    new GetSocialLinkDTO()
+                    {
+                        Id = Guid.NewGuid(),
+                        Name = "LinkedIn",
+                        DisplayOrder = 1,
+                        IconClass = "fa-brands fa-linkedin",
+                        IsVisible = true,
+                        Url = "https://www.linkedin.com/in/tahamucasiroglu/"
+                    },
+                    new GetSocialLinkDTO()
+                    {
+                        Id = Guid.NewGuid(),
+                        Name = "Github",
+                        DisplayOrder = 2,
+                        IconClass = "fa-brands fa-github",
+                        IsVisible = true,
+                        Url = "https://github.com/tahamucasiroglu"
+                    },
+                    new GetSocialLinkDTO()
+                    {
+                        Id = Guid.NewGuid(),
+                        Name = "Mail",
+                        DisplayOrder = 3,
+                        IconClass = "fa-solid fa-envelope",
+                        IsVisible = true,
+                        Url = "mailto:tahamucasiroglu@gmail.com"
+                    },
+                    new GetSocialLinkDTO()
+                    {
+                        Id = Guid.NewGuid(),
+                        Name = "Telefon",
+                        DisplayOrder = 4,
+                        IconClass = "fa-solid fa-phone",
+                        IsVisible = true,
+                        Url = "tel:+905537356289"
+                    }
                 },
 
                 Skills = new List<GetSkillWithSubSkillsDTO>()
@@ -608,7 +650,7 @@ namespace TahaMucasirogluBlog.Presentation.API.Controllers.Concrete
                     }
                 }
             };
-            return Ok(cvResponseDTO);
+            return Ok(new SuccessReturn<CvResponseDTO>(cvResponseDTO));
         }
 
 

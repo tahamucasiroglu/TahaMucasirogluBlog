@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace TahaMucasirogluBlog.Domain.Models.Entity
 {
-    public class GetSkillWithSubSkillsModel
+    public class GetSkillWithSubSkillsModel : Model
     {
         public string Name { get; set; } = default!;
         public List<GetSubSkillModel> SubSkills { get; set; } = new();

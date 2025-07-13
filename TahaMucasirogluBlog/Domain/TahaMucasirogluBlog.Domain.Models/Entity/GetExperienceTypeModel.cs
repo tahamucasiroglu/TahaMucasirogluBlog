@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace TahaMucasirogluBlog.Domain.Models.Entity
 {
-    public class GetExperienceTypeModel
+    public class GetExperienceTypeModel : Model
     {
         public string Name { get; set; } = string.Empty;
     }

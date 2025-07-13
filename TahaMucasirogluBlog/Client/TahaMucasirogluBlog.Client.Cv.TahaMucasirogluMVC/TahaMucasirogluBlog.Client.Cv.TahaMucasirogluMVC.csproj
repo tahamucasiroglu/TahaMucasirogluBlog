@@ -14,4 +14,8 @@
     <ProjectReference Include="..\..\Application\TahaMucasirogluBlog.Application.Validation\TahaMucasirogluBlog.Application.Validation.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <PackageReference Include="bootstrap" Version="5.3.7" />
+  </ItemGroup>
+
 </Project>

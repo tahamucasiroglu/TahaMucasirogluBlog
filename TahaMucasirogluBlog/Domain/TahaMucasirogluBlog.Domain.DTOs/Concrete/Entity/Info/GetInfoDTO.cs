@@ -13,5 +13,6 @@ namespace TahaMucasirogluBlog.Domain.DTOs.Concrete.Entity.Info
         public string Email { get; init; } = string.Empty;
         public string Phone { get; init; } = string.Empty;
         public string Location { get; init; } = string.Empty; // Konum
+        public string CoverLetter { get; set; } = string.Empty;
     }
 }

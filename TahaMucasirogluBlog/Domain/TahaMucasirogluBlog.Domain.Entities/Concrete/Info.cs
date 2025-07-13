@@ -8,5 +8,6 @@ namespace TahaMucasirogluBlog.Domain.Entities.Concrete
         public string Email { get; set; } = string.Empty;
         public string Phone { get; set; } = string.Empty;
         public string Location { get; set; } = string.Empty; // Konum
+        public string CoverLetter {  get; set; } = string.Empty;
     }
 }

@@ -1,0 +1,154 @@
+# CodeFuser Output
+# Generated: 2025-07-13 11:15:58
+# Total Files: 7
+
+================================================================================
+
+
+=== DOSYA: TahaMucasirogluBlog\Domain\TahaMucasirogluBlog.Domain.Models\Entity\GetExperienceTypeModel.cs ===
+
+[İÇERİK]
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace TahaMucasirogluBlog.Domain.Models.Entity
+{
+    public class GetExperienceTypeModel
+    {
+        public string Name { get; set; } = string.Empty;
+    }
+}
+
+
+
+=== DOSYA: TahaMucasirogluBlog\Domain\TahaMucasirogluBlog.Domain.Models\Entity\GetExperienceWithTechnologyAndTypeModel.cs ===
+
+[İÇERİK]
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace TahaMucasirogluBlog.Domain.Models.Entity
+{
+    public class GetExperienceWithTechnologyAndTypeModel
+    {
+        public string Title { get; set; } = string.Empty;
+        public string Provider { get; set; } = string.Empty;
+        public DateTime StartDate { get; set; }
+        public DateTime? EndDate { get; set; }
+        public string Description { get; set; } = string.Empty;
+        public string? Reference { get; set; }
+
+        public GetExperienceTypeModel ExperienceType { get; set; } = default!;
+        public List<GetSubSkillModel> SubSkills { get; set; } = new();
+    }
+}
+
+
+
+=== DOSYA: TahaMucasirogluBlog\Domain\TahaMucasirogluBlog.Domain.Models\Entity\GetInfoModel.cs ===
+
+[İÇERİK]
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace TahaMucasirogluBlog.Domain.Models.Entity
+{
+    public class GetInfoModel
+    {
+        public string FullName { get; set; } = string.Empty;
+        public string Email { get; set; } = string.Empty;
+        public string Phone { get; set; } = string.Empty;
+        public string Location { get; set; } = string.Empty; // Konum
+        public string CoverLetter { get; set; } = string.Empty;
+    }
+}
+
+
+
+=== DOSYA: TahaMucasirogluBlog\Domain\TahaMucasirogluBlog.Domain.Models\Entity\GetSkillWithSubSkillsModel.cs ===
+
+[İÇERİK]
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace TahaMucasirogluBlog.Domain.Models.Entity
+{
+    public class GetSkillWithSubSkillsModel
+    {
+        public string Name { get; set; } = default!;
+        public List<GetSubSkillModel> SubSkills { get; set; } = new();
+    }
+}
+
+
+
+=== DOSYA: TahaMucasirogluBlog\Domain\TahaMucasirogluBlog.Domain.Models\Entity\GetSocialLinkModel.cs ===
+
+[İÇERİK]
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace TahaMucasirogluBlog.Domain.Models.Entity
+{
+    public class GetSocialLinkModel
+    {
+        public string Name { get; init; } = string.Empty;
+        public string Url { get; init; } = string.Empty;
+        public string IconClass { get; init; } = string.Empty;
+        public int DisplayOrder { get; init; } = 0;
+        public bool IsVisible { get; init; } = true;
+    }
+}
+
+
+
+=== DOSYA: TahaMucasirogluBlog\Domain\TahaMucasirogluBlog.Domain.Models\Entity\GetSubSkillModel.cs ===
+
+[İÇERİK]
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace TahaMucasirogluBlog.Domain.Models.Entity
+{
+    public class GetSubSkillModel
+    {
+        public Guid SkillId { get; set; }
+        public string Name { get; set; } = default!; // ".NET", "Teamwork" vb.
+    }
+}
+
+
+
+=== DOSYA: TahaMucasirogluBlog\Domain\TahaMucasirogluBlog.Domain.Models\Response\CvResponseModel.cs ===
+
+[İÇERİK]
+﻿using TahaMucasirogluBlog.Domain.Models.Entity;
+
+namespace TahaMucasirogluBlog.Domain.Models.Response
+{
+    public class CvResponseModel
+    {
+        public GetInfoModel Info { get; set; } = default!;
+        public List<GetSocialLinkModel> SocialLinks { get; set; } = new();
+        public List<GetSkillWithSubSkillsModel> Skills { get; set; } = new();
+        public List<GetExperienceWithTechnologyAndTypeModel> Experiences { get; set; } = new();
+    }
+}

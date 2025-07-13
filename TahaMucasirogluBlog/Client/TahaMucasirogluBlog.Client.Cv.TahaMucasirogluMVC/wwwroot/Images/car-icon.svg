@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 40 40" fill="none">
+  <defs>
+    <linearGradient id="carGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#2a5298;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#f6921e;stop-opacity:1" />
+    </linearGradient>
+    <filter id="shadow" x="-50%" y="-50%" width="200%" height="200%">
+      <feDropShadow dx="2" dy="2" stdDeviation="3" flood-color="rgba(0,0,0,0.3)"/>
+    </filter>
+  </defs>
+  
+  <!-- Car Body -->
+  <rect x="8" y="18" width="24" height="8" rx="4" fill="url(#carGradient)" filter="url(#shadow)"/>
+  
+  <!-- Car Roof -->
+  <path d="M12 18 L16 12 L24 12 L28 18 Z" fill="url(#carGradient)" filter="url(#shadow)"/>
+  
+  <!-- Windows -->
+  <path d="M13 17 L16.5 13 L23.5 13 L27 17 Z" fill="rgba(255,255,255,0.8)"/>
+  
+  <!-- Wheels -->
+  <circle cx="14" cy="28" r="4" fill="#333" filter="url(#shadow)"/>
+  <circle cx="26" cy="28" r="4" fill="#333" filter="url(#shadow)"/>
+  <circle cx="14" cy="28" r="2" fill="#666"/>
+  <circle cx="26" cy="28" r="2" fill="#666"/>
+  
+  <!-- Headlights -->
+  <circle cx="32" cy="20" r="1.5" fill="#fff"/>
+  <circle cx="32" cy="24" r="1.5" fill="#fff"/>
+  
+  <!-- Motion Lines -->
+  <line x1="2" y1="16" x2="6" y2="16" stroke="url(#carGradient)" stroke-width="2" opacity="0.6"/>
+  <line x1="3" y1="20" x2="7" y2="20" stroke="url(#carGradient)" stroke-width="2" opacity="0.4"/>
+  <line x1="2" y1="24" x2="6" y2="24" stroke="url(#carGradient)" stroke-width="2" opacity="0.6"/>
+</svg>
