@@ -152,7 +152,7 @@ namespace TahaMucasirogluBlog.Presentation.API.Controllers.Concrete
                         DisplayOrder = 5,
                         IconClass = "fa-solid fa-file",
                         IsVisible = true,
-                        Url = "http://localhost:5000/api/Cv/DownloadCv"
+                        Url = "https://api.tahamucasiroglu.com.tr/api/Cv/DownloadCv"
                     },
                     new GetSocialLinkDTO()
                     {
@@ -161,7 +161,7 @@ namespace TahaMucasirogluBlog.Presentation.API.Controllers.Concrete
                         DisplayOrder = 5,
                         IconClass = "fa-solid fa-stamp",
                         IsVisible = true,
-                        Url = "http://localhost:5000/api/Cv/DownloadTurkcellSertifica"
+                        Url = "https://api.tahamucasiroglu.com.tr/api/Cv/DownloadTurkcellSertifica"
                     }
                 },
 
