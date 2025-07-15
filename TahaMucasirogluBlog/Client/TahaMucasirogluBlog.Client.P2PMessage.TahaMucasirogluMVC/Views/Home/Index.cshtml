@@ -1,0 +1,278 @@
+﻿@{
+    ViewData["Title"] = "TahaMessaging";
+}
+
+       
+
+<div class="container">
+
+
+<div class="container text-center py-5">
+    <div class="social-links-hero btn-group" role="group">
+        <a href="https://www.linkedin.com/in/tahamucasiroglu/" target="_blank" class="btn btn-outline-secondary" title="LinkedIn">
+            <i class="fab fa-linkedin"></i>
+        </a>
+        <a href="https://github.com/tahamucasiroglu" target="_blank" class="btn btn-outline-secondary" title="GitHub">
+            <i class="fab fa-github"></i>
+        </a>
+        <a href="mailto:tahamucasiroglu@gmail.com" class="btn btn-outline-secondary" title="Mail">
+            <i class="fas fa-envelope"></i>
+        </a>
+        <a href="tel:+905537356289" class="btn btn-outline-secondary" title="Telefon">
+            <i class="fas fa-phone"></i>
+        </a>
+        <a href="https://api.tahamucasiroglu.com.tr/api/Cv/DownloadCv" target="_blank" class="btn btn-outline-secondary" title="CV">
+            <i class="fas fa-file"></i>
+        </a>
+        <a href="https://api.tahamucasiroglu.com.tr/api/Cv/DownloadTurkcellSertifica" target="_blank" class="btn btn-outline-secondary" title="Turkcell Sertifika">
+            <i class="fas fa-stamp"></i>
+        </a>
+    </div>
+</div>
+
+    <h2>TahaMessaging - Güvenli Mesajlaşma</h2>
+
+    
+
+    @if (ViewBag.Error != null)
+    {
+        <div class="error-message">@ViewBag.Error</div>
+    }
+
+    <div id="connectionPanel" class="panel">
+        <h3>Bağlantı Bilgileri</h3>
+        <div class="info-row">
+            <label>Senin ID:</label>
+            <span id="myConnectionId">@ViewBag.ConnectionId</span>
+            <button onclick="copyId()" class="btn-small">Kopyala</button>
+        </div>
+
+        <div class="connect-section">
+            <h4>Birine Bağlan</h4>
+            <input type="text" id="targetId" placeholder="Hedef ID'yi girin" />
+            <button onclick="connect()" class="btn-primary">Bağlan</button>
+        </div>
+
+        <div id="status" class="status"></div>
+    </div>
+
+    <div id="chatPanel" class="panel" style="display:none;">
+        <div class="chat-header">
+            <h3>Güvenli Sohbet</h3>
+            <button onclick="disconnect()" class="btn-danger">Çıkış</button>
+        </div>
+
+        <div id="messages" class="messages"></div>
+
+        <div class="message-input">
+            <input type="text" id="messageInput" placeholder="Mesaj yazın..." onkeypress="handleKeyPress(event)" />
+            <button onclick="sendMessage()" class="btn-primary">Gönder</button>
+        </div>
+    </div>
+
+    <div id="requestModal" class="modal" style="display: none;">
+        <div class="modal-content">
+            <h3>Bağlantı İsteği</h3>
+            <p><span id="requesterInfo"></span> sizinle konuşmak istiyor.</p>
+            <input type="hidden" id="requesterConnectionId" />
+            <div class="modal-buttons">
+                <button onclick="acceptConnection()">Kabul Et</button>
+                <button onclick="rejectConnection()">Reddet</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+    let myConnectionId = '@ViewBag.ConnectionId';
+    let isConnected = false;
+    let checkInterval = null;
+
+    // SADECE AJAX - SignalR JavaScript YOK!
+
+    function copyId() {
+        navigator.clipboard.writeText(myConnectionId);
+        showStatus('ID kopyalandı!', 'success');
+    }
+
+    async function connect() {
+        const targetId = document.getElementById('targetId').value.trim();
+        if (!targetId) {
+            showStatus('Lütfen bir ID girin', 'error');
+            return;
+        }
+
+        const response = await fetch('/Home/Connect', {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+            body: `targetConnectionId=${encodeURIComponent(targetId)}`
+        });
+
+        const result = await response.json();
+        showStatus(result.message, result.success ? 'success' : 'error');
+
+        if (result.success) {
+            startMessageChecking();
+        }
+    }
+
+    async function acceptConnection() {
+        const requesterConnectionId = document.getElementById('requesterConnectionId').value;
+
+        const response = await fetch('/Home/AcceptConnection', {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+            body: `requesterConnectionId=${encodeURIComponent(requesterConnectionId)}`
+        });
+
+        const result = await response.json();
+        if (result.success) {
+            hideRequestModal();
+            showChatPanel();
+            showStatus('Bağlantı kabul edildi!', 'success');
+        }
+    }
+
+    async function rejectConnection() {
+        const requesterConnectionId = document.getElementById('requesterConnectionId').value;
+
+        const response = await fetch('/Home/RejectConnection', {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+            body: `requesterConnectionId=${encodeURIComponent(requesterConnectionId)}`
+        });
+
+        hideRequestModal();
+        showStatus('Bağlantı reddedildi', 'error');
+    }
+
+    async function sendMessage() {
+        const input = document.getElementById('messageInput');
+        const message = input.value.trim();
+        if (!message || !isConnected) return;
+
+        const response = await fetch('/Home/SendMessage', {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+            body: `message=${encodeURIComponent(message)}`
+        });
+
+        const result = await response.json();
+        if (result.success) {
+            addMessage(message, 'sent');
+            input.value = '';
+        } else {
+            showStatus(result.message || 'Hata oluştu', 'error');
+        }
+    }
+
+    async function disconnect() {
+        await fetch('/Home/Disconnect', { method: 'POST' });
+        showConnectionPanel();
+        stopMessageChecking();
+    }
+
+    async function checkMessages() {
+        const response = await fetch('/Home/CheckMessages');
+        const result = await response.json();
+
+        if (result.success) {
+            // Mesajları kontrol et
+            result.messages.forEach(msg => {
+                if (msg.message === 'CONNECTION_ACCEPTED') {
+                    showChatPanel();
+                    showStatus('Bağlantı kabul edildi!', 'success');
+                    isConnected = true;
+                } else if (msg.message === 'CONNECTION_REJECTED') {
+                    showStatus('Bağlantı isteğiniz reddedildi', 'error');
+                } else if (msg.message === 'USER_DISCONNECTED') {
+                    showStatus('Karşı taraf bağlantıyı kesti', 'error');
+                    showConnectionPanel();
+                    isConnected = false;
+                } else {
+                    addMessage(msg.message, 'received');
+                }
+            });
+
+            // Bağlantı isteği var mı kontrol et
+            if (result.connectionRequest) {
+                showRequestModal(result.connectionRequest);
+            }
+
+            // Bağlantı durumu kontrol et - eğer bağlantı kurulduysa chat ekranını göster
+            if (result.isConnected && !isConnected) {
+                showChatPanel();
+                isConnected = true;
+            } else if (!result.isConnected && isConnected) {
+                showStatus('Bağlantı koptu', 'error');
+                showConnectionPanel();
+                isConnected = false;
+            }
+        }
+    }
+
+    function startMessageChecking() {
+        checkInterval = setInterval(checkMessages, 1000); // Her saniye kontrol et
+    }
+
+    function stopMessageChecking() {
+        if (checkInterval) {
+            clearInterval(checkInterval);
+            checkInterval = null;
+        }
+    }
+
+    function showStatus(message, type) {
+        const status = document.getElementById('status');
+        status.textContent = message;
+        status.className = 'status ' + type;
+        setTimeout(() => status.className = 'status', 3000);
+    }
+
+    function showChatPanel() {
+        document.getElementById('connectionPanel').style.display = 'none';
+        document.getElementById('chatPanel').style.display = 'block';
+        document.getElementById('messageInput').focus();
+        isConnected = true;
+    }
+
+    function showConnectionPanel() {
+        document.getElementById('connectionPanel').style.display = 'block';
+        document.getElementById('chatPanel').style.display = 'none';
+        document.getElementById('messages').innerHTML = '';
+        isConnected = false;
+    }
+
+    function showRequestModal(requesterConnectionId) {
+        document.getElementById('requesterConnectionId').value = requesterConnectionId;
+        document.getElementById('requesterInfo').textContent = requesterConnectionId;
+        document.getElementById('requestModal').style.display = 'flex';
+    }
+
+    function hideRequestModal() {
+        document.getElementById('requestModal').style.display = 'none';
+    }
+
+    function addMessage(text, type) {
+        const messages = document.getElementById('messages');
+        const msgDiv = document.createElement('div');
+        msgDiv.className = 'message ' + type;
+        msgDiv.textContent = text;
+        messages.appendChild(msgDiv);
+        messages.scrollTop = messages.scrollHeight;
+    }
+
+    function handleKeyPress(e) {
+        if (e.key === 'Enter') sendMessage();
+    }
+
+    // Sayfa kapanırken veya yenilenirken
+    window.addEventListener('beforeunload', () => {
+        if (isConnected) disconnect();
+    });
+
+    // Sayfa yüklendiğinde mesaj kontrolünü başlat
+    window.addEventListener('load', () => {
+        startMessageChecking();
+    });
+</script>
