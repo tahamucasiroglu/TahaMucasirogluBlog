@@ -7,9 +7,7 @@ using TahaMucasirogluBlog.Domain.DTOs.Base;
 using TahaMucasirogluBlog.Domain.DTOs.Concrete.Cv.Experience;
 using TahaMucasirogluBlog.Domain.DTOs.Concrete.Cv.Info;
 using TahaMucasirogluBlog.Domain.DTOs.Concrete.Cv.Skill;
-using TahaMucasirogluBlog.Domain.DTOs.Concrete.Cv.ExperienceTechnology;
-using TahaMucasirogluBlog.Domain.DTOs.Concrete.Cv.ExperienceType;
-using TahaMucasirogluBlog.Domain.DTOs.Concrete.Entity.SocialLink;
+using TahaMucasirogluBlog.Domain.DTOs.Concrete.Main.SocialLink;
 
 namespace TahaMucasirogluBlog.Domain.DTOs.Concrete.Response
 {

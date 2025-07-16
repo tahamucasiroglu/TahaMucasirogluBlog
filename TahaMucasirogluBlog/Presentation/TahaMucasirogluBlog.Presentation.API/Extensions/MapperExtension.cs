@@ -1,5 +1,5 @@
-﻿using TahaMucasirogluBlog.Application.Mapper.MapProfile.Entity;
-using TahaMucasirogluBlog.Application.Mapper.MapProfile.Response;
+﻿using TahaMucasirogluBlog.Application.Mapper.MapProfile.Blog;
+using TahaMucasirogluBlog.Application.Mapper.MapProfile.Cv;
 
 namespace TahaMucasirogluBlog.Presentation.API.Extensions
 {

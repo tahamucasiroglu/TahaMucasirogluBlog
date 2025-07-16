@@ -14,6 +14,7 @@
 
   <ItemGroup>
     <Folder Include="Extensions\ConvertExtension\" />
+    <Folder Include="MapProfile\Response\" />
   </ItemGroup>
 
   <ItemGroup>

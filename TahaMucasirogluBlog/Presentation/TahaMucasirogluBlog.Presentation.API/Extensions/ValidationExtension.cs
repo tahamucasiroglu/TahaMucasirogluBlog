@@ -1,17 +1,17 @@
 ﻿using FluentValidation;
-using TahaMucasirogluBlog.Application.Validation.Concrete.Entity.BlogPost;
-using TahaMucasirogluBlog.Application.Validation.Concrete.Entity.BlogPostCategory;
-using TahaMucasirogluBlog.Application.Validation.Concrete.Entity.BlogPostTag;
-using TahaMucasirogluBlog.Application.Validation.Concrete.Entity.Category;
-using TahaMucasirogluBlog.Application.Validation.Concrete.Entity.Comment;
-using TahaMucasirogluBlog.Application.Validation.Concrete.Entity.Experience;
-using TahaMucasirogluBlog.Application.Validation.Concrete.Entity.ExperienceTechnology;
-using TahaMucasirogluBlog.Application.Validation.Concrete.Entity.ExperienceType;
-using TahaMucasirogluBlog.Application.Validation.Concrete.Entity.Info;
-using TahaMucasirogluBlog.Application.Validation.Concrete.Entity.Skill;
-using TahaMucasirogluBlog.Application.Validation.Concrete.Entity.SubSkill;
-using TahaMucasirogluBlog.Application.Validation.Concrete.Entity.Tag;
-using TahaMucasirogluBlog.Application.Validation.Concrete.Entity.User;
+using TahaMucasirogluBlog.Application.Validation.Concrete.Blog.BlogPost;
+using TahaMucasirogluBlog.Application.Validation.Concrete.Blog.BlogPostCategory;
+using TahaMucasirogluBlog.Application.Validation.Concrete.Blog.BlogPostTag;
+using TahaMucasirogluBlog.Application.Validation.Concrete.Blog.Category;
+using TahaMucasirogluBlog.Application.Validation.Concrete.Blog.Comment;
+using TahaMucasirogluBlog.Application.Validation.Concrete.Blog.Tag;
+using TahaMucasirogluBlog.Application.Validation.Concrete.Blog.User;
+using TahaMucasirogluBlog.Application.Validation.Concrete.Cv.Experience;
+using TahaMucasirogluBlog.Application.Validation.Concrete.Cv.ExperienceTechnology;
+using TahaMucasirogluBlog.Application.Validation.Concrete.Cv.ExperienceType;
+using TahaMucasirogluBlog.Application.Validation.Concrete.Cv.Info;
+using TahaMucasirogluBlog.Application.Validation.Concrete.Cv.Skill;
+using TahaMucasirogluBlog.Application.Validation.Concrete.Cv.SubSkill;
 
 namespace TahaMucasirogluBlog.Presentation.API.Extensions
 {

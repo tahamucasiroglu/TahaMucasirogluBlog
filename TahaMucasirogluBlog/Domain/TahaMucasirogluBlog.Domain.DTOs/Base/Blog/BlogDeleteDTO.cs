@@ -4,10 +4,11 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using TahaMucasirogluBlog.Domain.DTOs.Abstract;
+using TahaMucasirogluBlog.Domain.DTOs.Abstract.Blog;
 
 namespace TahaMucasirogluBlog.Domain.DTOs.Base.Blog
 {
-    public record BlogDeleteDTO : DeleteDTO, IDeleteDTO
+    public record BlogDeleteDTO : DeleteDTO, IBlogDeleteDTO
     {
     }
 }
