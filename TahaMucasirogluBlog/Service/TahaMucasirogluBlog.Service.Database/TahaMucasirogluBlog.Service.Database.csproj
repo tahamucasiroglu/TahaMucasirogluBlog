@@ -9,7 +9,17 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\..\Infrastructure\TahaMucasirogluBlog.Infrastructure.AdminRepository\TahaMucasirogluBlog.Infrastructure.AdminRepository.csproj" />
+    <ProjectReference Include="..\..\Infrastructure\TahaMucasirogluBlog.Infrastructure.BlogRepository\TahaMucasirogluBlog.Infrastructure.BlogRepository.csproj" />
+    <ProjectReference Include="..\..\Infrastructure\TahaMucasirogluBlog.Infrastructure.CvRepository\TahaMucasirogluBlog.Infrastructure.CvRepository.csproj" />
     <ProjectReference Include="..\..\Infrastructure\TahaMucasirogluBlog.Infrastructure.Repository\TahaMucasirogluBlog.Infrastructure.Repository.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Abstract\Blog\" />
+    <Folder Include="Abstract\Cv\" />
+    <Folder Include="Concrete\Blog\" />
+    <Folder Include="Concrete\Cv\" />
   </ItemGroup>
 
 </Project>

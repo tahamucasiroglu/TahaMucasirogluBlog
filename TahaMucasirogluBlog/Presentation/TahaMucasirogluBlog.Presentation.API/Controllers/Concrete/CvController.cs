@@ -5,12 +5,11 @@ using TahaMucasirogluBlog.Domain.DTOs.Concrete.Cv.Experience;
 using TahaMucasirogluBlog.Domain.DTOs.Concrete.Cv.ExperienceType;
 using TahaMucasirogluBlog.Domain.DTOs.Concrete.Cv.Skill;
 using TahaMucasirogluBlog.Domain.DTOs.Concrete.Cv.SubSkill;
-using TahaMucasirogluBlog.Domain.DTOs.Concrete.Cv.ExperienceTechnology;
 using TahaMucasirogluBlog.Domain.DTOs.Concrete.Cv.Info;
-using TahaMucasirogluBlog.Domain.DTOs.Concrete.Entity.SocialLink;
 using TahaMucasirogluBlog.Domain.DTOs.Concrete.Response;
 using TahaMucasirogluBlog.Domain.Return.Concrete;
 using TahaMucasirogluBlog.Service.Cv.Abstract;
+using TahaMucasirogluBlog.Domain.DTOs.Concrete.Main.SocialLink;
 
 namespace TahaMucasirogluBlog.Presentation.API.Controllers.Concrete
 {

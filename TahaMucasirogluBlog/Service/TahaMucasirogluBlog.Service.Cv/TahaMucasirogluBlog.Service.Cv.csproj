@@ -13,6 +13,9 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\..\Infrastructure\TahaMucasirogluBlog.Infrastructure.AdminRepository\TahaMucasirogluBlog.Infrastructure.AdminRepository.csproj" />
+    <ProjectReference Include="..\..\Infrastructure\TahaMucasirogluBlog.Infrastructure.BlogRepository\TahaMucasirogluBlog.Infrastructure.BlogRepository.csproj" />
+    <ProjectReference Include="..\..\Infrastructure\TahaMucasirogluBlog.Infrastructure.CvRepository\TahaMucasirogluBlog.Infrastructure.CvRepository.csproj" />
     <ProjectReference Include="..\..\Infrastructure\TahaMucasirogluBlog.Infrastructure.Repository\TahaMucasirogluBlog.Infrastructure.Repository.csproj" />
   </ItemGroup>
 

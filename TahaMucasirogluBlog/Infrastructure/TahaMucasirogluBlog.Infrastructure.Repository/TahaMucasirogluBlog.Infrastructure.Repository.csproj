@@ -9,15 +9,13 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Folder Include="Migrations\Blog\" />
-    <Folder Include="Migrations\Cv\" />
-    <Folder Include="Migrations\Main\" />
-  </ItemGroup>
-
-  <ItemGroup>
     <ProjectReference Include="..\..\Application\TahaMucasirogluBlog.Application.Managers\TahaMucasirogluBlog.Application.Managers.csproj" />
     <ProjectReference Include="..\..\Application\TahaMucasirogluBlog.Application.Mapper\TahaMucasirogluBlog.Application.Mapper.csproj" />
     <ProjectReference Include="..\..\Application\TahaMucasirogluBlog.Application.Validation\TahaMucasirogluBlog.Application.Validation.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Migrations\" />
   </ItemGroup>
 
 </Project>

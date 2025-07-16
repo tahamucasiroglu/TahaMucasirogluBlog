@@ -7,7 +7,7 @@ using TahaMucasirogluBlog.Domain.DTOs.Concrete.Response;
 using TahaMucasirogluBlog.Domain.Entities.Concrete.Cv;
 using TahaMucasirogluBlog.Domain.Return.Abstract;
 using TahaMucasirogluBlog.Domain.Return.Concrete;
-using TahaMucasirogluBlog.Infrastructure.Repository.Repository.Abstract.Cv;
+using TahaMucasirogluBlog.Infrastructure.CvRepository.Repository.Abstract;
 using TahaMucasirogluBlog.Service.Cv.Abstract;
 
 namespace TahaMucasirogluBlog.Service.Cv.Concrete

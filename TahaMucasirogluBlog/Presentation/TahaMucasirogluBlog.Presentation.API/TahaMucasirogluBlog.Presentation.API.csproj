@@ -38,6 +38,7 @@
 
 
 	<ItemGroup>
+    <Folder Include="Controllers\Concrete\Entity\" />
     <Folder Include="Files\" />
   </ItemGroup>
 

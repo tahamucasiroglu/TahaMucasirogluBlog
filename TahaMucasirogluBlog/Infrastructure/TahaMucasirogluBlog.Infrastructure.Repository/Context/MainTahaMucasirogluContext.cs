@@ -1,6 +1,6 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using TahaMucasirogluBlog.Domain.Entities.Concrete.Main;
-using TahaMucasirogluBlog.Infrastructure.Repository.Configuration.Main;
+using TahaMucasirogluBlog.Infrastructure.Repository.Configuration;
 
 namespace TahaMucasirogluBlog.Infrastructure.Repository.Context
 {
