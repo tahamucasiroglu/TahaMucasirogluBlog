@@ -1,0 +1,26 @@
+﻿using AutoMapper;
+using FluentValidation;
+using Microsoft.Extensions.Configuration;
+using Microsoft.Extensions.Logging;
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using TahaMucasirogluBlog.Domain.DTOs.Concrete.Cv.Skill;
+using TahaMucasirogluBlog.Domain.Entities.Concrete.Cv;
+using TahaMucasirogluBlog.Infrastructure.Repository.Repository.Abstract.Base;
+using TahaMucasirogluBlog.Infrastructure.Repository.Repository.Abstract.Cv;
+using TahaMucasirogluBlog.Service.Database.Abstract.Cv;
+using TahaMucasirogluBlog.Service.Database.Base;
+using TahaMucasirogluCv.Service.Database.Base;
+
+namespace TahaMucasirogluBlog.Service.Database.Concrete.Cv
+{
+    public class SkillDatabaseService : CvDatabaseService<Skill, GetSkillDTO, AddSkillDTO, UpdateSkillDTO, DeleteSkillDTO>, ISkillDatabaseService
+    {
+        public SkillDatabaseService(ISkillRepository repository, IMapper mapper, IConfiguration configuration, IValidator<AddSkillDTO> addValidator, IValidator<IEnumerable<AddSkillDTO>> addValidatorList, IValidator<UpdateSkillDTO> updateValidator, IValidator<IEnumerable<UpdateSkillDTO>> updateValidatorList, IValidator<DeleteSkillDTO> deleteValidator, IValidator<IEnumerable<DeleteSkillDTO>> deleteValidatorList, ILogger<SkillDatabaseService> logger) : base(repository, mapper, configuration, addValidator, addValidatorList, updateValidator, updateValidatorList, deleteValidator, deleteValidatorList, logger)
+        {
+        }
+    }
+}

@@ -73,8 +73,6 @@ namespace TahaMucasirogluBlog.Service.Database.Base
 
     }
 
-
-
     public abstract class DatabaseService<TEntity, TResponse> : DatabaseService<TEntity>, IDatabaseService<TEntity, TResponse>
        where TEntity : class, IEntity
        where TResponse : class, IGetDTO

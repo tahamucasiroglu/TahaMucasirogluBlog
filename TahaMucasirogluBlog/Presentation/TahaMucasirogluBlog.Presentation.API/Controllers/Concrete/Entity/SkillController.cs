@@ -5,8 +5,8 @@ using TahaMucasirogluBlog.Domain.DTOs.Concrete.Cv.Skill;
 using TahaMucasirogluBlog.Domain.Entities.Concrete.Cv;
 using TahaMucasirogluBlog.Presentation.API.Controllers.Abstract;
 using TahaMucasirogluBlog.Presentation.API.Controllers.Base;
-using TahaMucasirogluBlog.Service.Database.Abstract;
 using TahaMucasirogluBlog.Service.Database.Abstract.Base;
+using TahaMucasirogluBlog.Service.Database.Abstract.Cv;
 
 namespace TahaMucasirogluBlog.Presentation.API.Controllers.Concrete.Entity
 {

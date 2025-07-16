@@ -8,8 +8,12 @@ using TahaMucasirogluBlog.Infrastructure.Repository.Repository.Concrete.Cv;
 using TahaMucasirogluBlog.Infrastructure.Repository.Repository.Concrete.Main;
 using TahaMucasirogluBlog.Service.Cv.Abstract;
 using TahaMucasirogluBlog.Service.Cv.Concrete;
-using TahaMucasirogluBlog.Service.Database.Abstract;
+using TahaMucasirogluBlog.Service.Database.Abstract.Blog;
+using TahaMucasirogluBlog.Service.Database.Abstract.Cv;
+using TahaMucasirogluBlog.Service.Database.Abstract.Main;
 using TahaMucasirogluBlog.Service.Database.Concrete;
+using TahaMucasirogluBlog.Service.Database.Concrete.Cv;
+using TahaMucasirogluBlog.Service.Database.Concrete.Main;
 
 namespace TahaMucasirogluBlog.Presentation.API.Extensions
 {
