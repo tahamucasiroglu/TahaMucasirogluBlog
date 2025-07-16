@@ -1,7 +1,11 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using TahaMucasirogluBlog.Application.Managers.LoggerManager;
-using TahaMucasirogluBlog.Infrastructure.Repository.Repository.Abstract;
-using TahaMucasirogluBlog.Infrastructure.Repository.Repository.Concrete;
+using TahaMucasirogluBlog.Infrastructure.Repository.Repository.Abstract.Blog;
+using TahaMucasirogluBlog.Infrastructure.Repository.Repository.Abstract.Cv;
+using TahaMucasirogluBlog.Infrastructure.Repository.Repository.Abstract.Main;
+using TahaMucasirogluBlog.Infrastructure.Repository.Repository.Concrete.Blog;
+using TahaMucasirogluBlog.Infrastructure.Repository.Repository.Concrete.Cv;
+using TahaMucasirogluBlog.Infrastructure.Repository.Repository.Concrete.Main;
 using TahaMucasirogluBlog.Service.Cv.Abstract;
 using TahaMucasirogluBlog.Service.Cv.Concrete;
 using TahaMucasirogluBlog.Service.Database.Abstract;

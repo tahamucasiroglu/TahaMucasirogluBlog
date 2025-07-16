@@ -9,7 +9,9 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Folder Include="Migrations\" />
+    <Folder Include="Migrations\Blog\" />
+    <Folder Include="Migrations\Cv\" />
+    <Folder Include="Migrations\Main\" />
   </ItemGroup>
 
   <ItemGroup>

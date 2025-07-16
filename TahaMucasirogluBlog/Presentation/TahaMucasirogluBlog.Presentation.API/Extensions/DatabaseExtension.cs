@@ -17,7 +17,7 @@ namespace TahaMucasirogluBlog.Presentation.API.Extensions
             bool enableSensitiveDataLogging = builder.Configuration.GetAppSettingsValue<bool>("DatabaseSettings:EnableSensitiveDataLogging");
             bool enableDetailedErrors = builder.Configuration.GetAppSettingsValue<bool>("DatabaseSettings:EnableDetailedErrors");
             string SqlServerConnectionStrings = builder.Configuration.GetConnectionString("SqlServerConnectionStrings") ?? throw new Exception("Connection String Bulunamadı");
-            builder.Services.AddDbContext<TahaMucasirogluBlogContext>(opt =>
+            builder.Services.AddDbContext<MainTahaMucasirogluContext>(opt =>
             {
                 opt.UseSqlServer(SqlServerConnectionStrings);
                 opt.UseLoggerFactory(LoggerFactory.Create(builder =>

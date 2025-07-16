@@ -9,8 +9,8 @@ using System.Text;
 using System.Threading.Tasks;
 using TahaMucasirogluBlog.Domain.DTOs.Concrete.Entity.Tag;
 using TahaMucasirogluBlog.Domain.Entities.Concrete.Blog;
-using TahaMucasirogluBlog.Infrastructure.Repository.Repository.Abstract;
 using TahaMucasirogluBlog.Infrastructure.Repository.Repository.Abstract.Base;
+using TahaMucasirogluBlog.Infrastructure.Repository.Repository.Abstract.Blog;
 using TahaMucasirogluBlog.Service.Database.Abstract;
 using TahaMucasirogluBlog.Service.Database.Base;
 

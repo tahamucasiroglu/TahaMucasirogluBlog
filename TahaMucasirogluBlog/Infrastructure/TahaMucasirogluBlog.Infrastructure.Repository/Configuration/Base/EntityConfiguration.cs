@@ -9,7 +9,7 @@ namespace TahaMucasirogluBlog.Infrastructure.Repository.Configuration.Base
     /// MainEntity tipi için özel ek yapılandırmalar.
     /// Şu anlık ek yapılandırmaya gerek duyulmadı ancak genişletilebilir.
     /// </summary>
-    public class EntityConfiguration<TEntity> : IEntityTypeConfiguration<TEntity>
+    public abstract class EntityConfiguration<TEntity> : IEntityTypeConfiguration<TEntity>
         where TEntity : class, IEntity
     {
         public virtual void Configure(EntityTypeBuilder<TEntity> builder)

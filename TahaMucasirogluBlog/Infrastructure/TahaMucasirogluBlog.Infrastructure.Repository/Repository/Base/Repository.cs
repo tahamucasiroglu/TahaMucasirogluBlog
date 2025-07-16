@@ -18,7 +18,7 @@ namespace TahaMucasirogluBlog.Infrastructure.Repository.Repository.Base
         public readonly DbContext context;
         public readonly ILogger<Repository<TEntity>> logger;
         internal IDbContextTransaction? transaction;
-        public Repository(TahaMucasirogluBlogContext context, ILogger<Repository<TEntity>> logger)
+        public Repository(DbContext context, ILogger<Repository<TEntity>> logger)
         {
             this.context = context;
             this.logger = logger;

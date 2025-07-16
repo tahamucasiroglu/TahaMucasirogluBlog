@@ -9,8 +9,8 @@ using System.Text;
 using System.Threading.Tasks;
 using TahaMucasirogluBlog.Domain.DTOs.Concrete.Entity.SocialLink;
 using TahaMucasirogluBlog.Domain.Entities.Concrete.Main;
-using TahaMucasirogluBlog.Infrastructure.Repository.Repository.Abstract;
 using TahaMucasirogluBlog.Infrastructure.Repository.Repository.Abstract.Base;
+using TahaMucasirogluBlog.Infrastructure.Repository.Repository.Abstract.Main;
 using TahaMucasirogluBlog.Service.Database.Abstract;
 using TahaMucasirogluBlog.Service.Database.Base;
 
