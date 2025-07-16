@@ -8,7 +8,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using TahaMucasirogluBlog.Domain.DTOs.Concrete.Entity.Category;
-using TahaMucasirogluBlog.Domain.Entities.Concrete;
+using TahaMucasirogluBlog.Domain.Entities.Concrete.Blog;
 using TahaMucasirogluBlog.Infrastructure.Repository.Repository.Abstract;
 using TahaMucasirogluBlog.Infrastructure.Repository.Repository.Abstract.Base;
 using TahaMucasirogluBlog.Service.Database.Abstract;

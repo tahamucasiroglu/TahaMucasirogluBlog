@@ -8,4 +8,9 @@
 	  <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
   </PropertyGroup>
 
+  <ItemGroup>
+    <Folder Include="Concrete\Request\" />
+    <Folder Include="Concrete\Response\" />
+  </ItemGroup>
+
 </Project>

@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using TahaMucasirogluBlog.Domain.Entities.Concrete;
+using TahaMucasirogluBlog.Domain.Entities.Concrete.Blog;
 using TahaMucasirogluBlog.Infrastructure.Repository.Repository.Abstract.Base;
 
 namespace TahaMucasirogluBlog.Infrastructure.Repository.Repository.Abstract

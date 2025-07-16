@@ -5,7 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using TahaMucasirogluBlog.Application.Validation.Base;
-using TahaMucasirogluBlog.Domain.DTOs.Concrete.Entity.Info;
+using TahaMucasirogluBlog.Domain.DTOs.Concrete.Cv.Info;
 
 namespace TahaMucasirogluBlog.Application.Validation.Concrete.Entity.Info
 {

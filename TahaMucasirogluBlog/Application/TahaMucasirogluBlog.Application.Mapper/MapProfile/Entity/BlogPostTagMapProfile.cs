@@ -1,7 +1,7 @@
 ﻿using AutoMapper;
 using TahaMucasirogluBlog.Application.Mapper.Extensions.ConfigExtension;
 using TahaMucasirogluBlog.Domain.DTOs.Concrete.Entity.BlogPostTag;
-using TahaMucasirogluBlog.Domain.Entities.Concrete;
+using TahaMucasirogluBlog.Domain.Entities.Concrete.Blog;
 
 namespace TahaMucasirogluBlog.Application.Mapper.MapProfile.Entity
 {

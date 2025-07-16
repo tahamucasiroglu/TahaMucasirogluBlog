@@ -2,7 +2,7 @@ using Microsoft.AspNetCore.Mvc;
 using Newtonsoft.Json;
 using System.Net;
 using TahaMucasirogluBlog.Client.Cv.TahaMucasirogluMVC.Managers.UrlManager;
-using TahaMucasirogluBlog.Domain.Models.Response;
+using TahaMucasirogluBlog.Domain.Models.Concrete.Cv;
 using TahaMucasirogluBlog.Domain.Return.Base;
 using TahaMucasirogluBlog.Domain.Return.Concrete;
 

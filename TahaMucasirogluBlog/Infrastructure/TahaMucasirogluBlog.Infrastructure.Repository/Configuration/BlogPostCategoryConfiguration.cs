@@ -1,6 +1,6 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata.Builders;
-using TahaMucasirogluBlog.Domain.Entities.Concrete;
+using TahaMucasirogluBlog.Domain.Entities.Concrete.Blog;
 using TahaMucasirogluBlog.Infrastructure.Repository.Configuration.Base;
 
 namespace TahaMucasirogluBlog.Infrastructure.Repository.Configuration

@@ -4,7 +4,9 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using TahaMucasirogluBlog.Domain.Entities.Concrete;
+using TahaMucasirogluBlog.Domain.Entities.Concrete.Blog;
+using TahaMucasirogluBlog.Domain.Entities.Concrete.Cv;
+using TahaMucasirogluBlog.Domain.Entities.Concrete.Main;
 using TahaMucasirogluBlog.Infrastructure.Repository.Configuration;
 
 namespace TahaMucasirogluBlog.Infrastructure.Repository.Context

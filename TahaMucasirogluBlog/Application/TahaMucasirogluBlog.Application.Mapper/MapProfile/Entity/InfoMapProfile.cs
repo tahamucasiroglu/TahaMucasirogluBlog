@@ -5,9 +5,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using TahaMucasirogluBlog.Application.Mapper.Extensions.ConfigExtension;
+using TahaMucasirogluBlog.Domain.DTOs.Concrete.Cv.Info;
 using TahaMucasirogluBlog.Domain.DTOs.Concrete.Entity.ExperienceType;
-using TahaMucasirogluBlog.Domain.DTOs.Concrete.Entity.Info;
-using TahaMucasirogluBlog.Domain.Entities.Concrete;
+using TahaMucasirogluBlog.Domain.Entities.Concrete.Cv;
 
 namespace TahaMucasirogluBlog.Application.Mapper.MapProfile.Entity
 {

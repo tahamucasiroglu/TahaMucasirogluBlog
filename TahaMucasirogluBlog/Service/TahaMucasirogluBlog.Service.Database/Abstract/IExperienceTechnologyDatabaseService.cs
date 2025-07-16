@@ -1,5 +1,5 @@
-﻿using TahaMucasirogluBlog.Domain.DTOs.Concrete.Entity.ExperienceTechnology;
-using TahaMucasirogluBlog.Domain.Entities.Concrete;
+﻿using TahaMucasirogluBlog.Domain.DTOs.Concrete.Cv.ExperienceTechnology;
+using TahaMucasirogluBlog.Domain.Entities.Concrete.Cv;
 using TahaMucasirogluBlog.Service.Database.Abstract.Base;
 
 namespace TahaMucasirogluBlog.Service.Database.Abstract

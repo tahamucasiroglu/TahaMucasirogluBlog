@@ -1,8 +1,8 @@
 ﻿using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
-using TahaMucasirogluBlog.Domain.DTOs.Concrete.Entity.ExperienceType;
-using TahaMucasirogluBlog.Domain.Entities.Concrete;
+using TahaMucasirogluBlog.Domain.DTOs.Concrete.Cv.ExperienceType;
+using TahaMucasirogluBlog.Domain.Entities.Concrete.Cv;
 using TahaMucasirogluBlog.Presentation.API.Controllers.Abstract;
 using TahaMucasirogluBlog.Presentation.API.Controllers.Base;
 using TahaMucasirogluBlog.Service.Database.Abstract;

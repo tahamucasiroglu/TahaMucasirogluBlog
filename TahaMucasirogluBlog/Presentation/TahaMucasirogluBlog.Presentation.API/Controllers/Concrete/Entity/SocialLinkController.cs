@@ -2,7 +2,7 @@
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using TahaMucasirogluBlog.Domain.DTOs.Concrete.Entity.SocialLink;
-using TahaMucasirogluBlog.Domain.Entities.Concrete;
+using TahaMucasirogluBlog.Domain.Entities.Concrete.Main;
 using TahaMucasirogluBlog.Presentation.API.Controllers.Base;
 using TahaMucasirogluBlog.Service.Database.Abstract;
 using TahaMucasirogluBlog.Service.Database.Abstract.Base;

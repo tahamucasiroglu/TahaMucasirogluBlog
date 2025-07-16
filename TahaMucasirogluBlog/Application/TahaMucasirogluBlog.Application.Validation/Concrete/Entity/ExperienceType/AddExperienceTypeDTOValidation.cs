@@ -6,8 +6,8 @@ using System.Text;
 using System.Threading.Tasks;
 using TahaMucasirogluBlog.Application.Validation.Base;
 using TahaMucasirogluBlog.Application.Validation.Concrete.Entity.ExperienceTechnology;
+using TahaMucasirogluBlog.Domain.DTOs.Concrete.Cv.ExperienceType;
 using TahaMucasirogluBlog.Domain.DTOs.Concrete.Entity.ExperienceTechnology;
-using TahaMucasirogluBlog.Domain.DTOs.Concrete.Entity.ExperienceType;
 
 namespace TahaMucasirogluBlog.Application.Validation.Concrete.Entity.ExperienceType
 {

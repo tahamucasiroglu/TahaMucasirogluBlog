@@ -1,10 +1,10 @@
 ﻿using AutoMapper;
 using Microsoft.Extensions.Logging;
-using TahaMucasirogluBlog.Domain.DTOs.Concrete.Entity.Experience;
-using TahaMucasirogluBlog.Domain.DTOs.Concrete.Entity.Info;
-using TahaMucasirogluBlog.Domain.DTOs.Concrete.Entity.Skill;
+using TahaMucasirogluBlog.Domain.DTOs.Concrete.Cv.Experience;
+using TahaMucasirogluBlog.Domain.DTOs.Concrete.Cv.Info;
+using TahaMucasirogluBlog.Domain.DTOs.Concrete.Cv.Skill;
 using TahaMucasirogluBlog.Domain.DTOs.Concrete.Response;
-using TahaMucasirogluBlog.Domain.Entities.Concrete;
+using TahaMucasirogluBlog.Domain.Entities.Concrete.Cv;
 using TahaMucasirogluBlog.Domain.Return.Abstract;
 using TahaMucasirogluBlog.Domain.Return.Concrete;
 using TahaMucasirogluBlog.Infrastructure.Repository.Repository.Abstract;

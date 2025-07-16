@@ -6,7 +6,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using TahaMucasirogluBlog.Domain.Entities.Base;
-using TahaMucasirogluBlog.Domain.Entities.Concrete;
+using TahaMucasirogluBlog.Domain.Entities.Concrete.Main;
 using TahaMucasirogluBlog.Infrastructure.Repository.Configuration.Base;
 
 namespace TahaMucasirogluBlog.Infrastructure.Repository.Configuration

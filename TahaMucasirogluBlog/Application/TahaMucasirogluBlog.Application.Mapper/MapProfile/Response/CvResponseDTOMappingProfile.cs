@@ -4,11 +4,11 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using TahaMucasirogluBlog.Domain.DTOs.Concrete.Entity.Experience;
+using TahaMucasirogluBlog.Domain.DTOs.Concrete.Cv.Experience;
+using TahaMucasirogluBlog.Domain.DTOs.Concrete.Cv.Skill;
 using TahaMucasirogluBlog.Domain.DTOs.Concrete.Entity.Info;
-using TahaMucasirogluBlog.Domain.DTOs.Concrete.Entity.Skill;
 using TahaMucasirogluBlog.Domain.DTOs.Concrete.Entity.SubSkill;
-using TahaMucasirogluBlog.Domain.Entities.Concrete;
+using TahaMucasirogluBlog.Domain.Entities.Concrete.Cv;
 
 namespace TahaMucasirogluBlog.Application.Mapper.MapProfile.Response
 {

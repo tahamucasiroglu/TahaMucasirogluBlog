@@ -6,8 +6,8 @@ using System.Text;
 using System.Threading.Tasks;
 using TahaMucasirogluBlog.Application.Validation.Base;
 using TahaMucasirogluBlog.Application.Validation.Concrete.Entity.Comment;
+using TahaMucasirogluBlog.Domain.DTOs.Concrete.Cv.Experience;
 using TahaMucasirogluBlog.Domain.DTOs.Concrete.Entity.Comment;
-using TahaMucasirogluBlog.Domain.DTOs.Concrete.Entity.Experience;
 
 namespace TahaMucasirogluBlog.Application.Validation.Concrete.Entity.Experience
 {

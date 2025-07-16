@@ -1,5 +1,5 @@
 ﻿using Microsoft.Extensions.Logging;
-using TahaMucasirogluBlog.Domain.Entities.Concrete;
+using TahaMucasirogluBlog.Domain.Entities.Concrete.Blog;
 using TahaMucasirogluBlog.Infrastructure.Repository.Context;
 using TahaMucasirogluBlog.Infrastructure.Repository.Repository.Abstract;
 using TahaMucasirogluBlog.Infrastructure.Repository.Repository.Base;
