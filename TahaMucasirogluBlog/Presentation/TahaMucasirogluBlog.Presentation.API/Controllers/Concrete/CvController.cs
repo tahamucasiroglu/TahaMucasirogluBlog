@@ -6,10 +6,10 @@ using TahaMucasirogluBlog.Domain.DTOs.Concrete.Cv.ExperienceType;
 using TahaMucasirogluBlog.Domain.DTOs.Concrete.Cv.Skill;
 using TahaMucasirogluBlog.Domain.DTOs.Concrete.Cv.SubSkill;
 using TahaMucasirogluBlog.Domain.DTOs.Concrete.Cv.Info;
-using TahaMucasirogluBlog.Domain.DTOs.Concrete.Response;
 using TahaMucasirogluBlog.Domain.Return.Concrete;
 using TahaMucasirogluBlog.Service.Cv.Abstract;
 using TahaMucasirogluBlog.Domain.DTOs.Concrete.Main.SocialLink;
+using TahaMucasirogluBlog.Domain.DTOs.Concrete.Cv.Response;
 
 namespace TahaMucasirogluBlog.Presentation.API.Controllers.Concrete
 {
@@ -93,7 +93,7 @@ namespace TahaMucasirogluBlog.Presentation.API.Controllers.Concrete
                 Name = "Eğitim"
             };
 
-            CvResponseDTO cvResponseDTO = new CvResponseDTO()
+            CvPageResponseDTO cvResponseDTO = new CvPageResponseDTO()
             {
                 Info = new GetInfoDTO()
                 {
@@ -962,7 +962,7 @@ namespace TahaMucasirogluBlog.Presentation.API.Controllers.Concrete
                     }
                 }
             };
-            return Ok(new SuccessReturn<CvResponseDTO>(cvResponseDTO));
+            return Ok(new SuccessReturn<CvPageResponseDTO>(cvResponseDTO));
         }
 
 

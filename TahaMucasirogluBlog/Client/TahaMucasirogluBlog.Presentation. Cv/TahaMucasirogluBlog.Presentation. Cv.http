@@ -1,6 +1,0 @@
-@TahaMucasirogluBlog.Presentation._Cv_HostAddress = http://localhost:5145
-
-GET {{TahaMucasirogluBlog.Presentation._Cv_HostAddress}}/weatherforecast/
-Accept: application/json
-
-###
