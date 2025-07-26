@@ -1,0 +1,6 @@
+@TahaMucasiroglu.Presentation.StatisticAPI_HostAddress = http://localhost:5234
+
+GET {{TahaMucasiroglu.Presentation.StatisticAPI_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

@@ -1,0 +1,947 @@
+﻿using Microsoft.AspNetCore.Http;
+using Microsoft.AspNetCore.Mvc;
+using TahaMucasiroglu.Domain.DTOs.Concrete.Cv.Experience;
+using TahaMucasiroglu.Domain.DTOs.Concrete.Cv.ExperienceType;
+using TahaMucasiroglu.Domain.DTOs.Concrete.Cv.Info;
+using TahaMucasiroglu.Domain.DTOs.Concrete.Cv.Response;
+using TahaMucasiroglu.Domain.DTOs.Concrete.Cv.Skill;
+using TahaMucasiroglu.Domain.DTOs.Concrete.Cv.SubSkill;
+using TahaMucasiroglu.Domain.DTOs.Concrete.Main.SocialLink;
+using TahaMucasiroglu.Domain.Return.Concrete;
+using TahaMucasiroglu.Service.CvDatabase.Abstract;
+
+namespace TahaMucasiroglu.Presentation.CvAPI.Controllers.Concrete
+{
+    [Route("api/cv")]
+    [ApiController]
+    public class MainController : ControllerBase
+    {
+        private readonly ICvService cvService;
+        public MainController(ICvService cvService)
+        {
+            this.cvService = cvService;
+        }
+
+
+        [HttpGet("[action]")]
+        public async Task<IActionResult> GetCv()
+        {
+            return Ok(await cvService.GetCV());
+        }
+
+        [HttpGet("[action]")]
+        public async Task<IActionResult> Login()
+        {
+            return Ok(await cvService.GetCV());
+        }
+
+
+
+
+
+        [HttpGet("[action]")]
+        public IActionResult GetTest()
+        {
+            GetExperienceTypeDTO staj = new GetExperienceTypeDTO()
+            {
+                Id = Guid.NewGuid(),
+                Name = "Staj"
+            };
+
+            GetExperienceTypeDTO gonullu = new GetExperienceTypeDTO()
+            {
+                Id = Guid.NewGuid(),
+                Name = "Gönüllü"
+            };
+            GetExperienceTypeDTO calisma = new GetExperienceTypeDTO()
+            {
+                Id = Guid.NewGuid(),
+                Name = "İş"
+            };
+            GetExperienceTypeDTO proje = new GetExperienceTypeDTO()
+            {
+                Id = Guid.NewGuid(),
+                Name = "Proje"
+            };
+            GetExperienceTypeDTO egitim = new GetExperienceTypeDTO()
+            {
+                Id = Guid.NewGuid(),
+                Name = "Eğitim"
+            };
+
+            CvPageResponseDTO cvResponseDTO = new CvPageResponseDTO()
+            {
+                Info = new GetInfoDTO()
+                {
+                    Id = Guid.NewGuid(),
+                    Email = "tahamucasiroglu@gmail.com",
+                    FullName = "Ahmet Taha Mücasiroğlu",
+                    Location = "İstanbul - İzmir - Fethiye - Tüm Lokasyonlar",
+                    Phone = "553 735 62 89",
+                    CoverLetter = "Üç yılı aşkın süredir .NET teknolojileriyle backend geliştirme yapıyor, sürdürülebilir ve ölçeklenebilir projeler üretiyorum. ASP.NET Core ile çok katmanlı (Layered/Onion) mimarilerde, SOLID prensiplerine ve Clean Code yaklaşımına uygun, güvenli ve test edilebilir yazılımlar geliştiriyorum. SQL Server ve PostgreSQL veritabanlarında Entity Framework Core ve Dapper ile veri modelleme, migration ve performans optimizasyonu süreçlerine aktif görev aldım. Projelerimde JWT ile kimlik doğrulama, policy tabanlı yetkilendirme, dinamik connection string yönetimi ve multi-tenant yapılar gibi kurumsal çözümler geliştirdim. AutoMapper, FluentValidation, Dependency Injection, CORS, Redis, RabbitMQ, gRPC, Swagger/OpenAPI, MemoryCache ve SeriLog gibi araçları aktif şekilde kullanıyor; xUnit ile TDD yaklaşımına uygun birim testler yazıyorum.\r\n\r\nTeknik yetkinliğimin yanında, iletişim gücüm ve ekip çalışmasına yatkınlığım sayesinde iş birliklerine değer katıyorum. Öğrenmeye açık, uyumlu ve farklı şehirlerde ya da uzaktan çalışmaya elverişli bir geliştiriciyim. Hedefim, güçlü ekiplerle uzun vadeli .NET Backend projelerinde yer almak.\r\n"
+
+                },
+
+                SocialLinks = new List<GetSocialLinkDTO>()
+                {
+                    new GetSocialLinkDTO()
+                    {
+                        Id = Guid.NewGuid(),
+                        Name = "LinkedIn",
+                        DisplayOrder = 1,
+                        IconClass = "fa-brands fa-linkedin",
+                        IsVisible = true,
+                        Url = "https://www.linkedin.com/in/tahamucasiroglu/"
+                    },
+                    new GetSocialLinkDTO()
+                    {
+                        Id = Guid.NewGuid(),
+                        Name = "Github",
+                        DisplayOrder = 2,
+                        IconClass = "fa-brands fa-github",
+                        IsVisible = true,
+                        Url = "https://github.com/tahamucasiroglu"
+                    },
+                    new GetSocialLinkDTO()
+                    {
+                        Id = Guid.NewGuid(),
+                        Name = "Mail",
+                        DisplayOrder = 3,
+                        IconClass = "fa-solid fa-envelope",
+                        IsVisible = true,
+                        Url = "mailto:tahamucasiroglu@gmail.com"
+                    },
+                    new GetSocialLinkDTO()
+                    {
+                        Id = Guid.NewGuid(),
+                        Name = "Telefon",
+                        DisplayOrder = 4,
+                        IconClass = "fa-solid fa-phone",
+                        IsVisible = true,
+                        Url = "tel:+905537356289"
+                    },
+                    new GetSocialLinkDTO()
+                    {
+                        Id = Guid.NewGuid(),
+                        Name = "CV",
+                        DisplayOrder = 5,
+                        IconClass = "fa-solid fa-file",
+                        IsVisible = true,
+                        Url = "https://api.tahamucasiroglu.com.tr/api/Cv/DownloadCv"
+                    },
+                    new GetSocialLinkDTO()
+                    {
+                        Id = Guid.NewGuid(),
+                        Name = "Turkcell Sertifika",
+                        DisplayOrder = 5,
+                        IconClass = "fa-solid fa-stamp",
+                        IsVisible = true,
+                        Url = "https://api.tahamucasiroglu.com.tr/api/Cv/DownloadTurkcellSertifica"
+                    }
+                },
+
+                Skills = new List<GetSkillWithSubSkillsDTO>()
+                {
+                    new GetSkillWithSubSkillsDTO()
+                    {
+                        Id = Guid.NewGuid(),
+                        Name = "Backend",
+                        SubSkills = new List<GetSubSkillDTO>()
+                        {
+                            new GetSubSkillDTO()
+                            {
+                                Id = Guid.NewGuid(),
+                                Name = ".Net Api Core",
+                                Explanation = "Turkcell Bootcamp ve HWA .NET Bootcamp programları"
+                            },
+                            new GetSubSkillDTO()
+                            {
+                                Id = Guid.NewGuid(),
+                                Name = "Ef Core",
+                                Explanation = "Genel Olarak işlerde kullanıyorum"
+                            },
+                            new GetSubSkillDTO()
+                            {
+                                Id = Guid.NewGuid(),
+                                Name = "PostgreSQL",
+                            },
+                            new GetSubSkillDTO()
+                            {
+                                Id = Guid.NewGuid(),
+                                Name =  "Sql Server / Sql Express",
+                            },
+                            new GetSubSkillDTO()
+                            {
+                                Id = Guid.NewGuid(),
+                                Name = "Dapper",
+                            },
+                            new GetSubSkillDTO()
+                            {
+                                Id = Guid.NewGuid(),
+                                Name = "JWT",
+                            },
+                            new GetSubSkillDTO()
+                            {
+                                Id = Guid.NewGuid(),
+                                Name = "AutoMapper",
+                            },
+                            new GetSubSkillDTO()
+                            {
+                                Id = Guid.NewGuid(),
+                                Name = "Fluent Validation",
+                            },
+                            new GetSubSkillDTO()
+                            {
+                                Id = Guid.NewGuid(),
+                                Name = "CQRS",
+                            },
+                            new GetSubSkillDTO()
+                            {
+                                Id = Guid.NewGuid(),
+                                Name = "Layered/Onion Architecture",
+                            },
+                            new GetSubSkillDTO()
+                            {
+                                Id = Guid.NewGuid(),
+                                Name = "Dependency Injection",
+                            },
+                            new GetSubSkillDTO()
+                            {
+                                Id = Guid.NewGuid(),
+                                Name = "Redis",
+                            },
+                            new GetSubSkillDTO()
+                            {
+                                Id = Guid.NewGuid(),
+                                Name = "RabbitMQ",
+                            }
+                        }
+                    },
+                    new GetSkillWithSubSkillsDTO()
+                    {
+                        Id = Guid.NewGuid(),
+                        Name = "Mobile",
+                        SubSkills = new List<GetSubSkillDTO>()
+                        {
+                            new GetSubSkillDTO()
+                            {
+                                Id = Guid.NewGuid(),
+                                Name = "Flutter",
+                                Explanation = "Staj zamanı sıfırdan 2 ayda uygulama ürettim. 2 ayda destek verdim"
+                            },
+                            new GetSubSkillDTO()
+                            {
+                                Id = Guid.NewGuid(),
+                                Name = "Dart",
+                            },
+                            new GetSubSkillDTO()
+                            {
+                                Id = Guid.NewGuid(),
+                                Name = "Rest API",
+                            },
+                            new GetSubSkillDTO()
+                            {
+                                Id = Guid.NewGuid(),
+                                Name = "UI Design",
+                            }
+                        }
+                    },
+                    new GetSkillWithSubSkillsDTO()
+                    {
+                        Id = Guid.NewGuid(),
+                        Name = "Frontend",
+                        SubSkills = new List<GetSubSkillDTO>()
+                        {
+                            new GetSubSkillDTO()
+                            {
+                                Id = Guid.NewGuid(),
+                                Name = ".NET MVC",
+                                Explanation = "Frontend ihtiyaçlarımı karşılıyorum. Js ile kullanıyorum."
+                            },
+                            new GetSubSkillDTO()
+                            {
+                                Id = Guid.NewGuid(),
+                                Name = "Javascript",
+                            },
+                            new GetSubSkillDTO()
+                            {
+                                Id = Guid.NewGuid(),
+                                Name = "JQuery",
+                            },
+                            new GetSubSkillDTO()
+                            {
+                                Id = Guid.NewGuid(),
+                                Name =  "React",
+                            },
+                            new GetSubSkillDTO()
+                            {
+                                Id = Guid.NewGuid(),
+                                Name = "Bootstrap",
+                            },
+                            new GetSubSkillDTO()
+                            {
+                                Id = Guid.NewGuid(),
+                                Name = "Blazor",
+                            },
+                            new GetSubSkillDTO()
+                            {
+                                Id = Guid.NewGuid(),
+                                Name = "Razor",
+                            }
+
+                        }
+                    },
+                    new GetSkillWithSubSkillsDTO()
+                    {
+                        Id = Guid.NewGuid(),
+                        Name = "Other",
+                        SubSkills = new List<GetSubSkillDTO>()
+                        {
+                            new GetSubSkillDTO()
+                            {
+                                Id = Guid.NewGuid(),
+                                Name = "Python",
+                                Explanation = "Küçük çaplı her türlü işi çözdüğüm dildir."
+                            },
+                            new GetSubSkillDTO()
+                            {
+                                Id = Guid.NewGuid(),
+                                Name = "Script",
+                            },
+                            new GetSubSkillDTO()
+                            {
+                                Id = Guid.NewGuid(),
+                                Name = "Web Scraping",
+                            },
+                            new GetSubSkillDTO()
+                            {
+                                Id = Guid.NewGuid(),
+                                Name =  "Tensorflow",
+                            },
+                            new GetSubSkillDTO()
+                            {
+                                Id = Guid.NewGuid(),
+                                Name = "Clean Arch",
+                            },
+                            new GetSubSkillDTO()
+                            {
+                                Id = Guid.NewGuid(),
+                                Name =  "Postman",
+                            },
+                            new GetSubSkillDTO()
+                            {
+                                Id = Guid.NewGuid(),
+                                Name = "Git",
+                            },
+                            new GetSubSkillDTO()
+                            {
+                                Id = Guid.NewGuid(),
+                                Name = "Solidity",
+                            },
+                            new GetSubSkillDTO()
+                            {
+                                Id = Guid.NewGuid(),
+                                Name = "Blockchain",
+                            },
+                            new GetSubSkillDTO()
+                            {
+                                Id = Guid.NewGuid(),
+                                Name = "NFT Market",
+                            },
+                            new GetSubSkillDTO()
+                            {
+                                Id = Guid.NewGuid(),
+                                Name = "Arduino",
+                            },
+                            new GetSubSkillDTO()
+                            {
+                                Id = Guid.NewGuid(),
+                                Name = "C++",
+                            },
+                            new GetSubSkillDTO()
+                            {
+                                Id = Guid.NewGuid(),
+                                Name = "OpenCV",
+                            }
+                        }
+                    },
+                    new GetSkillWithSubSkillsDTO()
+                    {
+                        Id = Guid.NewGuid(),
+                        Name = "Beceriler",
+                        SubSkills = new List<GetSubSkillDTO>()
+                        {
+                            new GetSubSkillDTO()
+                            {
+                                Id = Guid.NewGuid(),
+                                Name = "Güçlü İletişim",
+                            },
+                            new GetSubSkillDTO()
+                            {
+                                Id = Guid.NewGuid(),
+                                Name = "Zaman Yönetimi",
+                            },
+                            new GetSubSkillDTO()
+                            {
+                                Id = Guid.NewGuid(),
+                                Name = "Hata Çözme",
+                            },
+                            new GetSubSkillDTO()
+                            {
+                                Id = Guid.NewGuid(),
+                                Name =  "Hızlı Uyum",
+                            },
+                            new GetSubSkillDTO()
+                            {
+                                Id = Guid.NewGuid(),
+                                Name = "Esneklik",
+                            },
+                            new GetSubSkillDTO()
+                            {
+                                Id = Guid.NewGuid(),
+                                Name =  "Sakin",
+                            },
+                            new GetSubSkillDTO()
+                            {
+                                Id = Guid.NewGuid(),
+                                Name = "Ekip Çalışması",
+                            },
+                            new GetSubSkillDTO()
+                            {
+                                Id = Guid.NewGuid(),
+                                Name = "Öğretici",
+                            }
+                        }
+                    }
+                },
+
+                Experiences = new List<GetExperienceWithTechnologyAndTypeDTO>()
+                {
+                    new GetExperienceWithTechnologyAndTypeDTO()
+                    {
+                        Id = Guid.NewGuid(),
+                        StartDate = DateTime.Parse("01-07-2019"),
+                        EndDate = DateTime.Parse("01-08-2019"),
+                        ExperienceType = staj,
+                        Provider = "",
+                        Title = "Seydikemer Belediyesi Bilgi İşlem",
+                        Reference = "",
+                        Description = "Kamu kurumunda teknik destek sağladım. Program kurulumu, kullanıcı desteği,arıza tespiti ve çözüm süreçlerinde doğrudan sahada görev aldım.",
+                        ImageUrl = "https://www.seydikemer.bel.tr/images/sklogo.png",
+                        Url = "https://www.seydikemer.bel.tr/",
+                        SubSkills = new List<GetSubSkillDTO>()
+                        {
+                            new GetSubSkillDTO()
+                            {
+                                Id= Guid.NewGuid(),
+                                Name = "Teknik Destek",
+                                Explanation = "Belediye personellerine her türlü bilişim desteği sağladım."
+                            },
+                            new GetSubSkillDTO()
+                            {
+                                Id= Guid.NewGuid(),
+                                Name = "Kullanıcı Memnuniyeti",
+                                Explanation = "Personeller ile müşteriymiş gibi her zaman kibar ve güler yüzlü iletişim kurdum."
+                            },
+                            new GetSubSkillDTO()
+                            {
+                                Id= Guid.NewGuid(),
+                                Name = "Problem Çözme"
+                            },
+                        }
+                    },
+                    new GetExperienceWithTechnologyAndTypeDTO()
+                    {
+                        Id = Guid.NewGuid(),
+                        StartDate = DateTime.Parse("01-11-2020"),
+                        EndDate = DateTime.Parse("01-01-2021"),
+                        ExperienceType = proje,
+                        Provider = "",
+                        Title = "Ayşe Tatile Çıksın - Şifreli Mesajlaşma",
+                        Reference = "",
+                        Description = "RSA şifreleme ile arada sunucu olmadan, doğrudan P2P iletişim yapan şifreli mesaşlaşma uygulaması.",
+                        Url = "https://bitbucket.org/Alchemysterio/yazilim-muh./src/master/",
+                        SubSkills = new List<GetSubSkillDTO>()
+                        {
+                            new GetSubSkillDTO()
+                            {
+                                Id= Guid.NewGuid(),
+                                Name = "Cryptology",
+                                Explanation = "MEsajların şifrelenme işlemlerinde öğrenildi."
+                            },
+                            new GetSubSkillDTO()
+                            {
+                                Id= Guid.NewGuid(),
+                                Name = "Python"
+                            },
+                            new GetSubSkillDTO()
+                            {
+                                Id= Guid.NewGuid(),
+                                Name = "Socket",
+                                Explanation = "P2P işlemlerde kullanıcı bağlantıları sağlandı."
+                            },
+                            new GetSubSkillDTO()
+                            {
+                                Id= Guid.NewGuid(),
+                                Name = "Thread"
+                            },
+                            new GetSubSkillDTO()
+                            {
+                                Id= Guid.NewGuid(),
+                                Name = "Tkinter"
+                            },
+                            new GetSubSkillDTO()
+                            {
+                                Id= Guid.NewGuid(),
+                                Name = "RSA"
+                            },
+                        }
+                    },
+                    new GetExperienceWithTechnologyAndTypeDTO()
+                    {
+                        Id = Guid.NewGuid(),
+                        StartDate = DateTime.Parse("01-06-2021"),
+                        EndDate = DateTime.Parse("01-12-2021"),
+                        ExperienceType = staj,
+                        Provider = "",
+                        Title = "NTN Yazılım - Mobil Uygulama Geliştirici",
+                        Reference = "",
+                        Description = "Atık toplama tesisi için geliştirilen, mobil ve tablet cihazlarda kullanılacak Flutter tabanlı uygulamanın geliştirilmesinde görev aldım.",
+                        Url = "https://ntn.com.tr/",
+                        ImageUrl = "https://ntn.com.tr/img/logo3.png",
+                        SubSkills = new List<GetSubSkillDTO>()
+                        {
+                            new GetSubSkillDTO()
+                            {
+                                Id= Guid.NewGuid(),
+                                Name = "Flutter",
+
+                            },
+                            new GetSubSkillDTO()
+                            {
+                                Id= Guid.NewGuid(),
+                                Name = "Dart"
+                            },
+                            new GetSubSkillDTO()
+                            {
+                                Id= Guid.NewGuid(),
+                                Name = "RESTful API"
+                            },
+                            new GetSubSkillDTO()
+                            {
+                                Id= Guid.NewGuid(),
+                                Name = "Layered Architecture"
+                            },
+                        }
+                    },
+                    new GetExperienceWithTechnologyAndTypeDTO()
+                    {
+                        Id = Guid.NewGuid(),
+                        StartDate = DateTime.Parse("01-09-2021"),
+                        EndDate = DateTime.Parse("01-06-2022"),
+                        ExperienceType = proje,
+                        Provider = "",
+                        Title = "TTB10 - Deepfake Video Tespiti",
+                        Reference = "",
+                        Description = "Tez projemiz için ürettiğimiz deepfake video tespiti. Hedef verisetinde %82'lik başarı oranı ile tamamlandı.",
+                        SubSkills = new List<GetSubSkillDTO>()
+                        {
+                            new GetSubSkillDTO()
+                            {
+                                Id= Guid.NewGuid(),
+                                Name = "Python"
+                            },
+                            new GetSubSkillDTO()
+                            {
+                                Id= Guid.NewGuid(),
+                                Name = "Tensorflow",
+                                Explanation = "Model tasarımı ve eğitiminde kullandık."
+                            },
+                            new GetSubSkillDTO()
+                            {
+                                Id= Guid.NewGuid(),
+                                Name = "Cuda"
+                            },
+                            new GetSubSkillDTO()
+                            {
+                                Id= Guid.NewGuid(),
+                                Name = "OpenCV"
+                            },
+                            new GetSubSkillDTO()
+                            {
+                                Id= Guid.NewGuid(),
+                                Name = "CNN(Convolutional Neural Networks)"
+                            },
+                            new GetSubSkillDTO()
+                            {
+                                Id= Guid.NewGuid(),
+                                Name = "Pandas"
+                            },
+                        }
+                    },
+                    new GetExperienceWithTechnologyAndTypeDTO()
+                    {
+                        Id = Guid.NewGuid(),
+                        StartDate = DateTime.Parse("01-12-2022"),
+                        EndDate = DateTime.Parse("01-04-2023"),
+                        ExperienceType = gonullu,
+                        Provider = "",
+                        Title = "Bitranium Blockchain",
+                        Reference = "",
+                        Description = "Bitranium kripto para uygulamasında kısa süreli gönüllü çalışma sağladım. Proje sonradan kapandı.",
+                        Url = "https://www.facebook.com/people/Bitranium-Teknoloji/100068613101869/",
+                        ImageUrl = "https://scontent.fadb6-4.fna.fbcdn.net/v/t39.30808-1/302077892_390792499884517_3735135599328716462_n.jpg?stp=dst-jpg_s200x200_tt6&_nc_cat=100&ccb=1-7&_nc_sid=2d3e12&_nc_ohc=wAXcXy23HO0Q7kNvwEId9zw&_nc_oc=AdnP35KRAMuvjZBPIO3toxU5cC2YzA0nTpdpVcYKFVXzg_fKl5ZLFZsqrf7uDOenOZY&_nc_zt=24&_nc_ht=scontent.fadb6-4.fna&_nc_gid=zCeSDDRzWkb_PPSDWM8l8g&oh=00_AfSCC90VrGMRAOLZxewz0z0y75t7UyMv10DSRQkwy5EWdw&oe=6879B4DD",
+                        SubSkills = new List<GetSubSkillDTO>()
+                        {
+                            new GetSubSkillDTO()
+                            {
+                                Id= Guid.NewGuid(),
+                                Name = "WEB3",
+                                Explanation = "Geleceğin teknolojisi"
+                            },
+                            new GetSubSkillDTO()
+                            {
+                                Id= Guid.NewGuid(),
+                                Name = "Blockchain"
+                            },
+                            new GetSubSkillDTO()
+                            {
+                                Id= Guid.NewGuid(),
+                                Name = "React"
+                            },
+                            new GetSubSkillDTO()
+                            {
+                                Id= Guid.NewGuid(),
+                                Name = "Solidity",
+                                Explanation = "Contract haazırladım. Temel blockchain methodları hazırladım."
+                            },
+                            new GetSubSkillDTO()
+                            {
+                                Id= Guid.NewGuid(),
+                                Name = "Contracts"
+                            }
+                        }
+                    },
+                    new GetExperienceWithTechnologyAndTypeDTO()
+                    {
+                        Id = Guid.NewGuid(),
+                        StartDate = DateTime.Parse("01-02-2023"),
+                        EndDate = DateTime.Parse("01-07-2023"),
+                        ExperienceType = egitim,
+                        Provider = "",
+                        Title = "Turkcell Bootcamp",
+                        Reference = "Türkay Ürkmez",
+                        Description = "Turkcell GYGY 2023 C# .NET Bootcamp eğitimi. Başarıyla tamamlandı.",
+                        ImageUrl = "https://glyapi.turkcell.com.tr/CdnApi/file/images/gy_svg.svg",
+                        Url = "https://gelecegiyazanlar.turkcell.com.tr/",
+                        SubSkills = new List<GetSubSkillDTO>()
+                        {
+                            new GetSubSkillDTO()
+                            {
+                                Id= Guid.NewGuid(),
+                                Name = "C#"
+                            },
+                            new GetSubSkillDTO()
+                            {
+                                Id= Guid.NewGuid(),
+                                Name = ".NET API"
+                            },
+                            new GetSubSkillDTO()
+                            {
+                                Id= Guid.NewGuid(),
+                                Name = "Architecture"
+                            },
+                            new GetSubSkillDTO()
+                            {
+                                Id= Guid.NewGuid(),
+                                Name = "Algorithm"
+                            }
+                        }
+                    },
+                    new GetExperienceWithTechnologyAndTypeDTO()
+                    {
+                        Id = Guid.NewGuid(),
+                        StartDate = DateTime.Parse("01-07-2023"),
+                        EndDate = DateTime.Parse("01-08-2023"),
+                        ExperienceType = staj,
+                        Provider = "",
+                        Title = "Atmosware Backend Developer",
+                        Reference = "",
+                        Description = "Turkcell Bootcamp sonrası Atmosware şirketinde 1 ay süren staj programı.",
+                        Url = "https://www.atmosware.com.tr/",
+                        SubSkills = new List<GetSubSkillDTO>()
+                        {
+                            new GetSubSkillDTO()
+                            {
+                                Id= Guid.NewGuid(),
+                                Name = "C#"
+                            },
+                            new GetSubSkillDTO()
+                            {
+                                Id= Guid.NewGuid(),
+                                Name = ".NET API"
+                            },
+                            new GetSubSkillDTO()
+                            {
+                                Id= Guid.NewGuid(),
+                                Name = ".NET MVC"
+                            },
+                            new GetSubSkillDTO()
+                            {
+                                Id= Guid.NewGuid(),
+                                Name = "React"
+                            },
+                            new GetSubSkillDTO()
+                            {
+                                Id= Guid.NewGuid(),
+                                Name = "PostgreSQL"
+                            },
+                            new GetSubSkillDTO()
+                            {
+                                Id= Guid.NewGuid(),
+                                Name = "SOLID"
+                            },
+                            new GetSubSkillDTO()
+                            {
+                                Id= Guid.NewGuid(),
+                                Name = "DI"
+                            }
+                        }
+                    },
+                    new GetExperienceWithTechnologyAndTypeDTO()
+                    {
+                        Id = Guid.NewGuid(),
+                        StartDate = DateTime.Parse("01-04-2024"),
+                        EndDate = DateTime.Parse("01-08-2024"),
+                        ExperienceType = egitim,
+                        Provider = "",
+                        Title = "HWA .NET Bootcamp",
+                        Reference = "",
+                        Description = "HWA (Veli Bacik) grubunda düzenlenen bootcamp programı.",
+                        ImageUrl = "https://yt3.googleusercontent.com/ytc/AIdro_mZl15k5MCBs4qtxiZ4kRqcaHBixmjaW2nDPTHIBfodZjI=s900-c-k-c0x00ffffff-no-rj",
+                        SubSkills = new List<GetSubSkillDTO>()
+                        {
+                            new GetSubSkillDTO()
+                            {
+                                Id= Guid.NewGuid(),
+                                Name = "C#"
+                            },
+                            new GetSubSkillDTO()
+                            {
+                                Id= Guid.NewGuid(),
+                                Name = ".NET API"
+                            },
+                            new GetSubSkillDTO()
+                            {
+                                Id= Guid.NewGuid(),
+                                Name = "SeriLog"
+                            },
+                            new GetSubSkillDTO()
+                            {
+                                Id= Guid.NewGuid(),
+                                Name = "MemoryCache"
+                            },
+                            new GetSubSkillDTO()
+                            {
+                                Id= Guid.NewGuid(),
+                                Name = "Middleware"
+                            },
+                            new GetSubSkillDTO()
+                            {
+                                Id= Guid.NewGuid(),
+                                Name = "CQRS"
+                            },
+                            new GetSubSkillDTO()
+                            {
+                                Id= Guid.NewGuid(),
+                                Name = "Redis"
+                            },
+                            new GetSubSkillDTO()
+                            {
+                                Id= Guid.NewGuid(),
+                                Name = "RabbitMQ"
+                            },
+                            new GetSubSkillDTO()
+                            {
+                                Id= Guid.NewGuid(),
+                                Name = "gRPC"
+                            },
+                            new GetSubSkillDTO()
+                            {
+                                Id= Guid.NewGuid(),
+                                Name = "Microservice"
+                            }
+                        }
+                    },
+                    new GetExperienceWithTechnologyAndTypeDTO()
+                    {
+                        Id = Guid.NewGuid(),
+                        StartDate = DateTime.Parse("01-12-2024"),
+                        ExperienceType = calisma,
+                        Provider = "",
+                        Title = "NTN Yazılım - Full Stack Developer",
+                        Reference = "",
+                        Description = "NTN Yazılım Şirketinde Fullstack Developer Olarak Çalışıyorum.",
+                        Url = "https://ntn.com.tr/",
+                        ImageUrl = "https://ntn.com.tr/img/logo3.png",
+                        SubSkills = new List<GetSubSkillDTO>()
+                        {
+                            new GetSubSkillDTO()
+                            {
+                                Id= Guid.NewGuid(),
+                                Name = "C#"
+                            },
+                            new GetSubSkillDTO()
+                            {
+                                Id= Guid.NewGuid(),
+                                Name = ".NET API"
+                            },
+                            new GetSubSkillDTO()
+                            {
+                                Id= Guid.NewGuid(),
+                                Name = "Ef Core"
+                            },
+                            new GetSubSkillDTO()
+                            {
+                                Id= Guid.NewGuid(),
+                                Name = "Sql Server"
+                            },
+                            new GetSubSkillDTO()
+                            {
+                                Id= Guid.NewGuid(),
+                                Name = "JWT"
+                            },
+                            new GetSubSkillDTO()
+                            {
+                                Id= Guid.NewGuid(),
+                                Name = "Postman"
+                            },
+                            new GetSubSkillDTO()
+                            {
+                                Id= Guid.NewGuid(),
+                                Name = "Git"
+                            },
+                            new GetSubSkillDTO()
+                            {
+                                Id= Guid.NewGuid(),
+                                Name = "Javascript"
+                            },
+                            new GetSubSkillDTO()
+                            {
+                                Id= Guid.NewGuid(),
+                                Name = "JQuery"
+                            },
+                            new GetSubSkillDTO()
+                            {
+                                Id= Guid.NewGuid(),
+                                Name = "Bootstrap"
+                            }
+                        }
+                    },
+                    new GetExperienceWithTechnologyAndTypeDTO()
+                    {
+                        Id = Guid.NewGuid(),
+                        StartDate = DateTime.Parse("01-06-2025"),
+                        ExperienceType = proje,
+                        Provider = "",
+                        Title = "CodeFuser",
+                        Reference = "",
+                        Description = "CodeFuser, yaklaşık bir yıldır kullandığım python scriptinin program hali. Gpt ler büyük programları kavrayamıyor. Bu sebep ile pythob script ile kodları txt yapıp öyle gptlere yüklüyordum. Programda aynısı yapmakta. Promt desteği var. Dosyaya özel promt desteği var. Bu süreçleri yöneterek işlerini kolay hale getirmeyi amaçladım.",
+                        Url = "https://github.com/tahamucasiroglu/CodeFuser",
+                        ImageUrl = "https://github.com/tahamucasiroglu/CodeFuser/blob/main/assets/CodeFuser%20Logo.png?raw=true",
+                        SubSkills = new List<GetSubSkillDTO>()
+                        {
+                            new GetSubSkillDTO()
+                            {
+                                Id= Guid.NewGuid(),
+                                Name = "Claude Code"
+                            },
+                            new GetSubSkillDTO()
+                            {
+                                Id= Guid.NewGuid(),
+                                Name = "Vibe Coding"
+                            },
+                            new GetSubSkillDTO()
+                            {
+                                Id= Guid.NewGuid(),
+                                Name = "Promt Engineering"
+                            },
+                            new GetSubSkillDTO()
+                            {
+                                Id= Guid.NewGuid(),
+                                Name = "Python"
+                            }
+                        }
+                    },
+                    new GetExperienceWithTechnologyAndTypeDTO()
+                    {
+                        Id = Guid.NewGuid(),
+                        StartDate = DateTime.Parse("01-05-2025"),
+                        ExperienceType = proje,
+                        Provider = "",
+                        Title = "Return",
+                        Reference = "",
+                        Description = "Return projesi .NET projelerinde geri dönüş tiplerini ortak bir yapıya almayı sağlar. Bu sayede güçlü bir hata yönetimi ve loglama imkanı sağlar. şuan temel aşamada ama ilerleyen süreçte gelişmiş yapılarla kişilerin temel ihtiyacı haline gelmesini hedefliyorum.",
+                        Url = "https://github.com/tahamucasiroglu/Return",
+                        SubSkills = new List<GetSubSkillDTO>()
+                        {
+                            new GetSubSkillDTO()
+                            {
+                                Id= Guid.NewGuid(),
+                                Name = "C#"
+                            },
+                            new GetSubSkillDTO()
+                            {
+                                Id= Guid.NewGuid(),
+                                Name = "Algorithm"
+                            },
+                            new GetSubSkillDTO()
+                            {
+                                Id= Guid.NewGuid(),
+                                Name = "Architecture"
+                            }
+                        }
+                    },
+                    new GetExperienceWithTechnologyAndTypeDTO()
+                    {
+                        Id = Guid.NewGuid(),
+                        StartDate = DateTime.Parse("01-07-2025"),
+                        ExperienceType = proje,
+                        Provider = "",
+                        Title = "TahaMucasiroglu.com.tr",
+                        Reference = "",
+                        Description = "Mimarisel, teknolojik, tasarımsal ve yeni teknolojileri denemek için açtığım site. Temel bir yapı kurdum. İleride tabiki değişebilir. Burada denemeler yaparak canlı süreçte neler olacağını test etmek istiyorum. Local ve public sorunlara genel bir tecrübe edinmek istiyorum.",
+                        Url = "https://github.com/tahamucasiroglu/TahaMucasirogluBlog",
+                        SubSkills = new List<GetSubSkillDTO>()
+                        {
+                            new GetSubSkillDTO()
+                            {
+                                Id= Guid.NewGuid(),
+                                Name = "Claude Code"
+                            },
+                            new GetSubSkillDTO()
+                            {
+                                Id= Guid.NewGuid(),
+                                Name = "Vibe Coding"
+                            },
+                            new GetSubSkillDTO()
+                            {
+                                Id= Guid.NewGuid(),
+                                Name = "Promt Engineering"
+                            },
+                            new GetSubSkillDTO()
+                            {
+                                Id= Guid.NewGuid(),
+                                Name = "Python"
+                            }
+                        }
+                    }
+                }
+            };
+            return Ok(new SuccessReturn<CvPageResponseDTO>(cvResponseDTO));
+        }
+
+
+
+    }
+}

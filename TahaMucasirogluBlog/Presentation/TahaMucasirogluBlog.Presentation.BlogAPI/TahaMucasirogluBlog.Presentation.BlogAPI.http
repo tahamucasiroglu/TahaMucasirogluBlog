@@ -1,6 +1,0 @@
-@TahaMucasirogluBlog.Presentation.BlogAPI_HostAddress = http://localhost:5252
-
-GET {{TahaMucasirogluBlog.Presentation.BlogAPI_HostAddress}}/weatherforecast/
-Accept: application/json
-
-###

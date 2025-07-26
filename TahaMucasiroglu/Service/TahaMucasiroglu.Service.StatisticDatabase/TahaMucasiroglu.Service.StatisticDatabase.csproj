@@ -1,0 +1,14 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\Infrastructure\TahaMucasiroglu.Infrastructure.Statistic\TahaMucasiroglu.Infrastructure.StatisticRepository.csproj" />
+    <ProjectReference Include="..\TahaMucasiroglu.Service.Database\TahaMucasiroglu.Service.Database.csproj" />
+  </ItemGroup>
+
+</Project>

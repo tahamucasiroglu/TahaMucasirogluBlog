@@ -1,0 +1,6 @@
+@TahaMucasiroglu.Presentation.AdminAPI_HostAddress = http://localhost:5198
+
+GET {{TahaMucasiroglu.Presentation.AdminAPI_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

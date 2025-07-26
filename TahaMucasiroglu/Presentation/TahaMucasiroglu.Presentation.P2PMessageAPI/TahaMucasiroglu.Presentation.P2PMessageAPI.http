@@ -1,0 +1,6 @@
+@TahaMucasiroglu.Presentation.P2PMessageAPI_HostAddress = http://localhost:5234
+
+GET {{TahaMucasiroglu.Presentation.P2PMessageAPI_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

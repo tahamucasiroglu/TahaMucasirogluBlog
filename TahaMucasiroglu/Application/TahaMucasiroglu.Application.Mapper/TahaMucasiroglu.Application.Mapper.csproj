@@ -1,0 +1,29 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+	  <!--uyarıları hata göstererek düzgün ilerleme sağlar-->
+	  <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="AutoMapper" Version="14.0.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\Domain\TahaMucasiroglu.Domain.Constant\TahaMucasiroglu.Domain.Constant.csproj" />
+    <ProjectReference Include="..\..\Domain\TahaMucasiroglu.Domain.DTOs\TahaMucasiroglu.Domain.DTOs.csproj" />
+    <ProjectReference Include="..\..\Domain\TahaMucasiroglu.Domain.Entities\TahaMucasiroglu.Domain.Entities.csproj" />
+    <ProjectReference Include="..\..\Domain\TahaMucasiroglu.Domain.Extensions\TahaMucasiroglu.Domain.Extensions.csproj" />
+    <ProjectReference Include="..\..\Domain\TahaMucasiroglu.Domain.Models\TahaMucasiroglu.Domain.Models.csproj" />
+    <ProjectReference Include="..\..\Domain\TahaMucasiroglu.Domain.Return\TahaMucasiroglu.Domain.Return.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Extensions\ConvertExtension\" />
+    <Folder Include="MapProfile\Response\" />
+  </ItemGroup>
+
+</Project>

@@ -1,0 +1,6 @@
+@TahaMucasiroglu.Presentation.CvAPI_HostAddress = http://localhost:5248
+
+GET {{TahaMucasiroglu.Presentation.CvAPI_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
